@@ -6,25 +6,50 @@ import re
 import time
 
 
+CALL_LIMIT = 120  # seconds one Gemini call may take before we give up on it
+
+
+def _with_limit(fn, seconds):
+    """Run fn in a worker thread; stop waiting after `seconds` so a stuck call can't hang the job."""
+    from concurrent.futures import ThreadPoolExecutor, TimeoutError as Late
+    pool = ThreadPoolExecutor(max_workers=1)
+    fut = pool.submit(fn)
+    try:
+        return fut.result(timeout=seconds)
+    except Late:
+        raise TimeoutError(f"no reply within {seconds} s")
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+
+
 def ask_gemini(prompt, model):
     from google import genai  # pip install google-genai
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    from google.genai import types
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"],
+                          http_options=types.HttpOptions(timeout=CALL_LIMIT * 1000))
+
+    def standard():
+        return client.models.generate_content(model=model, contents=prompt).text
+
+    def interactions():
+        return client.interactions.create(model=model, input=prompt).output_text
+
+    ways = [("generate_content", standard)] + ([("interactions", interactions)] if hasattr(client, "interactions") else [])
     last = None
-    for attempt in range(3):
-        try:
-            if hasattr(client, "interactions"):
-                r = client.interactions.create(model=model, input=prompt)
-                text = getattr(r, "output_text", None)
-            else:
-                r = client.models.generate_content(model=model, contents=prompt)
-                text = getattr(r, "text", None)
-            if text:
-                return text
-            last = RuntimeError("empty reply")
-        except Exception as e:  # rate limit or a passing server error
-            last = e
-        time.sleep(20 * (attempt + 1))
-    raise RuntimeError(f"Gemini did not answer: {last}")
+    for attempt in range(2):
+        for name, fn in ways:
+            t0 = time.time()
+            try:
+                text = _with_limit(fn, CALL_LIMIT + 10)
+                print(f"    Gemini replied via {name} in {time.time() - t0:.0f} s", flush=True)
+                if text:
+                    return text
+                last = RuntimeError("empty reply")
+            except Exception as e:  # rate limit, wrong model name, network, or time limit
+                last = e
+                print(f"    Gemini {name} failed after {time.time() - t0:.0f} s: {type(e).__name__}: {str(e)[:300]}", flush=True)
+        time.sleep(30)
+    raise RuntimeError(f"Gemini did not answer: {type(last).__name__}: {str(last)[:300]}")
 
 
 def parse_json(text):

@@ -34,7 +34,9 @@ jobs:
           python-version: "3.11"
       - run: pip install -r research/requirements.txt
       - name: Research, write and email today's edition
+        timeout-minutes: 25
         env:
+          PYTHONUNBUFFERED: "1"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

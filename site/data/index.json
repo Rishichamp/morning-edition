@@ -1,3 +1,12 @@
 {
- "editions": []
+ "editions": [
+  {
+   "date": "2026-11-10",
+   "headline": "Artificial intelligence is desperately seeking its narrative",
+   "publishedAt": "2026-11-10T14:37:20.790822+00:00",
+   "emailStatus": "not_sent",
+   "emailedAt": null,
+   "test": true
+  }
+ ]
 }

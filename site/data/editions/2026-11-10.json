@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-10",
+ "sample": false,
+ "front": {
+  "kicker": "Test edition",
+  "headline": "Artificial intelligence is desperately seeking its narrative",
+  "dek": "Built from the feeds without Gemini, for testing."
+ },
+ "brief": [
+  "Artificial intelligence is desperately seeking its narrative",
+  "How AI is reshaping China’s universities",
+  "Armenia's AI map: 118 companies, 882 jobs, 10 research labs"
+ ],
+ "changes": [],
+ "world": [
+  {
+   "headline": "Artificial intelligence is desperately seeking its narrative",
+   "summary": "Headline only; details are in the source.",
+   "why": "Test run: no reason written.",
+   "source": "The Conversation",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOWk0NGkyaTZjT29pR0VlM25mNGtrQmZqSnFxUS16cGgyU3dFcXNpQ0I5OGtrVzY4UmpsMHprcjJIQ0E5U1YwTTJtS3ZLTzNPMHhPMFd2TklGSHFMOUhsc2kwZkN6V21hY3ItVC1YM1hVSDd3UDhheXF1QjR6bUJUbVBEbjdCa0E1bnIyc3VuNXhiX3o5enBGYTlaSQ?oc=5",
+   "topic": "AI",
+   "unverified": false
+  },
+  {
+   "headline": "How AI is reshaping China’s universities",
+   "summary": "Headline only; details are in the source.",
+   "why": "Test run: no reason written.",
+   "source": "The Hindu",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZDJ3YlZ3MVl0dXp5Mmd4WHd6Y2RHcUJzY1BkbnBDVTRDc0lOS00wZU5vdk5GUzYxdkVfMnRLbTFETGNJQVdZTWEyaVpBdVp6ek80TllQbkM1dmdGRm5IeWlQM1JTaHRfanBJZ203dlgwNzl1eWt2bENkNHZRWU9zQWJMT0xBRGpzWGMzd1RleVk3N3pJUEpfZ2JuSEhQcUd4WkI3WXR30gGsAUFVX3lxTE0wbUVvQTNtTU41eEJWSHVvYXhtYy16VTBxN0tKVDBfbFFzNzNtaUZHSGE3bmhwbGtTeHZOZ1VyTDN5Y05JRWdLN2JtTThyWUhLbzVEME1RUTN3SDgydlJtWWU2N2thLWxlMDc0WDRLUEhVQ2ZIVlRXUkkxRm5iRUxqNlBZWi1pdEI2amsxanZtc3RpbC1nZ3V0eUVvaFpsQmtzNGpFTGJVSVRaS1Y?oc=5",
+   "topic": "Education",
+   "unverified": false
+  },
+  {
+   "headline": "Armenia's AI map: 118 companies, 882 jobs, 10 research labs",
+   "summary": "Headline only; details are in the source.",
+   "why": "Test run: no reason written.",
+   "source": "Dealroom",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOOTktaWxiTmRVV1prTjFoNFZmOThpamlEWGMtV05EMHR6RURDeThYYXlVNklnOVdiVG9FNEVNd1M2NHM4azNPUHJVdEtyamxXVmJMemRqOGFnSW94TkdEYm44d0RqVV9iWVVJNnlndmFPYkRYdXNQX1ZRX1lJajFFWWhESEpLN19XU290cWU4eEFESXZt?oc=5",
+   "topic": "Research",
+   "unverified": false
+  },
+  {
+   "headline": "OpenAI Builds A 'Kill Switch' To Stop Risky AI Model Work",
+   "summary": "Headline only; details are in the source.",
+   "why": "Test run: no reason written.",
+   "source": "NDTV",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMVg2U1dhQTBwVHVPdk5uZGI1eUNRSWhkZEdVU01wTDZsUG9PaHoxUGM1a3BGLW81R0pTMkJmRzhnUDdFeHlQSDJSNWlZek9kaXFCa2diMV9tU2pzdko5eldTZlRiTDhsU1MyTjRoYWhLX1BsN3ZNbHMyWlBINnJicV82bkg2Y05yWFZqOW15Q3dPN2dkd0wxRTJRTjJWLW5uS0dpTXFhb3MyN3l3aGfSAbYBQVVfeXFMTURZSkV5NS01aUF6SkV3OGtRbTQ0MGRGUkxLaEhvVkdQT2pxZU1KTzFsd1ZzQ2dPZ0tKMTh2YU96LTR3Mkw1M0pGTkNmNVp1S2RIOGktMEtWT05Xa1JzWHo0VmM4TTdoUGxhcHJzU29FeDhNc1JfYWd2andJTTRXcGxhX2UyRFFMVkpuSnoyeV9PV0tnaWhaX2NsLWdrUUxHc0lnU2JVRmU0UEEzUDd4Sml1U1VuU0E?oc=5",
+   "topic": "AI",
+   "unverified": false
+  },
+  {
+   "headline": "Top 5 Artificial Intelligence Applications in the FinTech Industry",
+   "summary": "Headline only; details are in the source.",
+   "why": "Test run: no reason written.",
+   "source": "Nasscom",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORGhWWl9lTkJIQm1IeVVXejY1T2RkUW1pT0U3MXdQR0JocWtBSTdIX3dJZjBWY1RMcU9rdEg1Z2JaRHNtSm9YbTV5ZFFpQVNZUF9hamFLUThYcURZYWlyLU9HNHYwMUduUlN3S0hnUHdxOFkzeVIxcXFjQ20yTHowbUx4dTcxUnYtM2c3aFJscmFfWW1GUW4tRUp4eXQtQVBCT1RoSjF3?oc=5",
+   "topic": "AI",
+   "unverified": false
+  }
+ ],
+ "question": "What would you like tomorrow's edition to cover?",
+ "record": {
+  "window": "News from the last 36 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news feeds. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to the article the feed listed. Summaries restate the headline and feed snippet; open the source for detail.",
+  "unverified": [
+   "Test edition built without Gemini. Stories are the first feed items per topic."
+  ]
+ }
+}

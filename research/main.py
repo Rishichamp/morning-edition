@@ -61,7 +61,8 @@ def main(argv):
     existing = next((e for e in index["editions"] if e["date"] == today), None)
     ed_path = os.path.join(EDS, today + ".json")
 
-    if existing and os.path.exists(ed_path):
+    replace_test = bool(existing and existing.get("test") and not dry)   # a real run replaces a test edition
+    if existing and os.path.exists(ed_path) and not replace_test:
         print(f"Edition {today} already published.")
         if existing.get("emailStatus") != "sent" and not no_email:   # never send twice
             existing["emailStatus"] = mailer.send(settings, load_json(ed_path, None))

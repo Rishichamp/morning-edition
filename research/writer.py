@@ -9,47 +9,61 @@ import time
 CALL_LIMIT = 120  # seconds one Gemini call may take before we give up on it
 
 
+FALLBACK_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]
+
+
 def _with_limit(fn, seconds):
-    """Run fn in a worker thread; stop waiting after `seconds` so a stuck call can't hang the job."""
-    from concurrent.futures import ThreadPoolExecutor, TimeoutError as Late
-    pool = ThreadPoolExecutor(max_workers=1)
-    fut = pool.submit(fn)
-    try:
-        return fut.result(timeout=seconds)
-    except Late:
+    """Run fn in a background (daemon) thread and stop waiting after `seconds`.
+    A daemon thread never keeps the job alive, even if the call underneath is stuck."""
+    import threading
+    box = {}
+
+    def run():
+        try:
+            box["value"] = fn()
+        except Exception as e:
+            box["error"] = e
+    t = threading.Thread(target=run, daemon=True)
+    t.start()
+    t.join(seconds)
+    if t.is_alive():
         raise TimeoutError(f"no reply within {seconds} s")
-    finally:
-        pool.shutdown(wait=False, cancel_futures=True)
+    if "error" in box:
+        raise box["error"]
+    return box.get("value")
+
+
+def _short(e):
+    """Readable one-line error, with the quota or reason lines kept."""
+    s = re.sub(r"\s+", " ", str(e).replace("\\n", " "))
+    return f"{type(e).__name__}: {s[:900]}"
 
 
 def ask_gemini(prompt, model):
+    """Ask Gemini, moving to the next free model when one is busy (503) or over its limit (429)."""
     from google import genai  # pip install google-genai
     from google.genai import types
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"],
                           http_options=types.HttpOptions(timeout=CALL_LIMIT * 1000))
-
-    def standard():
-        return client.models.generate_content(model=model, contents=prompt).text
-
-    def interactions():
-        return client.interactions.create(model=model, input=prompt).output_text
-
-    ways = [("generate_content", standard)] + ([("interactions", interactions)] if hasattr(client, "interactions") else [])
+    models = [model] + [m for m in FALLBACK_MODELS if m != model]
     last = None
-    for attempt in range(2):
-        for name, fn in ways:
+    for rnd in range(2):
+        for m in models:
             t0 = time.time()
             try:
-                text = _with_limit(fn, CALL_LIMIT + 10)
-                print(f"    Gemini replied via {name} in {time.time() - t0:.0f} s", flush=True)
+                text = _with_limit(lambda: client.models.generate_content(model=m, contents=prompt).text, CALL_LIMIT + 10)
                 if text:
-                    return text
+                    print(f"    Gemini {m} replied in {time.time() - t0:.0f} s", flush=True)
+                    return text, m
                 last = RuntimeError("empty reply")
-            except Exception as e:  # rate limit, wrong model name, network, or time limit
+                print(f"    Gemini {m}: empty reply", flush=True)
+            except Exception as e:  # busy, over limit, unknown model, network, or time limit
                 last = e
-                print(f"    Gemini {name} failed after {time.time() - t0:.0f} s: {type(e).__name__}: {str(e)[:300]}", flush=True)
-        time.sleep(30)
-    raise RuntimeError(f"Gemini did not answer: {type(last).__name__}: {str(last)[:300]}")
+                print(f"    Gemini {m} failed after {time.time() - t0:.0f} s: {_short(e)}", flush=True)
+        if rnd == 0:
+            print("    All models busy or limited; waiting 60 s and trying once more", flush=True)
+            time.sleep(60)
+    raise RuntimeError(f"Gemini did not answer: {_short(last)}")
 
 
 def parse_json(text):

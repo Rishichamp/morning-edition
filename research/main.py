@@ -91,7 +91,8 @@ def main(argv):
     if dry:
         ed = writer.dry_run(settings, today, cands, earlier)
     else:
-        reply = writer.ask_gemini(writer.build_prompt(settings, today, cands, earlier), settings["model"])
+        reply, used_model = writer.ask_gemini(writer.build_prompt(settings, today, cands, earlier), settings["model"])
+        settings["model"] = used_model   # The record names the model that actually wrote it
         ed = writer.assemble(writer.parse_json(reply), settings, today, cands, earlier)
 
     save_json(ed_path, ed)

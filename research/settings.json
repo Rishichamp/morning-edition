@@ -1,0 +1,19 @@
+{
+  "name": "The Morning Edition",
+  "owner": "Rishi Singh",
+  "time_zone_offset": "+05:30",
+  "publish_time": "08:00",
+  "site_url": "https://rishichamp.github.io/morning-edition/",
+  "stories_per_day": 5,
+  "keep_editions": 14,
+  "keep_kb_days": 60,
+  "topics": [
+    { "name": "AI", "query": "artificial intelligence OR \"AI model\" OR LLM" },
+    { "name": "Education", "query": "education technology OR \"AI in education\" OR universities" },
+    { "name": "Research", "query": "machine learning research OR \"new study\" AI" }
+  ],
+  "ignore_words": ["celebrity", "bollywood", "cricket", "football", "IPL", "box office"],
+  "arxiv_categories": ["cs.AI", "cs.CL", "cs.LG"],
+  "reader_profile": "An M.Tech student in India working on a machine learning thesis that trains models on a single cloud GPU. Cares about AI, education and research methods. Wants short, calm, practical news.",
+  "model": "gemini-3.8-flash"
+}

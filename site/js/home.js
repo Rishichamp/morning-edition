@@ -75,7 +75,7 @@
       </div>
       <aside class="lead-side" aria-label="Inside today">
         <p class="side-h">Inside today</p>
-        <ul class="index-list">${c.world.map((s, i) => `<li><a href="#ed-${t}"><span class="t">${esc(s.headline)}</span></a><span class="s">World news · story ${i + 1}</span></li>`).join("")}</ul>
+        <ul class="index-list">${(c.stories ? c.stories.slice(1).concat(c.india || []) : c.world).map((s, i) => `<li><a href="${s.n ? `#story-${t}-${s.n}` : `#ed-${t}`}"><span class="t">${esc(s.headline)}</span></a><span class="s">${esc([s.company, s.category].filter(Boolean).join(" · ") || "World news · story " + (i + 1))}</span></li>`).join("")}</ul>
       </aside>
     </article>`;
   }

@@ -7,6 +7,8 @@
     const h = location.hash.slice(1);
     if (h === "deleted") return { v: "deleted", nav: "deleted" };
     if (h === "today") return { v: "edition", date: S.todayKey(), nav: "today" };
+    const sm = h.match(/^story-(\d{4}-\d{2}-\d{2})-(\d{1,2})$/);
+    if (sm) return { v: "story", date: sm[1], n: +sm[2], nav: "" };
     const m = h.match(/^ed-(\d{4}-\d{2}-\d{2})$/);
     if (m) return { v: "edition", date: m[1], nav: m[1] === S.todayKey() ? "today" : "" };
     return { v: "home", nav: "home" };
@@ -16,7 +18,7 @@
   function rank(r) {
     if (r.v === "home") return 0;
     if (r.v === "deleted") return 1e6;
-    return 1 + S.diffDays(r.date, S.todayKey());
+    return 1 + S.diffDays(r.date, S.todayKey()) + (r.v === "story" ? r.n / 100 : 0);
   }
   let last = null;
 

@@ -4,16 +4,67 @@
   "time_zone_offset": "+05:30",
   "publish_time": "08:00",
   "site_url": "https://rishichamp.github.io/morning-edition/",
-  "stories_per_day": 5,
+  "world_stories": 10,
+  "india_stories": 3,
+  "freshness_hours": 72,
   "keep_editions": 14,
   "keep_kb_days": 60,
-  "topics": [
-    { "name": "AI", "query": "artificial intelligence OR \"AI model\" OR LLM" },
-    { "name": "Education", "query": "education technology OR \"AI in education\" OR universities" },
-    { "name": "Research", "query": "machine learning research OR \"new study\" AI" }
+  "model": "gemini-3.8-flash",
+  "reader_profile": "Rishi Singh, an M.Tech AI and Data Science student at IIT (ISM) Dhanbad in India. Works on deep learning and computer vision, trains models on a single cloud GPU, and follows the AI industry closely: new models, tools he can use, company moves, chips, research and careers.",
+
+  "companies": [
+    { "name": "OpenAI", "query": "OpenAI OR ChatGPT", "match": ["openai", "chatgpt", "sam altman", "gpt-"] },
+    { "name": "Anthropic", "query": "Anthropic OR \"Claude AI\"", "match": ["anthropic", "claude"] },
+    { "name": "Google DeepMind", "query": "\"Google DeepMind\" OR Gemini AI", "match": ["deepmind", "gemini", "google ai"] },
+    { "name": "Nvidia", "query": "Nvidia AI", "match": ["nvidia", "jensen huang", "blackwell", "cuda"] },
+    { "name": "Meta AI", "query": "\"Meta AI\" OR Llama model", "match": ["meta ai", "llama", "meta superintelligence"] },
+    { "name": "Microsoft", "query": "Microsoft AI OR Copilot", "match": ["microsoft", "copilot", "azure ai"] },
+    { "name": "Apple", "query": "Apple Intelligence OR Apple AI", "match": ["apple intelligence", "apple ai", "siri"] },
+    { "name": "Amazon / AWS", "query": "AWS AI OR Amazon Bedrock OR Amazon Nova", "match": ["aws", "amazon bedrock", "amazon nova", "alexa"] },
+    { "name": "xAI", "query": "xAI Grok", "match": ["xai", "grok"] },
+    { "name": "Mistral", "query": "\"Mistral AI\"", "match": ["mistral"] },
+    { "name": "Hugging Face", "query": "\"Hugging Face\"", "match": ["hugging face", "huggingface"] },
+    { "name": "DeepSeek", "query": "DeepSeek", "match": ["deepseek"] },
+    { "name": "Alibaba Qwen", "query": "Alibaba Qwen", "match": ["qwen", "alibaba cloud"] },
+    { "name": "Moonshot / Kimi", "query": "\"Moonshot AI\" OR Kimi model", "match": ["moonshot", "kimi"] },
+    { "name": "Perplexity", "query": "\"Perplexity AI\"", "match": ["perplexity"] },
+    { "name": "Cohere", "query": "Cohere AI", "match": ["cohere"] },
+    { "name": "AMD", "query": "AMD AI chips", "match": ["amd", "instinct", "lisa su"] },
+    { "name": "Intel", "query": "Intel AI", "match": ["intel", "gaudi"] },
+    { "name": "TSMC", "query": "TSMC AI chips", "match": ["tsmc"] },
+    { "name": "Tesla AI", "query": "Tesla AI OR Optimus robot OR Tesla FSD", "match": ["tesla", "optimus", "dojo"] },
+    { "name": "Stability / Midjourney / Runway", "query": "\"Stability AI\" OR Midjourney OR \"Runway AI\"", "match": ["stability ai", "midjourney", "runway"] },
+    { "name": "Cursor / GitHub Copilot", "query": "Cursor AI editor OR \"GitHub Copilot\"", "match": ["cursor", "github copilot", "anysphere"] },
+    { "name": "Indian AI", "query": "\"Sarvam AI\" OR Krutrim OR \"IndiaAI Mission\"", "match": ["sarvam", "krutrim", "indiaai", "bhashini"], "india": true }
   ],
-  "ignore_words": ["celebrity", "bollywood", "cricket", "football", "IPL", "box office"],
-  "arxiv_categories": ["cs.AI", "cs.CL", "cs.LG"],
-  "reader_profile": "An M.Tech student in India working on a machine learning thesis that trains models on a single cloud GPU. Cares about AI, education and research methods. Wants short, calm, practical news.",
-  "model": "gemini-3.8-flash"
+
+  "categories": [
+    "Model launches", "Benchmarks and leaderboards", "Open-source models", "Research papers",
+    "AI agents and coding tools", "APIs, pricing and developer updates", "Chips and hardware",
+    "Cloud and GPU access", "Funding, deals and acquisitions", "Big tech earnings", "Policy and regulation",
+    "Safety and alignment", "Lawsuits and copyright", "AI security and privacy", "Robotics and embodied AI",
+    "Image, video and audio AI", "AI in science and healthcare", "AI in education", "Jobs, hiring and internships",
+    "India AI and startups", "Events and conferences", "Tutorials and how-tos",
+    "Computer vision", "NLP and language models", "MLOps and infrastructure"
+  ],
+
+  "feeds": [
+    { "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "kind": "official" },
+    { "name": "Google AI", "url": "https://blog.google/technology/ai/rss/", "kind": "official" },
+    { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "kind": "official" },
+    { "name": "Nvidia", "url": "https://blogs.nvidia.com/feed/", "kind": "official" },
+    { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "kind": "official" },
+    { "name": "AWS Machine Learning", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "kind": "official" },
+    { "name": "GitHub", "url": "https://github.blog/feed/", "kind": "official" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "kind": "press" },
+    { "name": "The Verge", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "kind": "press" },
+    { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed", "kind": "press" },
+    { "name": "Ars Technica", "url": "https://arstechnica.com/ai/feed/", "kind": "press" },
+    { "name": "Analytics India Magazine", "url": "https://analyticsindiamag.com/feed/", "kind": "india" },
+    { "name": "Inc42", "url": "https://inc42.com/feed/", "kind": "india" }
+  ],
+
+  "india_queries": ["India artificial intelligence startup", "India AI policy OR IndiaAI", "IIT AI research"],
+
+  "avoid": ["stock tip", "share price target", "buy or sell", "crypto", "bitcoin", "celebrity", "bollywood", "rumour", "rumor", "cricket", "football"]
 }

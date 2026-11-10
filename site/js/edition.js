@@ -144,6 +144,94 @@
     </nav>`;
   }
 
+  /* ---------- version 2 editions: lead story + 9 equal tiles + India ---------- */
+  const tag = st => [st.company, st.category].filter(Boolean).map(esc).join(" · ");
+  const storyHref = st => `#story-${date}-${st.n}`;
+  function tile(st, i, cls = "") {
+    return `<a class="tile ${cls}" href="${storyHref(st)}">
+        <span class="tile-top"><span class="tile-n">${String(i).padStart(2, "0")}</span><span class="label">${tag(st) || "AI news"}</span></span>
+        <h3>${esc(st.headline)}</h3>
+        <p class="tile-dek">${esc(st.dek)}</p>
+        <span class="tile-foot"><span>${esc(st.source)}</span><span class="more">Read more →</span></span>
+      </a>`;
+  }
+  function bodyV2(r, c) {
+    const n = neighbours();
+    const [lead, ...rest] = c.stories;
+    const changes = (c.changes || []).length
+      ? `<ul class="changes">${c.changes.map(ch => `<li>
+          <p class="label">Since ${esc(U.shortDate(ch.since))} · ${esc(ch.earlier)}</p>
+          <h3><a href="${ch.story ? `#story-${date}-${(c.stories.concat(c.india || [])).find(x => x.id === ch.story)?.n || 1}` : esc(ch.url)}">${esc(ch.headline)}</a></h3><p>${esc(ch.update)}</p></li>`).join("")}</ul>`
+      : `<p class="note">No follow-ups today. This fills in as the knowledge base grows day by day.</p>`;
+    return `
+    <header class="ed-mast">
+      <a class="name" href="#shelf">${esc(C.name)}</a>
+      <div class="dateline"><span>${esc(U.longDate(date))}</span><span class="hide-sm">${c.stories.length} AI stories${c.india && c.india.length ? ` · ${c.india.length} from India` : ""}</span><span>${U.edCode(date)}</span></div>
+    </header>
+
+    <section class="front lead-story" id="front" aria-labelledby="front-h">
+      <a class="lead-link" href="${storyHref(lead)}">
+        <p class="kicker">Lead story · ${tag(lead) || "AI news"}${c.sample ? ' · <span class="unv">sample</span>' : ""}</p>
+        <h1 class="front-h" id="front-h">${esc(lead.headline)}</h1>
+        <p class="dek">${esc(lead.dek)}</p>
+        <span class="pill accent-btn lg lead-btn">Read the full story →</span>
+      </a>
+      <div class="byline"><span>${esc(lead.source)} · published ${esc(U.fmtTime(r.publishedAt))}</span><span class="card-state" id="front-state">${U.stateHTML(r)}</span></div>
+    </section>
+
+    <section class="e-sec fade" id="tiles" aria-label="More AI news">
+      <div class="e-flag"><h2>More AI news</h2><span class="label">Tap a story to open it</span></div>
+      <div class="tiles">${rest.map((st, i) => tile(st, i + 2)).join("")}</div>
+    </section>
+
+    <section class="e-sec fade" id="brief" aria-labelledby="brief-h">
+      <div class="glance">
+        <div class="e-flag" style="border:0;padding:0;margin-bottom:12px"><h2 id="brief-h">At a glance</h2><span class="label">Three things not to miss</span></div>
+        <ol class="brief-cols">${c.brief.map(b => `<li>${esc(b)}</li>`).join("")}</ol>
+      </div>
+    </section>
+
+    ${(c.india || []).length ? `<section class="e-sec fade" id="india" aria-labelledby="india-h">
+      <div class="e-flag"><h2 id="india-h">India</h2><span class="label">AI in India today</span></div>
+      <div class="tiles">${c.india.map((st, i) => tile(st, i + 1, "in")).join("")}</div>
+    </section>` : ""}
+
+    <section class="e-sec fade" id="changes" aria-labelledby="changes-h">
+      <div class="e-flag"><h2 id="changes-h">What changed since yesterday</h2><span class="label">From the knowledge base</span></div>
+      ${changes}
+    </section>
+
+    <section class="question fade" id="question" aria-labelledby="q-h">
+      <span class="label" id="q-h">Editor's question</span>
+      <blockquote>${esc(c.question)}</blockquote>
+    </section>
+
+    <section class="e-sec fade" id="record" aria-labelledby="record-h">
+      <div class="e-flag"><h2 id="record-h">The record</h2><span class="label">How this edition was made</span></div>
+      <div class="record-grid">
+        <dl class="fine">
+          <div class="row"><dt>Reporting window</dt><dd>${esc(c.record.window)}</dd></div>
+          <div class="row"><dt>Privacy rule</dt><dd>${esc(c.record.privacy)}</dd></div>
+          <div class="row"><dt>Verification rule</dt><dd>${esc(c.record.verification)}</dd></div>
+          <div class="row"><dt>Not verified*</dt><dd><ul>${c.record.unverified.map(u => `<li>${esc(u)}</li>`).join("")}</ul></dd></div>
+          <div class="row"><dt>Lifecycle</dt><dd>Mark as read starts a ${C.readDeleteDays}-day timer. An emailed edition you never touch clears after ${C.emailDeleteDays} days. Mark as unread keeps it until you read it.</dd></div>
+        </dl>
+        <div class="email-box" id="email-box">
+          <span class="label">Newsletter</span>
+          <h3>Morning email</h3>
+          <p class="note" id="email-line">${emailLine(r)}</p>
+          <dl class="mail-meta"><div><dt>Subject</dt><dd>${esc(emailSubject(r, c))}</dd></div></dl>
+          <div class="acts"><button class="pill ghost sm" type="button" id="preview-email">Preview</button></div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="prevnext" aria-label="Other editions">
+      ${n.newer ? `<a class="prev" href="#ed-${n.newer.date}"><span class="label">← Newer · ${esc(U.shortDate(n.newer.date))}</span><span class="t">${esc(n.newer.headline)}</span></a>` : '<span class="none">This is the newest edition.</span>'}
+      ${n.older ? `<a class="next" href="#ed-${n.older.date}"><span class="label">Older · ${esc(U.shortDate(n.older.date))} →</span><span class="t">${esc(n.older.headline)}</span></a>` : '<span class="none" style="text-align:right">No older editions.</span>'}
+    </nav>`;
+  }
+
   function missing(r) {
     const del = r && r.status === "deleted";
     return `<section class="page-head">
@@ -187,7 +275,7 @@
       return;
     }
     document.title = `${r.headline} · ${C.name}`;
-    main.innerHTML = body(r, c);
+    main.innerHTML = c.version === 2 && c.stories && c.stories.length ? bodyV2(r, c) : body(r, c);
     U.rollAll(main);
     renderSticky(r);
     wireEmail(r, c);

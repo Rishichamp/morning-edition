@@ -9,6 +9,10 @@ on:
         description: "Test run without Gemini"
         type: boolean
         default: false
+      replace:
+        description: "Rebuild today's edition even if it exists (sends a new email)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["site/**"]
@@ -40,7 +44,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        run: python research/main.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python research/main.py ${{ inputs.dry_run && '--dry-run' || '' }} ${{ inputs.replace && '--replace' || '' }}
       - name: Save the edition and knowledge base
         run: |
           git config user.name "morning-edition-bot"

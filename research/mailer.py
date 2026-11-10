@@ -25,7 +25,22 @@ def body_html(settings, ed):
     e = html.escape
     link = settings["site_url"].rstrip("/") + "/#ed-" + ed["date"]
     brief = "".join(f'<tr><td style="padding:9px 0;border-top:1px solid {RULE};font:15px/1.5 Georgia,serif;color:{INK}"><b style="color:{BLUE}">{i}</b>&nbsp;&nbsp;{e(b)}</td></tr>' for i, b in enumerate(ed["brief"], 1))
-    world = "".join(f'<tr><td style="padding:12px 0;border-top:1px solid {RULE}"><div style="font:bold 17px/1.3 Georgia,serif;color:{INK}">{e(s["headline"])}</div><div style="font:14px/1.5 Georgia,serif;color:{MUTED};margin-top:4px">{e(s["summary"])}</div><div style="font:12px Arial,sans-serif;margin-top:6px"><a href="{e(s["url"])}" style="color:{BLUE}">{e(s["source"])}</a></div></td></tr>' for s in ed["world"])
+    base = settings["site_url"].rstrip("/")
+
+    def row(st, n):
+        page = f"{base}/#story-{ed['date']}-{st['n']}" if st.get("n") else st["url"]
+        tag = " · ".join(x for x in (st.get("company"), st.get("category")) if x)
+        return (f'<tr><td style="padding:12px 0;border-top:1px solid {RULE}">'
+                f'<div style="font:bold 10px Arial,sans-serif;letter-spacing:1px;color:{BLUE};text-transform:uppercase">{n:02d}{" · " + e(tag) if tag else ""}</div>'
+                f'<div style="font:bold 17px/1.3 Georgia,serif;margin-top:3px"><a href="{e(page)}" style="color:{INK};text-decoration:none">{e(st["headline"])}</a></div>'
+                f'<div style="font:14px/1.5 Georgia,serif;color:{MUTED};margin-top:4px">{e(st.get("dek") or st.get("summary", ""))}</div>'
+                f'<div style="font:12px Arial,sans-serif;margin-top:6px"><a href="{e(page)}" style="color:{BLUE}">Read more</a> &middot; <a href="{e(st["url"])}" style="color:{MUTED}">{e(st["source"])}</a></div></td></tr>')
+    stories = ed.get("stories") or ed.get("world", [])
+    world = "".join(row(st, i) for i, st in enumerate(stories[1:] if ed.get("stories") else stories, 2 if ed.get("stories") else 1))
+    india = ""
+    if ed.get("india"):
+        india = (f'<div style="font:bold 11px Arial,sans-serif;letter-spacing:1px;color:{MUTED};text-transform:uppercase;margin:22px 0 4px">India</div>'
+                 f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{"".join(row(st, i) for i, st in enumerate(ed["india"], 1))}</table>')
     changes = ""
     if ed.get("changes"):
         rows = "".join(f'<tr><td style="padding:9px 0;border-top:1px solid {RULE};font:14px/1.5 Georgia,serif;color:{INK}"><b>{e(c["headline"])}</b> &mdash; {e(c["update"])} <a href="{e(c["url"])}" style="color:{BLUE};font:12px Arial,sans-serif">{e(c["source"])}</a></td></tr>' for c in ed["changes"])
@@ -43,8 +58,9 @@ def body_html(settings, ed):
 <div style="font:bold 11px Arial,sans-serif;letter-spacing:1px;color:{MUTED};text-transform:uppercase;margin-bottom:4px">At a glance</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">{brief}</table>
 {changes}
-<div style="font:bold 11px Arial,sans-serif;letter-spacing:1px;color:{MUTED};text-transform:uppercase;margin:22px 0 4px">World news</div>
+<div style="font:bold 11px Arial,sans-serif;letter-spacing:1px;color:{MUTED};text-transform:uppercase;margin:22px 0 4px">{"More AI news" if ed.get("stories") else "World news"}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">{world}</table>
+{india}
 <table role="presentation" cellpadding="0" cellspacing="0" style="margin:24px 0 4px"><tr><td style="background:{BLUE};border-radius:4px"><a href="{e(link)}" style="display:inline-block;padding:13px 24px;font:bold 15px Arial,sans-serif;color:#FFFFFF;text-decoration:none">Open today's edition</a></td></tr></table>
 </td></tr>
 <tr><td style="padding:14px 26px;border-top:1px solid {RULE};font:12px/1.5 Arial,sans-serif;color:{MUTED}">Sent automatically each morning. Opening the site and pressing Mark as read starts the 2-day timer.</td></tr>
@@ -54,7 +70,9 @@ def body_html(settings, ed):
 def body_text(settings, ed):
     lines = [settings["name"], long_date(ed["date"]), "", ed["front"]["headline"], ed["front"]["dek"], "", "At a glance:"]
     lines += [f"{i}. {b}" for i, b in enumerate(ed["brief"], 1)]
-    lines += ["", "World news:"] + [f"- {s['headline']} ({s['source']}) {s['url']}" for s in ed["world"]]
+    lines += ["", "AI news:"] + [f"- {s['headline']} ({s['source']}) {s['url']}" for s in (ed.get("stories") or ed.get("world", []))]
+    if ed.get("india"):
+        lines += ["", "India:"] + [f"- {s['headline']} ({s['source']}) {s['url']}" for s in ed["india"]]
     lines += ["", "Open today's edition: " + settings["site_url"].rstrip("/") + "/#ed-" + ed["date"]]
     return "\n".join(lines)
 

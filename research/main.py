@@ -3,6 +3,7 @@
     python research/main.py            normal run (needs GEMINI_API_KEY)
     python research/main.py --dry-run  build a test edition from the feeds without Gemini
     python research/main.py --no-email skip the email step
+    python research/main.py --replace  rebuild today's edition even if it exists
 """
 import json
 import os
@@ -10,7 +11,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-import feeds, kb, writer, mailer  # noqa: E402
+import feeds, kb, writer, mailer, article  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA = os.path.join(ROOT, "site", "data")
@@ -61,8 +62,9 @@ def main(argv):
     existing = next((e for e in index["editions"] if e["date"] == today), None)
     ed_path = os.path.join(EDS, today + ".json")
 
+    replace = "--replace" in argv
     replace_test = bool(existing and existing.get("test") and not dry)   # a real run replaces a test edition
-    if existing and os.path.exists(ed_path) and not replace_test:
+    if existing and os.path.exists(ed_path) and not replace_test and not replace:
         print(f"Edition {today} already published.")
         if existing.get("emailStatus") != "sent" and not no_email:   # never send twice
             existing["emailStatus"] = mailer.send(settings, load_json(ed_path, None))
@@ -75,34 +77,57 @@ def main(argv):
         print("GEMINI_API_KEY is not set. Add it as a GitHub secret (or use --dry-run to test).")
         return 2
 
-    print("1/4 Gathering news from feeds...")
+    print("1/5 Gathering AI news from company blogs, tech press, news search and papers...", flush=True)
     cands = feeds.collect(settings)
-    print(f"    {len(cands)} candidate stories")
-    if len(cands) < 3:
-        print("Too few stories from the feeds today; nothing published.")
+    print(f"    {len(cands)} candidate stories", flush=True)
+    if len(cands) < 5:
+        print("Too few stories from the sources today; nothing published.")
         return 3
 
     earlier = kb.load(days=7, today=now.date())
     for i, k in enumerate(earlier, 1):
         k["kid"] = f"K{i}"
-    print(f"2/4 Knowledge base: {len(earlier)} stories from the last 7 days")
+    print(f"    knowledge base: {len(earlier)} stories from the last 7 days", flush=True)
 
-    print("3/4 Writing the edition" + (" (dry run, no Gemini)" if dry else f" with {settings['model']}"))
-    if dry:
-        ed = writer.dry_run(settings, today, cands, earlier)
-    else:
-        reply, used_model = writer.ask_gemini(writer.build_prompt(settings, today, cands, earlier), settings["model"])
-        settings["model"] = used_model   # The record names the model that actually wrote it
-        ed = writer.assemble(writer.parse_json(reply), settings, today, cands, earlier)
+    model = "no Gemini (test run)"
+    print("2/5 Picking the lead, 9 world stories and the India section", flush=True)
+    picked = None
+    if not dry:
+        try:
+            reply, model = writer.ask_gemini(writer.build_pick_prompt(settings, today, cands), settings["model"])
+            picked = writer.check_pick(writer.parse_json(reply), settings, cands)
+        except Exception as e:
+            print(f"    pick step failed, using the plain fallback: {e}", flush=True)
+    if not picked:
+        picked = writer.fallback_pick(settings, cands)
+    print(f"    {sum(p['section'] == 'world' for p in picked)} world + {sum(p['section'] == 'india' for p in picked)} India", flush=True)
+
+    print("3/5 Reading the chosen articles in full", flush=True)
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        texts = list(pool.map(lambda p: article.fetch_text(p["link"]) if p["kind"] != "paper" else "", picked))
+    for p, t in zip(picked, texts):
+        p["text"] = t or (p["snippet"] if p["kind"] == "paper" and len(p["snippet"]) > 300 else "")
+    print(f"    {sum(bool(p['text']) for p in picked)} of {len(picked)} read in full", flush=True)
+
+    print("4/5 Writing the tiles and detailed pages", flush=True)
+    written = None
+    if not dry:
+        try:
+            reply, model = writer.ask_gemini(writer.build_write_prompt(settings, today, picked, earlier), settings["model"])
+            written = writer.parse_json(reply)
+        except Exception as e:
+            print(f"    write step failed, using article text directly: {e}", flush=True)
+    ed = writer.assemble(written, settings, today, picked, earlier, model)
 
     save_json(ed_path, ed)
-    kb.add([{"date": today, "topic": s["topic"], "headline": s["headline"], "summary": s["summary"],
-             "source": s["source"], "url": s["url"]} for s in ed["world"]],
+    kb.add([{"date": today, "company": s["company"], "category": s["category"], "headline": s["headline"],
+             "summary": s["dek"], "source": s["source"], "url": s["url"]} for s in ed["stories"] + ed["india"]],
            keep_days=settings["keep_kb_days"], today=now.date())
 
     entry = {"date": today, "headline": ed["front"]["headline"], "publishedAt": datetime.now(timezone.utc).isoformat(),
-             "emailStatus": "not_sent", "emailedAt": None, "test": dry}
-    print("4/4 Sending the email")
+             "emailStatus": "not_sent", "emailedAt": None, "test": dry, "version": 2}
+    print("5/5 Sending the email", flush=True)
     if not no_email:
         entry["emailStatus"] = mailer.send(settings, ed)
         if entry["emailStatus"] == "sent":

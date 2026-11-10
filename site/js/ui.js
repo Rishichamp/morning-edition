@@ -309,7 +309,7 @@
     const link = (C.siteUrl || location.href.split("#")[0]) + "#ed-" + r.date;
     const ink = "#1A2638", cream = "#FFFFFF", orange = "#2D5A94", muted = "#66768C";
     const li = c.brief.map((b, i) => `<tr><td style="padding:10px 0;border-top:1px dashed #D7DFEA;font:14px/1.5 Arial,sans-serif;color:${ink}"><span style="font:bold 14px Georgia,serif;color:${orange}">${i + 1}</span>&nbsp;&nbsp;${esc(b)}</td></tr>`).join("");
-    const heads = c.world.map(s => `<tr><td style="padding:12px 0;border-top:1px solid #D7DFEA"><div style="font:bold 17px/1.3 Georgia,serif;color:${ink}">${esc(s.headline)}</div><div style="font:14px/1.5 Arial,sans-serif;color:${muted};margin-top:4px">${esc(s.summary.split(". ")[0].replace(/\.$/, ""))}.${s.unverified ? " (unverified)" : ""}</div></td></tr>`).join("");
+    const heads = (c.stories ? c.stories.concat(c.india || []) : c.world).map(s => `<tr><td style="padding:12px 0;border-top:1px solid #D7DFEA"><div style="font:bold 17px/1.3 Georgia,serif;color:${ink}">${esc(s.headline)}</div><div style="font:14px/1.5 Arial,sans-serif;color:${muted};margin-top:4px">${esc(s.dek || (s.summary || "").split(". ")[0])}</div></td></tr>`).join("");
     return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(C.name)}</title></head>
 <body style="margin:0;padding:0;background:#EEF2F8">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EEF2F8"><tr><td align="center" style="padding:24px 12px">

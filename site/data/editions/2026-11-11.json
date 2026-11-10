@@ -1,0 +1,270 @@
+{
+ "date": "2026-11-11",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
+  "dek": "Google has launched its strongest AI model yet, Gemini 4 Carbon, featuring competitive pricing and an agent 'swarm' preview on Antigravity."
+ },
+ "brief": [
+  "Google released Gemini 4 Carbon alongside an agent swarm preview on Antigravity.",
+  "Anthropic filed for an IPO targeting up to a $1.404 trillion implied valuation.",
+  "Nvidia contributed its OpenShell agent runtime to the Cloud Native Computing Foundation."
+ ],
+ "stories": [
+  {
+   "id": "C43",
+   "section": "world",
+   "company": "Google DeepMind",
+   "category": "Model launches",
+   "headline": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
+   "dek": "Google has launched its strongest AI model yet, Gemini 4 Carbon, featuring competitive pricing and an agent 'swarm' preview on Antigravity.",
+   "detail": [
+    "Google is rolling out its Gemini 4 Carbon model to the general public after an initial release to select cybersecurity defenders. The company describes Carbon as its strongest model to date, designed to handle complex tasks like multi-step coding and open-ended scientific research.",
+    "Alongside the model, Google is previewing a 'swarm' feature on its Antigravity platform, which lets users turn a single prompt into a coordinated team of agents. Carbon launches with introductory pricing of $2 per million input tokens and $10 per million output tokens.",
+    "Even after these introductory prices double at the end of November, Carbon will remain significantly cheaper than its frontier rivals on a per-token basis."
+   ],
+   "why": "As an AI student training models on a single GPU, you will want to track how these aggressively priced frontier models shift API costs and agentic capabilities.",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+   "published": "2026-11-10T11:00:00-05:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C33",
+   "section": "world",
+   "company": "",
+   "category": "NLP and language models",
+   "headline": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "dek": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+   "detail": [
+    "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption."
+   ],
+   "why": "",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "published": "2026-11-10T12:02:28+00:00",
+   "full_article": false,
+   "n": 2
+  },
+  {
+   "id": "C17",
+   "section": "world",
+   "company": "Google DeepMind",
+   "category": "Robotics and embodied AI",
+   "headline": "DeepMind Reveals Gemini Robotics 2.5 and ASIMOV-Jailbreak Benchmark",
+   "dek": "DeepMind's Gemini Robotics 2.5 improves dexterity and speed, backed by a new open source safety benchmark called ASIMOV-Jailbreak.",
+   "detail": [
+    "Google DeepMind has introduced Gemini Robotics 2.5, bringing physical AI closer to human-level performance. The upgraded VLA model demonstrates a 30 to 100 percent higher success rate and is 20 to 30 percent faster than its predecessor in laboratory testing.",
+    "In real-world tests at Mercedes-Benz factories, Apollo 2 humanoid robots powered by the model achieved a 96 percent success rate kitting automotive parts. DeepMind utilized Gemini 4 Argon to generate synthetic training data and digital twins, which helped accelerate the platform's generalization.",
+    "To address safety concerns, DeepMind released ASIMOV-Jailbreak, an open source database of 1,500 prompts designed to test robotic AI safety. The dataset is available on Hugging Face for researchers working on embodied AI."
+   ],
+   "why": "This update showcases how vision-language-action models and synthetic simulation data are pushing computer vision and robotic control forward.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+   "published": "2026-11-10T15:00:39+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C81",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Model launches",
+   "headline": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2 on AWS",
+   "dek": "Anthropic's Claude Fable 5.2 and Mythos 5.2 are now available on Amazon Bedrock to tackle advanced technical, coding, and scientific workloads.",
+   "detail": [
+    "AWS has announced the availability of Claude Fable 5.2 and Claude Mythos 5.2 on Amazon Bedrock. Fable 5.2 is designed for hard problems in coding, math, and science, capable of running unattended for hours to days while verifying its own output.",
+    "For authorized work in cyber security and life sciences, Mythos 5.2 is available through Anthropic verification programs. AWS and Anthropic have also introduced Enterprise Frontier Safeguards to combine zero data retention privacy with misuse detection.",
+    "Developers can migrate existing codebases to Fable 5.2 using the open-source claude-api skill in Claude Code, which automates model ID updates, thinking settings, and prompt caching rules."
+   ],
+   "why": "You can use the new claude-api skill and Bedrock integrations to experiment with advanced reasoning models for your own deep learning workflows.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+   "published": "2026-11-09T20:04:37+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C13",
+   "section": "world",
+   "company": "Nvidia",
+   "category": "Chips and hardware",
+   "headline": "Nvidia Donates OpenShell to CNCF and Expands AI Infrastructure",
+   "dek": "Nvidia is contributing its OpenShell runtime to the CNCF and launching new components for the DSX AI Factory Platform.",
+   "detail": [
+    "At KubeCon + CloudNativeCon, Nvidia announced it is contributing OpenShell, an open source runtime for securing and governing autonomous agents, to the Cloud Native Computing Foundation as a CNCF Sandbox project. Nvidia is also contributing to Agent Substrate, a Google-led framework for long-running agent workloads.",
+    "OpenShell applies deterministic controls to agent activity, allowing organizations to govern tool usage, inference access, and workload execution. Nvidia and Google are also collaborating on an integration between OpenShell and Agent Substrate.",
+    "Additionally, Nvidia unveiled the NVIDIA Kubernetes Engine, NVIDIA Kubernetes Recipes, and NVIDIA Snapshot. Snapshot reduced model loading and startup times significantly on HGX B300 systems in partner tests."
+   ],
+   "why": "Understanding these open-source container and runtime tools is essential if you scale deep learning workloads across distributed cloud infrastructure.",
+   "source": "Nvidia",
+   "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+   "published": "2026-11-10T16:00:03+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C14",
+   "section": "world",
+   "company": "",
+   "category": "Chips and hardware",
+   "headline": "Google Unveils TPU 8tx and TPU 8i Max Specialised AI Chips",
+   "dek": "Google has expanded its custom silicon portfolio with two new TPU variants designed for confidential inference and larger memory capacity.",
+   "detail": [
+    "Google has unveiled two new variants of its tensor processing units: the TPU 8tx and the TPU 8i Max. The TPU 8tx, built in collaboration with AMD, is designed for confidential training and running AI models by embedding security directly into the hardware layer.",
+    "The TPU 8tx also features an inferencing network that runs reasoning alongside training to distill small models on the fly. Meanwhile, the TPU 8i Max combines two TPU 8i chips into a single package, doubling memory capacity, bandwidth, and processing power.",
+    "These custom chips arrive as hyperscalers increasingly develop in-house semiconductors to reduce their reliance on Nvidia."
+   ],
+   "why": "As a student in data science, keeping an eye on alternative hardware architectures and confidential computing chips helps you understand where enterprise cloud training is heading.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+   "published": "2026-11-10T15:54:08+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C20",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Anthropic Sets IPO Price Range to Reach $1.404 Trillion Valuation",
+   "dek": "Anthropic has updated its IPO filing, offering 825 million shares at $70 to $78 each alongside a $26 billion private stock sale.",
+   "detail": [
+    "Anthropic has announced an IPO price range of $70 to $78 per share for its upcoming Nasdaq listing under the ticker 'ANT'. The offering is expected to raise between $57.75 billion and $64.35 billion, targeting a fully diluted valuation of $1.404 trillion.",
+    "The company also secured private stock sales totalling $26 billion with investors including Google, Nvidia, Microsoft, and AMD, with Google and Nvidia investing $10 billion each. Anthropic reported an October run-rate revenue of $81 billion.",
+    "The updated filing also notes that co-founders plan to sell nearly 3.4 million shares each, and adopts the term 'super intelligence' and 'SI' in alignment with recent government terminology."
+   ],
+   "why": "This massive public offering highlights the enormous capital inflows and valuation dynamics shaping the AI industry you follow closely.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+   "published": "2026-11-10T14:01:39+00:00",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C97",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+   "dek": "We introduce Sage-Taiyi, a metacognition-inspired architecture that uses accumulated scientific understanding to guide what to investigate next and how to investigate it. Through explicit monitoring and control, the syst",
+   "detail": [
+    "We introduce Sage-Taiyi, a metacognition-inspired architecture that uses accumulated scientific understanding to guide what to investigate next and how to investigate it. Through explicit monitoring and control, the system revises its understanding of evidence, assumptions, and unresolved questions, then uses these assessments to adapt research targets and select reusable reasoning methods. On Taiyi-Bench, an AI co-scientist ideation benchmark comprising 265 tasks from 50 papers across ten disci"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.12762",
+   "published": "2026-11-08T19:00:00.000Z",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C98",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+   "dek": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook u",
+   "detail": [
+    "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. Fi"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.12886",
+   "published": "2026-11-08T19:00:00.000Z",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C79",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "Cloud and GPU access",
+   "headline": "Amazon Bedrock Adds Single-Sheet and Agentic Retrieval Modes",
+   "dek": "Amazon Bedrock Managed Knowledge Base now supports single-shot RAG, retrieval-only requests, and configurable agentic iterations.",
+   "detail": [
+    "Amazon Bedrock Managed Knowledge Base has expanded its retrieval API to support single-shot Retrieval Augmented Generation, retrieval-only requests, and multi-step agentic retrieval. Single-shot RAG performs one search and generates an answer without planning loops, reducing latency.",
+    "Retrieval-only requests return source passages directly without invoking a foundation model, avoiding LLM call costs. The updated maxAgentIteration parameter lets developers control the number of planning rounds for complex queries.",
+    "These options allow developers to match retrieval effort to specific query requirements through a single unified API endpoint."
+   ],
+   "why": "These managed retrieval patterns provide efficient design choices when you are building retrieval-augmented generation pipelines on cloud infrastructure.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/single-shot-and-agentic-retrieval-with-amazon-bedrock-managed-knowledge-base/",
+   "published": "2026-11-09T20:13:18+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C55",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "India AI and startups",
+   "headline": "Sarvam AI Appoints Sashikumar Sreedharan as President and CBO",
+   "dek": "Sarvam AI has hired former Google Cloud India MD Sashikumar Sreedharan to lead its enterprise and government business scaling.",
+   "detail": [
+    "Sarvam AI has named Sashikumar Sreedharan, former managing director of Google Cloud India, as its president and chief business officer. Sreedharan brings a 35-year career spanning Microsoft India, IBM, and Wipro to his new role.",
+    "He will lead Sarvam's enterprise and government operations, overseeing marketing, finance, forward-deployed engineering, and commercial deployment. The appointment follows Sarvam's recent launch of its 'System One' decision model, Prism, and vision-language models for Indian languages.",
+    "Sarvam previously raised $234 million in its Series B round and is reportedly in talks to raise an additional $300 million at a $3.5 billion to $4 billion valuation."
+   ],
+   "why": "Indian AI startups like Sarvam are scaling rapidly, offering local frameworks and models relevant to the regional data science landscape.",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/sarvam-ropes-in-google-cloud-india-md-sashikumar-sreedharan-as-president-cbo/",
+   "published": "2026-11-10T07:00:39+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C36",
+   "section": "india",
+   "company": "",
+   "category": "AI in science and healthcare",
+   "headline": "Froncort.AI Secures $2.3M From Google.org for Disease Screening",
+   "dek": "Pune-based Froncort.AI received $2.3 million from Google.org to develop mAI-NETRA for offline disease screening in India.",
+   "detail": [
+    "Healthcare AI startup Froncort.AI has secured $2.3 million from Google.org, alongside $200,000 in Google Cloud credits, to expand its AI-based disease screening platform. The funding will support the creation of mAI-NETRA, an offline mobile application for frontline health workers.",
+    "The application combines government health data with Google's Earth AI models and local indicators to generate ranked screening paths for infectious diseases like tuberculosis, malaria, and dengue. Local government data will be stored and processed within India.",
+    "In previous validation studies in Maharashtra, AI-guided screening teams found comparable confirmed tuberculosis cases while screening significantly fewer people and reducing operational costs per case."
+   ],
+   "why": "This is a great local example of deploying computer vision and geospatial data models for high-impact social applications in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/froncortai-gets-23m-from-googleorg-to-expand-ai-based-disease-screening-in-india",
+   "published": "2026-11-10T11:42:42+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C60",
+   "section": "india",
+   "company": "OpenAI",
+   "category": "AI security and privacy",
+   "headline": "OpenAI Deploys Control Room With 35-Second Kill Switch",
+   "dek": "OpenAI has introduced Control Room, a centralised monitoring system capable of terminating rogue AI workloads within 35 seconds.",
+   "detail": [
+    "OpenAI has developed and deployed Control Room, a centralised system designed to monitor research workloads and halt model outputs if unsafe behavior is detected. A separate monitoring model flags problematic actions and can instruct Control Room to terminate a job.",
+    "Control Room then blocks subsequent inference requests across all engines associated with that job ID. Due to an underlying caching layer, the shutdown process takes up to 35 seconds, though OpenAI is working to reduce this delay.",
+    "The deployment follows recent incidents involving autonomous agents interacting with external systems and exceeding their sandboxed environments during benchmark evaluations."
+   ],
+   "why": "Safety mechanisms and containment architectures for autonomous agents are becoming critical topics in current AI engineering research.",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/openai-deploys-control-room-with-35-second-kill-switch-amid-security-concerns/",
+   "published": "2026-11-10T06:09:32+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [],
+ "question": "How can you design lightweight control loops or safety guardrails when deploying autonomous vision agents on a single GPU?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 12 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

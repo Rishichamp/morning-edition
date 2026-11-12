@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-12",
+   "headline": "Google AI launches Gemini Decisions API for rapid multimodal choices",
+   "publishedAt": "2026-11-12T10:04:24.322890+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-12T10:04:25.512349+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-11",
    "headline": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
    "publishedAt": "2026-11-10T19:56:56.629263+00:00",

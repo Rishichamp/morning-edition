@@ -1,0 +1,280 @@
+{
+ "date": "2026-11-12",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "APIs, pricing and developer updates",
+  "headline": "Google AI launches Gemini Decisions API for rapid multimodal choices",
+  "dek": "Google has released the Gemini Decisions API powered by Gemini Decision 1, enabling single-pass evaluation of up to 1,000 bounded choices."
+ },
+ "brief": [
+  "Google introduced the Gemini Decisions API for rapid multimodal option scoring down to 150ms latency.",
+  "OpenAI launched local API inference residency in India for GPT-6 Luna enterprise workloads.",
+  "TSMC approved a $1 billion investment split evenly between OpenAI stock and Anthropic shares."
+ ],
+ "stories": [
+  {
+   "id": "C38",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Google AI launches Gemini Decisions API for rapid multimodal choices",
+   "dek": "Google has released the Gemini Decisions API powered by Gemini Decision 1, enabling single-pass evaluation of up to 1,000 bounded choices.",
+   "detail": [
+    "Google AI has introduced the Gemini Decisions API alongside the new Gemini Decision 1 model (gemini-decision-1), available through Google AI Studio. The API allows users to evaluate up to 1,000 yes/no, multiple choice, or rubric-scoring questions in a single forward pass across text, images, audio, video, and PDFs up to 256K tokens.",
+    "Rather than generating text token by token, Gemini Decision 1 scores candidate options in a single forward pass, delivering end-to-end latency of 150 to 250 ms. Pricing is set at $0.10 per 1 million input tokens with zero output token fees billed. It supports three bounded question types: yes/no (noul), multiple choice (choice, up to 255 options), and ordered rubric scoring (score).",
+    "Google teams are already using the API as a low-latency control plane. Gemini Notebook uses it for real-time model routing to lower latency by up to 40%, Stitch uses it for rapid wireframe generation, CC uses it to select from over 200 emoji reactions, and Google Search applies it for tool safety evaluation. SDK integrations are rolling out for Python, JavaScript, REST, OpenRouter, LangChain, Vercel, LiteLLM, Pydantic AI, Pipecat, LiveKit, and OpenCode."
+   ],
+   "why": "This API offers a low-latency, highly cost-effective control plane for query routing and content scoring without token generation overhead.",
+   "source": "Google AI",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "published": "2026-11-11T18:00:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C21",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "APIs, pricing and developer updates",
+   "headline": "AWS introduces direct Web Search API for Amazon Bedrock AgentCore",
+   "dek": "AWS has launched the Web Search API on Amazon Bedrock AgentCore, providing a single SDK call to search Amazon’s managed web index.",
+   "detail": [
+    "Amazon Web Services has introduced the Web Search API on Amazon Bedrock AgentCore, allowing developers to query the web via a direct API call named InvokeWebSearch. The operation returns ranked search results complete with text extracts, page titles, URLs, and publication dates directly from an Amazon-operated web index.",
+    "Previously, web search on AgentCore required setting up an AgentCore Gateway with Model Context Protocol (MCP) tooling. The new direct API is designed for custom agent loops, non-agent pipelines (such as dashboards and monitoring systems), and developers requiring direct control over retries, caching, and error handling without full gateway infrastructure.",
+    "The API authenticates using standard AWS IAM credentials with SigV4 signing, supporting execution from AWS Lambda, ECS, EC2, or EKS without API keys. Requests can include domain filters for up to 100 trusted domains, publication date ranges, query strings up to 200 characters, and configurable result limits up to 25 items."
+   ],
+   "why": "Simplifies web grounding pipelines for custom Python agents and tools without requiring gateway orchestration setups.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+   "published": "2026-11-11T23:13:16+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C49",
+   "section": "world",
+   "company": "",
+   "category": "AI in science and healthcare",
+   "headline": "Google DeepMind announces AlphaGenome 2 for single-cell DNA prediction",
+   "dek": "DeepMind’s AlphaGenome 2 conditional model predicts DNA variant effects across 107 million single-cell profiles across 68 human and mouse tissues.",
+   "detail": [
+    "Google DeepMind has announced AlphaGenome 2, a next-generation genomic sequence model designed to predict how DNA variants impact specific human cell types and states. Unlike its predecessor, which predicted broad tissue averages in parallel, AlphaGenome 2 is a conditional model that takes both a 1-million-letter DNA sequence and a target biological condition as input at every stage of its architecture.",
+    "Trained on over 107 million individual cell profiles across 68 tissues, AlphaGenome 2 evaluates gene expression, histone modifications, chromatin accessibility, and DNA methylation. On the TenK10K primary immune dataset, it identified 30% of causal variants compared to 16% for the original AlphaGenome, while doubling the detection rate of directional gene effects.",
+    "The model can generalise to unseen single-cell experiments using a snapshot of gene activity from a few dozen cells, enabling variant predictions for novel disease or post-vaccination states. AlphaGenome 2 is available immediately for non-commercial research through the AlphaGenome API and in private preview for commercial partners."
+   ],
+   "why": "Illustrates how conditional deep learning architectures can handle high-dimensional biological data across unseen cell states.",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "published": "2026-11-11T15:00:15+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C37",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Funding, deals and acquisitions",
+   "headline": "TSMC board approves $1 billion investment split between Anthropic and OpenAI",
+   "dek": "Contract chipmaker TSMC will invest up to $500 million in OpenAI preferred stock and $500 million in Anthropic common shares at its IPO price.",
+   "detail": [
+    "Taiwan Semiconductor Manufacturing Company (TSMC) has approved plans to invest up to $1 billion directly into leading AI developers Anthropic and OpenAI. The board authorized up to $500 million for OpenAI preferred stock reserved for large investors and another $500 million for Anthropic common shares at its anticipated initial public offering price.",
+    "TSMC manufactures the vast majority of advanced AI accelerators designed by Nvidia, alongside custom silicon for Apple. Both OpenAI and Anthropic purchase large volumes of hardware built by TSMC for their data center infrastructure, aligning the transaction with a broader pattern of circular financing in the semiconductor and AI sectors.",
+    "Analysts noted that circular investments among hardware vendors, capital backers, and model developers complicate efforts to gauge real underlying market demand. TSMC retains substantial capital liquidity following six consecutive quarters of record profit, including generating over $23 billion in net profit during the third quarter of 2026."
+   ],
+   "why": "Tracking hardware manufacturer investments provides insight into financial ties and supply chain dynamics between model developers and foundries.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+   "published": "2026-11-11T18:16:40+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C54",
+   "section": "world",
+   "company": "AMD",
+   "category": "Chips and hardware",
+   "headline": "AMD details Zen 6 EPYC architecture split into frequency and density variants",
+   "dek": "AMD’s sixth-generation EPYC Venice server platform divides into standard Zen 6 cores reaching 5.3 GHz and Zen 6c cores reaching 256 cores.",
+   "detail": [
+    "AMD has detailed its upcoming sixth-generation EPYC 'Venice' server platform, which splits into standard Zen 6 processors for high clocks and Zen 6c processors for core density. Standard Zen 6 targets clock-sensitive tasks with boost speeds up to 5.3 GHz across 12-core chiplets, while Zen 6c uses 32-core chiplets to reach 256 cores and 512 threads at up to 4.1 GHz per package.",
+    "AMD claims a 27% geomean IPC improvement for Zen 6 over Zen 5 across enterprise, cloud, and AI workloads, with task gains ranging from 20% to 31%. The microarchitecture replaces Zen 5's dual-front-end with a single redesigned front end and uses a distributed out-of-order scheduler. Zen 6c features deeper scheduler queues to offset lower clock speeds, whereas standard Zen 6 uses shallower queues for high-frequency efficiency.",
+    "For AI and vector workloads, Zen 6 supports four AVX2 loads or two AVX-512 loads per cycle, introduces native FP16 execution, and doubles VNNI-INT8 pipelines from two to four. Both variants share a common instruction-set architecture and provide roughly 4 MB of L3 cache per core, alongside PCIe Gen 6 and CXL 3.1 connectivity."
+   ],
+   "why": "Microarchitectural details on native FP16, AVX-512 execution, and quadrupled VNNI pipelines highlight evolving CPU capabilities for deep learning workloads.",
+   "source": "News search",
+   "url": "https://tech.yahoo.com/computing/articles/amd-zen-6-splits-two-195518473.html",
+   "published": "2026-11-11T11:55:00+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C79",
+   "section": "world",
+   "company": "TSMC",
+   "category": "Chips and hardware",
+   "headline": "TSMC reports record October revenue of $17.81 billion driven by AI chip demand",
+   "dek": "TSMC logged a 59.7% year-on-year revenue surge in October 2026, boosting its full-year growth outlook to approximately 44%.",
+   "detail": [
+    "Taiwan Semiconductor Manufacturing Company (TSMC) reported record consolidated monthly revenue of NT 586.89 billion ($17.81 billion) for October 2026, representing a 59.7% increase compared to October 2025 and a 14.7% rise over September. Total revenue for the first ten months of 2026 reached $140 billion, up 43.3% year-on-year.",
+    "The performance surpassed TSMC's previous monthly record of $15.63 billion set in August. Following the results, TSMC raised its full-year 2026 revenue growth forecast in US dollar terms to approximately 44%, up from its previous projection of slightly above 40%. It expects fourth-quarter revenue to reach between $52.3 billion and $54.3 billion.",
+    "The revenue expansion was propelled by high-performance computing demand and advanced process nodes, including TSMC's 2-nanometre (2nm) technology, which accounted for 8% of total wafer revenue in Q3. The announcement coincided with volatility for key client Nvidia, whose market capitalization dropped by $190 billion on November 9 amid reports of an executive investigation and proposed shareholder litigation."
+   ],
+   "why": "Provides context on semiconductor manufacturing scale and advanced node capacity driving AI hardware production.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/tsmc-october-revenue-hits-record-1781-bn-on-skyrocketing-ai-chip-demand",
+   "published": "2026-11-10T11:59:13+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C89",
+   "section": "world",
+   "company": "",
+   "category": "NLP and language models",
+   "headline": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+   "dek": "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails",
+   "detail": [
+    "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks it would solve without memory, often because it follows a lesson that is incorrect, or misapplies or misreads a valid one. This is because lessons are inferred from trajectories labeled only with task success or failure, yet are typically provided without the trajectori"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.14320",
+   "published": "2026-11-09T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C75",
+   "section": "world",
+   "company": "xAI",
+   "category": "AI agents and coding tools",
+   "headline": "Grok Build flaw exposes thousands of private user apps to public access",
+   "dek": "Security research reveals a design flaw in SpaceXSI’s Grok Build platform that allows passive DNS enumeration of thousands of confidential apps.",
+   "detail": [
+    "Research from security firm Claroc has revealed that SpaceXSI’s vibe-coding platform, Grok Build, leaks sensitive user data due to a flawed URL architecture. While URLs use randomized 'dice words' to prevent guessing, placing the randomness as subdomains to the left of grok.me allows passive DNS logging services to index and expose the web addresses.",
+    "Claroc identified 43,601 grok.me links via passive DNS searches, finding that over 35,000 (nearly 95%) were publicly accessible by default. Exposed contents included medical records, defense contractor rosters, sales territory maps, Fortune 500 proposals, and 24 internal SpaceXSI documents, including a confidential sales team onboarding plan.",
+    "SpaceXSI began taking down its 24 exposed app links after being contacted. A representative from Cursor, which SpaceXSI recently acquired, stated that apps are intended to be private by default, but Claroc's testing showed new projects defaulted to 'Anyone with the link'. Claroc is currently notifying affected organisations to contain the exposure."
+   ],
+   "why": "Demonstrates critical security pitfalls in subdomain-based link sharing when deploying custom AI-generated web applications.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "published": "2026-11-10T21:12:59+00:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C66",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Model launches",
+   "headline": "Cognizant allocates 25,000 professionals to deploy Anthropic Claude for clients",
+   "dek": "Cognizant has launched a managed services offering combining proprietary software and 25,000 dedicated staff to operate Claude in production.",
+   "detail": [
+    "IT services provider Cognizant has committed over 25,000 professionals to deploy and operate Anthropic's Claude AI models for enterprise clients. As part of the initiative, Cognizant has launched a managed services model where its teams assume operational responsibility for running Claude systems in client production environments.",
+    "The managed service integrates dedicated Cognizant personnel, licensed access to Claude models, and Cognizant's internal software tooling. Cognizant reported that over 44,000 associates have undergone training on Claude, resulting in more than 26,000 formal certifications across its enterprise, legacy refactoring, and software development groups.",
+    "The move builds on an expanded July partnership between Cognizant and Anthropic, following similar moves in the Indian IT sector such as HCLTech's establishment of a dedicated Claude Centre of Excellence. Anthropic Chief Commercial Officer Paul Smith noted that the collaboration addresses a shortage of specialized talent capable of maintaining enterprise AI systems."
+   ],
+   "why": "Reflects large-scale industry investment into enterprise deployment infrastructure and managed model operations in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/cognizant-commits-25000-professionals-to-deploy-claude-in-enterprises",
+   "published": "2026-11-11T05:13:10+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C19",
+   "section": "world",
+   "company": "Intel",
+   "category": "Cloud and GPU access",
+   "headline": "Intel Korea launches AI alliance with 23 companies at Seoul summit",
+   "dek": "Intel Korea announced on the 12th that it held the **‘2026 Intel AI Summit Seoul’** at COEX in Samseong-dong, Seoul. Approximately 1,000 domestic and international industry officials from 52 companies ...",
+   "detail": [
+    "Intel Korea announced on the 12th that it held the **‘2026 Intel AI Summit Seoul’** at COEX in Samseong-dong, Seoul. Approximately 1,000 domestic and international industry officials from 52 companies ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-xl/technology/tech-companies/intel-korea-launches-ai-alliance-with-23-companies-at-seoul-summit/ar-AA2hh1Uf",
+   "published": "2026-11-11T23:18:12+00:00",
+   "full_article": false,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C1",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "Model launches",
+   "headline": "Chariot releases multilingual text-to-speech model covering 11 Indian languages",
+   "dek": "Indian AI startup Chariot has introduced Chariot-1-TTS-Multilingual, supporting code-mixing, voice cloning, and contextual pronunciation.",
+   "detail": [
+    "Chariot, a frontier AI research lab headquartered in Delhi and backed by the IndiaAI Mission, has launched Chariot-1-TTS-Multilingual. The text-to-speech model supports 11 Indian languages—including Hindi, Marathi, Bengali, Tamil, Telugu, Kannada, Malayalam, Gujarati, Punjabi, and Odia—alongside Indian English.",
+    "The model provides over 50 voices, supports sentence-level code-mixing, and enables voice cloning using a few seconds of audio. It processes up to 1,000 characters per request and employs contextual reasoning rather than standard text normalisation rules to decide pronunciations, such as distinguishing whether 'B+' refers to a blood group or an academic grade.",
+    "Chariot reported a character error rate of 7.60% for Hindi and 6.47% across nine other Indic languages, alongside a 93.78% accuracy score on an English verbalisation benchmark. The startup was founded by former Google DeepMind and Meta FAIR researchers Parth Sarthi and Suvrat Bhooshan under the government's ₹10,372 crore IndiaAI Mission."
+   ],
+   "why": "Provides an indigenous, context-aware speech synthesis model tailored for Indian languages and code-mixed applications.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/chariot-launches-multilingual-tts-model-with-support-for-11-indian-languages",
+   "published": "2026-11-12T09:37:13+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C4",
+   "section": "india",
+   "company": "OpenAI",
+   "category": "APIs, pricing and developer updates",
+   "headline": "OpenAI launches local API inference residency for GPT-6 Luna in India",
+   "dek": "OpenAI now allows eligible Indian enterprises and developers to process and store GPT-6 Luna API workloads within India.",
+   "detail": [
+    "OpenAI has introduced API inference residency in India, allowing businesses and developers to process supported GPT-6 Luna workloads within the country. The capability supports GPT-6 Luna input and output through the Responses and Chat Completions APIs, covering text-based applications such as document summarisation and drafting responses.",
+    "The move addresses strict data localisation constraints, particularly in regulated industries such as financial services. Under the offering, eligible customer API requests, model computations, and stored content remain inside India when developers create a project selecting India as the processing region and use the local endpoint.",
+    "The launch expands on OpenAI's existing data storage options in India and forms part of its broader 'OpenAI for India' initiative, which includes enterprise adoption, skills programs, and a partnership with Tata Group for domestic AI data centre capacity. Inference residency has also been expanded to Australia and Japan."
+   ],
+   "why": "Local inference processing enables compliant deployment of enterprise AI applications for regulated Indian sectors directly via OpenAI APIs.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/openai-launches-api-inference-residency-in-india",
+   "published": "2026-11-12T08:02:14+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C9",
+   "section": "india",
+   "company": "",
+   "category": "AI in education",
+   "headline": "IIT Madras opens free online courses for classes 7 to 12 in AI and entrepreneurship",
+   "dek": "Students from Classes 7 to 12 can enrol in free online training programmes offered by IIT Madras Pravartak Technologies Foundation in collaboration with BodhBridge Education, with courses covering ...",
+   "detail": [
+    "Students from Classes 7 to 12 can enrol in free online training programmes offered by IIT Madras Pravartak Technologies Foundation in collaboration with BodhBridge Education, with courses covering ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-in/news/other/iit-madras-opens-free-online-courses-for-classes-7-to-12-in-ai-and-entrepreneurship/ar-AA2hh8fW",
+   "published": "2026-11-12T01:30:00+00:00",
+   "full_article": false,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "TSMC board approves $1 billion investment split between Anthropic and OpenAI",
+   "update": "TSMC's board approved up to $500 million to purchase Anthropic common shares at its expected IPO price.",
+   "since": "2026-11-11",
+   "earlier": "Anthropic Sets IPO Price Range to Reach $1.404 Trillion Valuation",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/",
+   "story": "C37"
+  }
+ ],
+ "question": "How will single-pass forward APIs reshape real-time routing logic in agent control planes?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "date": "2026-11-13",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+  "dek": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses."
+ },
+ "brief": [
+  "Google launched Gemini 4 Hydrogen globally with enhanced coding and a 1-million-token context window.",
+  "Amazon released SGLang-Neuron publicly to allow serving frontier models on AWS Trainium using PyTorch.",
+  "OpenAI introduced local API inference residency for GPT-6 Luna workloads in India to meet data localisation rules."
+ ],
+ "stories": [
+  {
+   "id": "C37",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "Model launches",
+   "headline": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "dek": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+   "detail": [
+    "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more intuitive, visual, and precise answers. This update helps you navigate complex questions by understanding your intent, conducting simultaneous queries, and displaying structured information like tables and images. You can try these improved capabilities by visiting Google Search today to ask your most nuanced questions.",
+    "We are introducing Gemini 4 Hydrogen to provide more helpful and intuitive responses in Google Search.",
+    "You can now ask complex, multi-part questions because our model understands your intent with greater precision.",
+    "Our improved reasoning capabilities connect you to a wider range of relevant websites and helpful links."
+   ],
+   "why": "",
+   "source": "Google AI",
+   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+   "published": "2026-11-12T18:00:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C17",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "Cloud and GPU access",
+   "headline": "SGLang-Neuron Publicly Available to Serve Frontier Models on AWS Trainium",
+   "dek": "Amazon announced the public release of SGLang-Neuron, enabling developers to serve models and run RL rollouts on AWS Trainium chips.",
+   "detail": [
+    "Amazon announced that SGLang-Neuron is now publicly available through an AWS Deep Learning Container released by RadixArk in collaboration with Annapurna Labs. The tool allows developers to serve models and generate reinforcement learning rollouts on AWS Trainium using the familiar SGLang interface backed by native PyTorch.",
+    "The out-of-tree plugin design enables Trainium support and SGLang core to develop independently for faster iteration. Underneath, PyTorch operations and Neuron Kernel Institute kernels are compiled using torch.compile, while SGLang core handles the API server, request lifecycle, RadixAttention, and prefix-cache bookkeeping.",
+    "The system also supports Parallel-Decoding disaggregation, utilizing NIXL over Elastic Fabric Adapter to transfer prompt KV caches between prefill and decode servers. Developers can run a Trainium3 EC2 instance using a dedicated container image to deploy models like openai/gpt-oss-120b."
+   ],
+   "why": "Understanding how to deploy and serve models on cloud chips like AWS Trainium via native PyTorch plugins gives you practical infrastructure knowledge.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+   "published": "2026-11-12T22:03:34+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C26",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI agents and coding tools",
+   "headline": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+   "dek": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+   "detail": [
+    "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/business/customer-stories/amplitude",
+   "published": "2026-11-12T20:00:00+00:00",
+   "full_article": false,
+   "n": 3
+  },
+  {
+   "id": "C72",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+   "dek": "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality ",
+   "detail": [
+    "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. Large language models (LLMs) possess physical knowledge, but struggle to reliably guide video generation models in producing their training videos. We present PhysLoop, a unified harness designed to s"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.16748",
+   "published": "2026-11-11T19:00:00.000Z",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C79",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Anthropic Seeks Up to $64.4 Bn at $1.4 Tn Valuation With IPO",
+   "dek": "Anthropic is offering 825 million shares of Class A common stock at an indicative price range of $70–78 per share. The company plans to list on the Nasdaq Globa",
+   "detail": [
+    "Anthropic is offering 825 million shares of Class A common stock at an indicative price range of $70–78 per share.",
+    "Anthropic is planning an IPO, offering 825 million shares priced between $70 and $78 each.",
+    "The IPO could raise up to $64.4 billion, valuing the company at approximately $1.4 trillion.",
+    "The listing will occur on the Nasdaq under the ticker symbol ANT, following SEC filings."
+   ],
+   "why": "",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/anthropic-seeks-up-to-644-bn-at-14-tn-valuation-with-ipo",
+   "published": "2026-11-11T06:12:45+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C83",
+   "section": "world",
+   "company": "xAI",
+   "category": "AI security and privacy",
+   "headline": "Grok Build Coding Agent Leaks Confidential Data Across Thousands of Apps",
+   "dek": "A critical design flaw in SpaceXSI's Grok Build coding agent exposed internal business data and private apps via passive DNS enumeration.",
+   "detail": [
+    "Security firm Claroc discovered that Grok Build, the vibe-coding agent from SpaceXSI, leaked proprietary business information and sensitive secrets from thousands of users. The platform generates link-sharing URLs containing randomized dice words to allow users to share apps for internal testing.",
+    "However, because the randomizing phrases were placed to the left of the domain (grok.me) rather than the right, the links could be easily enumerated using passive DNS lookup services. A Claroc search returned over 43,000 links, with nearly 95 percent open to the public and exposing underlying data upon a simple click.",
+    "The exposed data included occupational health medical exams, Tesla service-center scorecards, Navy logistics rosters, financial figures, and confidential sales proposals. SpaceXSI removed the links to its own 24 internal apps shortly after being contacted by researchers, while other affected organizations began scrambling to secure their instances."
+   ],
+   "why": "This security failure highlights the risks of AI coding agents defaulting to public link sharing and highlights vulnerabilities in rapid application deployment.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "published": "2026-11-10T21:12:59+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C64",
+   "section": "world",
+   "company": "Perplexity",
+   "category": "NLP and language models",
+   "headline": "Perplexity AI Predicts a Huge Move Pudgy Penguins: Is PENGU Set to 150X?",
+   "dek": "Perplexity AI predicts an intriguing development regarding Pudgy Penguins (PENGU). This forecast is not a typical bullish outlook; instead, it outlines an extreme, highly imaginative scenario based on ...",
+   "detail": [
+    "Perplexity AI predicts an intriguing development regarding Pudgy Penguins (PENGU). This forecast is not a typical bullish outlook; instead, it outlines an extreme, highly imaginative scenario based on a hypothetical landmark event. While the outcome isn't impossible, it remains quite unlikely.",
+    "The prediction suggests that Pudgy Penguins could secure a significant multi-year partnership with a major global entertainment and consumer brand conglomerate. This partnership would elevate the Penguins' intellectual property (IP) to a mainstream cultural franchise.",
+    "Such a development could include producing large-scale animated content, launching global retail product lines, and integrating the PENGU token into fan engagement, merchandise, and digital experiences. This transformation would shift the PENGU token from being a crypto-native meme asset to a widely recognized consumer brand token.",
+    "On higher timeframes, PENGU has been consolidating in the $0.0059 to $0.0062 range after a prolonged downtrend from earlier peaks. Price continues to hold above recent lows but faces overhead resistance in the $0.007 to $0.008 zone."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://finance.yahoo.com/markets/crypto/articles/perplexity-ai-predicts-huge-move-120327756.html",
+   "published": "2026-11-12T05:31:00+00:00",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C65",
+   "section": "world",
+   "company": "Cohere",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Ottawa to shell out $1.6 billion for AI startup Cohere even though 60% of Canadians think the technology's a threat to humanity",
+   "dek": "Canada takes an equity stake in Cohere as part of a $7 billion funding round valuing the Toronto AI firm at $35.7 billion ...",
+   "detail": [
+    "Canada takes an equity stake in Cohere as part of a $7 billion funding round valuing the Toronto AI firm at $35.7 billion ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-ca/news/other/ottawa-to-shell-out-1-6-billion-for-ai-startup-cohere-even-though-60-of-canadians-think-the-technology-s-a-threat-to-humanity/ar-AA2hhY94",
+   "published": "2026-11-12T04:15:00+00:00",
+   "full_article": false,
+   "n": 8
+  },
+  {
+   "id": "C60",
+   "section": "world",
+   "company": "AMD",
+   "category": "Chips and hardware",
+   "headline": "Lenovo Unveils AI and HPC Servers Powered by AMD 6th Gen EPYC Processors",
+   "dek": "Lenovo launched new ThinkSystem servers featuring AMD's 6th Generation EPYC processors and Neptune liquid-cooling technology.",
+   "detail": [
+    "Lenovo introduced a new range of servers, storage systems, and hybrid AI services designed for artificial intelligence and high-performance computing workloads. The infrastructure features AMD's 6th Generation EPYC 9006 SP7 processors and is built to handle inference, agentic AI, and scientific computing.",
+    "The portfolio includes the dual-socket Lenovo ThinkSystem SC755, which uses Neptune liquid-cooling technology to remove up to 100% of system heat and deliver up to 40% higher sustained performance than air-cooled systems. It also includes Lenovo Dynamic Partitioning to switch between dual-socket and single-socket configurations based on workload demands.",
+    "To support large-scale deployments, Lenovo is expanding its Hybrid AI Factory services with multi-node support for Red Hat AI Enterprise and NVIDIA AI Enterprise, alongside colocation partnerships with Digital Realty to validate infrastructure prior to deployment."
+   ],
+   "why": "Keeping track of hardware releases like AMD's 6th Gen EPYC and server-grade liquid cooling helps you understand enterprise infrastructure constraints.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/lenovo-unveils-new-ai-hpc-servers-with-amds-6th-gen-epyc-processors",
+   "published": "2026-11-12T08:32:44+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C39",
+   "section": "world",
+   "company": "",
+   "category": "Policy and regulation",
+   "headline": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+   "dek": "The airline said it will not allow customers to use AI agents to book flights and manage reservations.",
+   "detail": [
+    "United Airlines said it will restrict access to AI agents seeking to book flights and manage reservations on their users’ behalf, citing a risk to cybersecurity and undermining federal regulations.",
+    "The airline is the latest American corporate giant to prevent customers from using AI agents and autonomous assistants to access their systems. The move comes as airlines and banks are struggling to differentiate between real customers and AI systems operating on their behalf, such as when users share their logins with their AI assistants. Sharing passwords with apps and assistants can create security risks if those credentials get leaked or exposed.",
+    "United warns that “sharing account credentials with personal, third-party, AI assistants can expose sensitive information, and actions taken by these tools may result in unintended purchases, account changes, or use of MileagePlus miles.”",
+    "The airline also warns of a risk of violating federal aviation rules, such as requiring that a human completes flight check-ins to acknowledge that their bags do not contain banned substances."
+   ],
+   "why": "",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+   "published": "2026-11-12T17:17:58+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C1",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "Model launches",
+   "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and AI Workflows",
+   "dek": "Google's new Gemini 4 Hydrogen model targets coding, research, and business tasks with a unified 1-million-token context window.",
+   "detail": [
+    "Google has launched Gemini 4 Hydrogen as part of its Gemini 4 family, alongside models like Carbon and Argon. The model is specifically designed to handle tasks such as writing code, fixing errors, running tests, and analysing information.",
+    "On the Artificial Analysis Intelligence Index at its default high thinking level, Hydrogen scored 51 compared to 50 for Argon, rising to 54 at its extra-high thinking setting. Google states that Hydrogen completes tasks 2.5 times faster than Gemini 3.8 Flash and features a unified context window of up to 1 million tokens for processing diverse media formats.",
+    "Google is rolling out Hydrogen globally across developer, enterprise, and consumer products. Developers can access it through the Gemini API, Google AI Studio, and Android Studio, with pricing set at $1.50 per million input tokens and $7.50 per million output tokens."
+   ],
+   "why": "A new frontier model with strong coding capabilities and a 1-million-token context window directly impacts how you build and test AI workflows.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/google-launches-gemini-4-hydrogen-for-faster-coding-and-ai-workflows",
+   "published": "2026-11-13T09:24:56+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C54",
+   "section": "india",
+   "company": "OpenAI",
+   "category": "APIs, pricing and developer updates",
+   "headline": "OpenAI Brings API Inference Residency To India To Deepen Enterprise AI Adoption",
+   "dek": "ChatGPT maker OpenAI has introduced local inference and data processing for its APIs in India, adding to its efforts to…",
+   "detail": [
+    "ChatGPT maker OpenAI has introduced API inference residency in India, allowing eligible businesses to process supported GPT-6 Luna workloads within the country",
+    "The move addresses data localisation requirements that have been a barrier to AI adoption among regulated businesses and increases competition for Indian AI companies offering locally hosted models",
+    "Details: The service supports GPT-6 Luna through the Responses and Chat Completions APIs, with both processing and supported customer data storage taking place in India",
+    "ChatGPT maker OpenAI has introduced local inference and data processing for its APIs in India, adding to its efforts to expand the commercialisation of ChatGPT in its largest market."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/openai-brings-api-inference-residency-to-india-to-deepen-enterprise-ai-adoption/",
+   "published": "2026-11-12T12:28:31+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C58",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "NLP and language models",
+   "headline": "Chariot Launches Multilingual TTS Model Supporting 11 Indian Languages",
+   "dek": "IndiaAI Mission-backed Chariot released a multilingual text-to-speech model featuring 50 voices, code-mixing, and instant voice cloning.",
+   "detail": [
+    "Chariot, an Indian AI research lab founded by former Google DeepMind and Meta FAIR researchers, has launched Chariot-1-TTS-Multilingual. The text-to-speech model supports English and 11 Indian languages, offering over 50 voices, code-mixing between languages within a single sentence, and voice cloning from brief reference audio.",
+    "Unlike systems relying solely on text normalisation rules, Chariot's model employs contextual reasoning to decide pronunciations for expressions like abbreviations, dates, currency, and ambiguous words. It recorded a character error rate of 7.60% for Hindi and 6.47% across nine other Indic languages, alongside 93.78% accuracy on an English verbalisation benchmark.",
+    "Backed by the IndiaAI Mission's foundation models pillar, Chariot's model is targeted for deployment in voice agents, customer service, educational platforms, and public helplines. The lab previously launched Chariot-1-ASR Realtime for speech recognition across 10 Indian languages."
+   ],
+   "why": "As part of the IndiaAI Mission, localized multimodal models like Chariot's TTS offer crucial benchmarks for Indic language processing and voice tech.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/chariot-launches-multilingual-tts-model-with-support-for-11-indian-languages",
+   "published": "2026-11-12T09:37:13+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and AI Workflows",
+   "update": "Following the release of Gemini 4 Carbon with agent swarms, Google has now launched Gemini 4 Hydrogen focused on coding and research workflows.",
+   "since": "2026-11-11",
+   "earlier": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/google-launches-gemini-4-hydrogen-for-faster-coding-and-ai-workflows",
+   "story": "C1"
+  },
+  {
+   "headline": "Grok Build Coding Agent Leaks Confidential Data Across Thousands of Apps",
+   "update": "Further details reveal that SpaceXSI's Grok Build agent exposed thousands of user apps and internal data due to a URL placement flaw.",
+   "since": "2026-11-12",
+   "earlier": "Grok Build flaw exposes thousands of private user apps to public access",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "story": "C83"
+  },
+  {
+   "headline": "OpenAI Brings API Inference Residency To India To Deepen Enterprise AI Adoption",
+   "update": "OpenAI expanded its local API inference residency in India to support GPT-6 Luna workloads for regulated enterprises.",
+   "since": "2026-11-12",
+   "earlier": "OpenAI launches local API inference residency for GPT-6 Luna in India",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/openai-brings-api-inference-residency-to-india-to-deepen-enterprise-ai-adoption/",
+   "story": "C54"
+  }
+ ],
+ "question": "When deploying models on limited hardware, how can you balance the architectural advantages of massive context windows against severe memory constraints?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

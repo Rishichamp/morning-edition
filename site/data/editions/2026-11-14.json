@@ -1,0 +1,272 @@
+{
+ "date": "2026-11-14",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and Workflows",
+  "dek": "Google introduces Gemini 4 Hydrogen, an efficient coding model featuring a 1-million-token context window and automated model orchestration."
+ },
+ "brief": [
+  "Google launched Gemini 4 Hydrogen with a 1-million-token context window and Orchestrator task routing.",
+  "llama.cpp v1.0.0 released strict semantic versioning boundaries for its cross-platform inference libraries.",
+  "Chariot debuted a multilingual text-to-speech model supporting 11 Indian languages under the IndiaAI Mission."
+ ],
+ "stories": [
+  {
+   "id": "C44",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "Model launches",
+   "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and Workflows",
+   "dek": "Google introduces Gemini 4 Hydrogen, an efficient coding model featuring a 1-million-token context window and automated model orchestration.",
+   "detail": [
+    "Google has launched Gemini 4 Hydrogen, a new model targeted at coding, research, and everyday business tasks within its Gemini 4 product family. The model excels in writing code, fixing errors, and analyzing structured information across documents, spreadsheets, charts, audio, and video.",
+    "Google paired the release with the Orchestrator feature in its Antigravity platform, which automatically switches between models based on task complexity. On Terminal-Bench 4.0, Orchestrator achieved task success rates close to the larger Carbon model while consuming 24% less quota and completing tasks 19% faster.",
+    "Hydrogen scored 51 on the Artificial Analysis Intelligence Index at its default high thinking level, rising to 54 at the extra-high setting. It is priced at $1.50 per million input tokens and $7.50 per million output tokens across its unified 1-million-token context window."
+   ],
+   "why": "A new frontier model with strong coding capabilities and a 1-million-token context window provides a capable tool for your AI software development work.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/google-launches-gemini-4-hydrogen-for-faster-coding-and-ai-workflows",
+   "published": "2026-11-13T09:24:56+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C34",
+   "section": "world",
+   "company": "Meta AI",
+   "category": "Open-source models",
+   "headline": "llama.cpp v1.0.0 Released to Stabilize Local AI Ecosystem",
+   "dek": "The llama.cpp team reaches version 1.0.0, establishing stricter semantic versioning boundaries for APIs and ABIs across supported hardware.",
+   "detail": [
+    "The project has released libraries version 1.0.0 after 3.5 years of growth, signaling a commitment to API and ABI stability for downstream developers. Moving forward, both llama.cpp and ggml will reflect incompatibilities with major-version bumps to support growing enterprise and local adoption.",
+    "The underlying ggml machine learning engine runs on virtually any hardware through dynamic backend libraries. Supported platforms include NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel, backed by expanded CI infrastructure scaling via Hugging Face technologies.",
+    "The software currently supports more than 150 architecture variants and all mainstream speculative decoding methods. The team also ships companion Llama desktop applications for macOS and Windows."
+   ],
+   "why": "Stable local inference libraries are essential if you want to run and test quantized models efficiently on constrained local hardware.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "published": "2026-11-13T14:05:22+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C41",
+   "section": "world",
+   "company": "DeepSeek",
+   "category": "APIs, pricing and developer updates",
+   "headline": "DeepSeek Opens App Toolkit and Flash Model to Developers",
+   "dek": "DeepSeek extends its consumer app features and search endpoints to third-party APIs, anchored by the new deepseek-flash model.",
+   "detail": [
+    "DeepSeek has opened the features of its consumer application to developers through an API, allowing third-party builders to integrate web search, file parsing, deep-thinking modes, URL reading, voice functions, and safety checks.",
+    "At the center of the rollout is a new model called deepseek-flash, identified as V4.1-Flash-1017, operating across Messages, Responses, and Chat Completions endpoints. Standalone APIs were also released for Search, Fetch, OCR, ASR, and TTS capabilities.",
+    "Public-facing applications built using the API are required to include mandatory safety checks. DeepSeek also provided an open-source frontend demo to give developers a working reference implementation."
+   ],
+   "why": "Access to native search, file parsing, and voice endpoints via an API offers practical building blocks for experimental AI applications.",
+   "source": "News search",
+   "url": "https://cryptobriefing.com/deepseek-opens-app-features-developers-api/",
+   "published": "2026-11-13T12:37:00+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C32",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI agents and coding tools",
+   "headline": "Introducing ChatGPT Wallet",
+   "dek": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+   "detail": [
+    "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "published": "2026-11-13T15:00:00+00:00",
+   "full_article": false,
+   "n": 4
+  },
+  {
+   "id": "C61",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "Cloud and GPU access",
+   "headline": "SGLang-Neuron Publicly Available to Serve Models on AWS Trainium",
+   "dek": "Amazon releases SGLang-Neuron publicly via a Deep Learning Container, enabling model serving and reinforcement learning on AWS Trainium chips.",
+   "detail": [
+    "Amazon announced the public availability of SGLang-Neuron, accessible through an AWS Deep Learning Container released by RadixArk in collaboration with Annapurna Labs. The plugin connects SGLang with AWS Trainium using native PyTorch operations and Neuron Kernel Interface kernels.",
+    "The out-of-tree plugin design allows SGLang core and Trainium support to iterate independently while preserving standard SGLang server interfaces, request lifecycles, and generation APIs. It supports features like RadixAttention, prefix-cache bookkeeping, and chunked prefill.",
+    "The architecture also supports prefix-decode (PD) disaggregation, where a prefill server computes the prompt KV cache and transfers it to a decode server using NIXL over Elastic Fabric Adapter. The setup can be tested on Trainium3 instances using provided Docker containers."
+   ],
+   "why": "Understanding how alternative cloud accelerators handle high-throughput inference serving is crucial given your focus on efficient cloud GPU and hardware model training.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+   "published": "2026-11-12T22:03:34+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C58",
+   "section": "world",
+   "company": "Intel",
+   "category": "Chips and hardware",
+   "headline": "SK Hynix and Intel Explore Shared Memory Pools for AI Servers",
+   "dek": "SK Hynix proposes a rack-scale shared memory architecture with Intel to cut first-token latency in agentic AI workloads.",
+   "detail": [
+    "SK Hynix presented a shared memory pool design at the Intel AI Summit in Seoul, aimed at addressing memory bottlenecks caused by agentic AI workloads. Instead of attaching high-bandwidth memory exclusively to individual GPUs, the architecture places high-capacity memory into dedicated racks accessible via CXL and RDMA.",
+    "The design specifically targets the working memory or KV cache that builds up during multi-turn inference tasks. SK Hynix internal testing indicated that using remote CXL DRAM from a shared pool reduced average time to first token from 80.76 seconds to 15.45 seconds.",
+    "The companies plan to validate the system architecture collaboratively from the design phase onward, building on previous work such as Intel Data Center certification for SK Hynix DDR5 RDIMM modules."
+   ],
+   "why": "Memory bandwidth and KV cache management are critical bottlenecks when training and deploying large models on limited hardware setups.",
+   "source": "News search",
+   "url": "https://cryptobriefing.com/sk-hynix-intel-shared-memory-pool-ai/",
+   "published": "2026-11-12T23:06:00+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C17",
+   "section": "world",
+   "company": "",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Agent Management Startup LangChain Raises $300M at $3B Valuation",
+   "dek": "LangChain secures a $300 million Series C funding round led by CapitalG, doubling its valuation to $3 billion as agent management demand grows.",
+   "detail": [
+    "LangChain has raised a $300 million Series C round at a $3 billion valuation, led by CapitalG with participation from GIC, DFJ Growth, IVP, and Sapphire Ventures. The valuation represents more than double its $1.25 billion valuation from a year prior.",
+    "Founded in 2022 as an open-source library for early LLM tasks, the company shifted focus toward managing AI agents through its software platform, LangSmith. The product aims to help enterprises manage agent behavior without enforcing lock-in to specific model providers or cloud ecosystems.",
+    "LangChain reports serving 7,000 LangSmith customers, spanning major startups and enterprise clients across diverse industries."
+   ],
+   "why": "Tracking how agent management frameworks scale commercially gives you insight into the software layers being built on top of foundation models.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+   "published": "2026-11-13T19:37:57+00:00",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C88",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+   "dek": "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, ",
+   "detail": [
+    "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open and reproducible recipe for converting pretrained generators into unified multi-task perception systems. Our analyses identify the design choices that matter most for generalization"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.15844",
+   "published": "2026-11-10T19:00:00.000Z",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C70",
+   "section": "world",
+   "company": "",
+   "category": "NLP and language models",
+   "headline": "LLMON Introduced to Improve LLM Reliability and Prevent Injections",
+   "dek": "Researchers release LLMON, an LLM-native markup language designed to structure context explicitly and mitigate prompt injections.",
+   "detail": [
+    "LLMON (LLM Object Notation) is a markup language designed to communicate structure and semantics explicitly to language models using XML-like tags wrapped in reserved special-token delimiters. It separates instructions, data schemas, and requirements to reduce brittleness and prevent indirect prompt injections in smaller models.",
+    "Two experimental preview models—granite-4.1-3b-LLMON-preview and granite-4.1-8b-LLMON-preview—were released alongside conversion tooling to translate existing JSON structures into LLMON without data loss. The markup allows instructions to be bound directly to specific data blocks via unique IDs.",
+    "Evaluations on benchmarks like OPI showed that LLMON models reduced attack success rates compared to standard instruction-tuned models while maintaining general capabilities. The format integrates into existing chat templates through specialized rendering steps."
+   ],
+   "why": "Alternative context representation formats offer interesting techniques for improving the robustness and security of smaller open-weight models.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+   "published": "2026-11-12T19:07:35+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C24",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "Building Robot Pick-and-Place Simulations with SimReady Assets",
+   "dek": "A new Isaac Sim walkthrough demonstrates setting up a robotic pick-and-place task using validated OpenUSD assets from SimReady Central.",
+   "detail": [
+    "This robotics workflow combines a UR17G arm, Robotiq 2F-140 gripper, and a beverage can asset inside Isaac Sim 6.2 to execute a pick-and-place task. SimReady Central provides these OpenUSD assets pre-configured with authored simulation properties such as collisions, mass, and joints.",
+    "SimReady Foundation specifications validate asset profiles, features, and joint-drive settings before simulation runs. Users can perform validation checks manually or use an AI agent equipped with Isaac Sim remote skills to assemble the robot articulation and write control scripts.",
+    "The workflow outlines downloading assets via the Hugging Face CLI or folder options, verifying joint limits and physics contact behavior in the Isaac Sim GUI, and executing agent-generated Python control code."
+   ],
+   "why": "Combining simulation environments with pre-validated OpenUSD robotics assets provides a practical framework for testing computer vision and control algorithms.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+   "published": "2026-11-13T18:00:39+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C76",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "India AI and startups",
+   "headline": "Chariot Launches Multilingual TTS Model for 11 Indian Languages",
+   "dek": "IndiaAI-backed lab Chariot releases a multilingual text-to-speech model supporting code-mixing, voice cloning, and contextual pronunciation.",
+   "detail": [
+    "Chariot has launched Chariot-1-TTS-Multilingual, supporting 11 Indian languages and English with over 50 voices, code-mixing within sentences, and voice cloning from short audio snippets. The model processes up to 1,000 characters per request.",
+    "Unlike conventional normalization rules, the model uses contextual reasoning to determine pronunciation for currency, abbreviations, dates, and ambiguous expressions like blood groups versus grades. It reported a character error rate of 7.60% for Hindi and 6.47% across nine other Indic languages.",
+    "Developed by former DeepMind and Meta FAIR researchers in Delhi, Chariot is one of the 12 organizations selected under the IndiaAI Mission's Foundation Models pillar to build indigenous AI infrastructure and applications."
+   ],
+   "why": "Local foundation model developments in Indian languages highlight indigenous progress supported by the IndiaAI Mission.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/chariot-launches-multilingual-tts-model-with-support-for-11-indian-languages",
+   "published": "2026-11-12T09:37:13+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C3",
+   "section": "india",
+   "company": "",
+   "category": "Policy and regulation",
+   "headline": "India Considers Regulating AI Chatbots as Youth Reliance Grows",
+   "dek": "Rising reliance on AI chatbots for emotional support prompts global regulation and sparks policy discussions on youth safety in India.",
+   "detail": [
+    "Children and adolescents are increasingly turning to AI chatbots for emotional companionship, academic help, and therapy-like conversations. Recent legislation in New York and proposed frameworks in Europe aim to restrict features that encourage emotional dependency among minors.",
+    "Reports in India highlight instances of adolescents relying heavily on chatbots for emotional support, raising concerns regarding mental health, social isolation, and potential exposure to harmful instructions. A 2026 survey indicated that about 65% of surveyed Indian adolescents had used a chatbot for emotional support.",
+    "Experts and educationists, such as Dr VP Niranjanaradhya, have raised concerns over cognitive offloading in education, calling for pauses on unverified AI implementations in schools. Psychologists note that children under 13 often lack the metacognitive maturity to recognize algorithms as non-sentient pattern-matchers."
+   ],
+   "why": "Understanding societal and regulatory discussions around conversational AI safety informs the broader ethical context of deploying interactive systems.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-features/ai-chatbots-and-children-should-india-regulate-what-bots-say",
+   "published": "2026-11-14T04:37:52+00:00",
+   "full_article": true,
+   "n": 12
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and Workflows",
+   "update": "Google expanded its Gemini 4 family by releasing the coding-focused Hydrogen model alongside the Carbon reasoning model.",
+   "since": "2026-11-11",
+   "earlier": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/google-launches-gemini-4-hydrogen-for-faster-coding-and-ai-workflows",
+   "story": "C44"
+  },
+  {
+   "headline": "Chariot Launches Multilingual TTS Model for 11 Indian Languages",
+   "update": "Further details emerged on Chariot's multilingual text-to-speech release and its backing under the IndiaAI Mission.",
+   "since": "2026-11-12",
+   "earlier": "Chariot releases multilingual text-to-speech model covering 11 Indian languages",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/chariot-launches-multilingual-tts-model-with-support-for-11-indian-languages",
+   "story": "C76"
+  }
+ ],
+ "question": "How can you leverage local quantization frameworks like llama.cpp to optimize inference workflows for deep learning models on resource-constrained single-GPU setups?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 11 of 12 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

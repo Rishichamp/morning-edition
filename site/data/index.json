@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-15",
+   "headline": "Google DeepMind releases Gemini 4 Hydrogen with multi-model Orchestrator integration",
+   "publishedAt": "2026-11-15T09:46:37.353241+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-15T09:46:38.670916+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-14",
    "headline": "Google Launches Gemini 4 Hydrogen for Faster Coding and Workflows",
    "publishedAt": "2026-11-14T09:12:28.325244+00:00",

@@ -1,0 +1,302 @@
+{
+ "date": "2026-11-15",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Google DeepMind releases Gemini 4 Hydrogen with multi-model Orchestrator integration",
+  "dek": "Gemini 4 Hydrogen offers four thinking levels, a 1 million-token context window, and dynamic session switching via Google Antigravity."
+ },
+ "brief": [
+  "DeepMind launched Gemini 4 Hydrogen with dynamic multi-model Orchestrator integration in Google Antigravity.",
+  "Hugging Face released llama.cpp v1.0.0, establishing strict semantic versioning for local model inference APIs.",
+  "DeepSeek introduced V4.1-Flash with server-side tool execution and a unified dual-billing pricing structure."
+ ],
+ "stories": [
+  {
+   "id": "C70",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "Model launches",
+   "headline": "Google DeepMind releases Gemini 4 Hydrogen with multi-model Orchestrator integration",
+   "dek": "Gemini 4 Hydrogen offers four thinking levels, a 1 million-token context window, and dynamic session switching via Google Antigravity.",
+   "detail": [
+    "Google DeepMind has introduced Gemini 4 Hydrogen, a model optimized for execution speed, daily coding, and agentic workflows. Priced flat at $1.50 per million input tokens and $7.50 per million output tokens across its 1 million-token context window, the model achieves a score of 51 at its default high thinking level and 54 at its highest xhigh setting on the Artificial Analysis Intelligence Index, outperforming Argon. It features four selectable thinking levels—low, medium, high, and xhigh—to align quality, latency, and token cost with task requirements.",
+    "Google also introduced Orchestrator in Google Antigravity, which dynamically switches between frontier models like Carbon and execution models like Hydrogen within a single session. On Terminal-Bench 4.0, Orchestrator achieved near-Carbon success rates while consuming 24% less quota and operating 19% faster on average. In multi-agent configurations, Carbon serves as a coordinator while Hydrogen powers worker and verifier agents to build and test code across isolated workspaces.",
+    "Compared to Gemini 3.8 Flash, Hydrogen finishes tasks 2.5 times faster at default high thinking and more than triples Terminal-Bench 4.1 scores from 18.2% to 57%, while reducing fabricated claims by more than five times. It ranks fifth overall on Agent Arena, scores 58.8% on HLE-Diamond, 52.3% on Vals Tax Agent Bench, 55.8% on Vals Legal Research Bench, 53.4% on the Multimodal Knowledge Agent benchmark, and 71.6% on Agents' Last Exam v1.1."
+   ],
+   "why": "Gemini 4 Hydrogen's low execution pricing and Orchestrator integration offer Rishi an efficient option for running fast evaluation and code-generation passes.",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+   "published": "2026-11-12T18:00:50+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C60",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "MLOps and infrastructure",
+   "headline": "AWS releases SGLang-Neuron for model serving on Trainium accelerators",
+   "dek": "SGLang-Neuron connects the SGLang serving interface to AWS Trainium using an out-of-tree PyTorch plugin design.",
+   "detail": [
+    "Amazon, in collaboration with RadixArk and Annapurna Labs, has released SGLang-Neuron through a public AWS Deep Learning Container. The tool connects the SGLang inference framework directly to AWS Trainium silicon via an out-of-tree plugin. The plugin architecture allows SGLang core to handle API serving, request lifecycles, RadixAttention, and prefix caching, while the plugin handles Trainium-specific model implementations, attention mechanisms, mixture-of-experts logic, and execution graph management.",
+    "The underlying execution uses TorchNeuron to register Trainium as a native PyTorch device. Custom kernels written with the Neuron Kernel Interface are integrated into the PyTorch operation path and compiled into executables using torch.compile. SGLang-Neuron also supports prefill-decode disaggregation, allowing a prefill server to compute the prompt KV cache and transfer it over Elastic Fabric Adapter via NIXL to a dedicated decode server for token generation.",
+    "Developers can launch the container using a public Amazon ECR image and serve models such as openai/gpt-oss-120b across eight tensor parallel and eight expert parallel ranks. The setup uses standard SGLang server flags to configure static memory fractions, context lengths up to 10,240 tokens, and chunked prefill settings."
+   ],
+   "why": "SGLang-Neuron provides Rishi with a practical framework for deploying large open models on non-NVIDIA cloud hardware using standard PyTorch workflows.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+   "published": "2026-11-12T22:03:34+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C42",
+   "section": "world",
+   "company": "Meta AI",
+   "category": "Open-source models",
+   "headline": "llama.cpp reaches version 1.0.0 with formal API stability guarantees",
+   "dek": "The project establishes semantic versioning rules for local LLM inference across more than 150 supported model architectures.",
+   "detail": [
+    "The maintainers of llama.cpp and ggml have officially released libraries version 1.0.0, establishing a stable API and ABI contract for downstream software dependencies. Moving forward, both ggml-org projects will adhere strictly to semantic versioning rules, indicating breaking interface or binary incompatibilities through major-version increment bumps.",
+    "Over its three-and-a-half-year development history, llama.cpp has expanded to support over 150 machine learning architecture variants alongside mainstream speculative decoding methods. Its execution engine, ggml, uses dynamic libraries compiled for specific hardware backends to run multimodal models on consumer-grade local machines and enterprise servers.",
+    "To support the release, Hugging Face provided infrastructure tools including HF Buckets and HF Jobs to scale continuous integration testing. The project also expanded its network of self-hosted runners using dedicated hardware from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel to verify code changes prior to merging into master branches."
+   ],
+   "why": "The version 1.0.0 release provides Rishi with a stable, standardized local engine for running open-weight models without risk of sudden API breakage.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "published": "2026-11-13T14:05:22+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C24",
+   "section": "world",
+   "company": "DeepSeek",
+   "category": "APIs, pricing and developer updates",
+   "headline": "DeepSeek launches V4.1-Flash model with integrated tool APIs and dual billing",
+   "dek": "DeepSeek introduces five server-side built-in tools for deepseek-flash and unifies pricing across its Tool API platform.",
+   "detail": [
+    "DeepSeek has released its new deepseek-flash model, designated as V4.1-Flash, featuring five built-in server-side execution tools across its Messages, Responses, and Chat Completions APIs. The server-side toolsuite includes Web Search, Deep Thinking Search for multi-step reasoning, File Input for inspecting PDFs, Office documents, and images, URL Reading, and mandatory Safety Checks for public apps.",
+    "The API relies on a dual-billing system, charging a separate tool usage fee in addition to token-based consumption. DeepSeek has formally unified its Tool API pricing structure for standalone services including Search, Fetch, OCR, Automatic Speech Recognition, and Text-to-Speech, with a temporary 50% discount currently applied to audio APIs.",
+    "By executing file parsing, web search, link retrieval, and moderation on the server side via flags such as deepseek_web_search, the framework removes the need for developers to maintain custom parsing pipelines or external search scrapers in client applications."
+   ],
+   "why": "Built-in server-side tool execution in DeepSeek V4.1-Flash allows Rishi to test document parsing and web search workflows without writing external scrapers.",
+   "source": "News search",
+   "url": "https://note.com/masa_cloud/n/n9618055ea625?hl=en",
+   "published": "2026-11-14T02:01:00+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C40",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI agents and coding tools",
+   "headline": "Introducing ChatGPT Wallet",
+   "dek": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+   "detail": [
+    "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "published": "2026-11-13T15:00:00+00:00",
+   "full_article": false,
+   "n": 5
+  },
+  {
+   "id": "C27",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "AI in science and healthcare",
+   "headline": "OpenFold3 structure prediction model arrives on Amazon SageMaker JumpStart",
+   "dek": "Columbia University and the OpenFold Consortium deploy their Apache 2.0 all-atom biomolecular model to managed cloud endpoints.",
+   "detail": [
+    "The OpenFold Consortium and Columbia University's AlQuraishi Lab have made OpenFold3-preview available on Amazon SageMaker JumpStart under an open-source Apache 2.0 license. The all-atom biomolecular prediction model generates joint 3D structures for single protein chains, multi-chain protein complexes, protein-nucleic acid assemblies, and protein-ligand binding complexes directly from sequence inputs and SMILES representations.",
+    "Because biomolecular folding calculations scale with sequence length and can require several minutes per request, OpenFold3 deploys to SageMaker Asynchronous Inference endpoints rather than real-time endpoints capped at 60 seconds. Users submit requests to Amazon S3 and invoke asynchronous endpoints, which queue jobs with execution timeouts up to one hour and write structural predictions and confidence scores back to S3.",
+    "The managed endpoints run inside AWS-maintained containers on GPU instances such as ml.g6.4xlarge and ml.g6.12xlarge with network isolation. The setup includes automatic request queuing and the ability to scale endpoint instances to zero during idle periods to reduce overall infrastructure costs."
+   ],
+   "why": "OpenFold3 serves as an accessible architectural reference for Rishi on how to package complex, multi-minute deep learning inference pipelines on cloud GPUs.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+   "published": "2026-11-13T21:53:40+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C77",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+   "dek": "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, ",
+   "detail": [
+    "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open and reproducible recipe for converting pretrained generators into unified multi-task perception systems. Our analyses identify the design choices that matter most for generalization"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.15844",
+   "published": "2026-11-10T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C72",
+   "section": "world",
+   "company": "",
+   "category": "Image, video and audio AI",
+   "headline": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+   "dek": "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality ",
+   "detail": [
+    "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. Large language models (LLMs) possess physical knowledge, but struggle to reliably guide video generation models in producing their training videos. We present PhysLoop, a unified harness designed to s"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.16748",
+   "published": "2026-11-11T19:00:00.000Z",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C4",
+   "section": "world",
+   "company": "Nvidia",
+   "category": "Chips and hardware",
+   "headline": "Where was Nvidia’s security team?",
+   "dek": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intellig",
+   "detail": [
+    "Outsiders had little reason to notice when Nvidia’s longtime chief security officer and head of product security stepped down in August. Just two and a half months later, CEO Jensen Huang himself left the company over growing questions about his extramarital relationships — starting with an executive at Megaspeed, a Singapore data center company that U.S. investigators suspect of funneling Nvidia chips to China, then widening to reports about two separate affairs with Nvidia employees.",
+    "At the time, David Reber, who spent four years as CSO and seven at Nvidia overall, said he was leaving for health reasons. “This wasn’t a pivot I had planned. But I know what needs to come first: family and health,” he wrote on LinkedIn in late August, disclosing that he’d been diagnosed with young-onset Parkinson’s more than two years ago.",
+    "Reber’s replacement, Saša Zdjelar, previously spent 17 years at ExxonMobil in Houston, leaving as a senior IT manager before spending one year at Salesforce and several years at the cybersecurity company ReversingLabs. Zdjelar didn’t respond to questions Thursday about the transition or what the security team knew.",
+    "Nothing public connects Reber’s or Zdjelar’s role changes to the Megaspeed matter, but it seems fair to wonder what Nvidia’s security team knew about the government’s scrutiny of Megaspeed and about Huang’s relationships, and whether anyone raised concerns. Reber didn’t respond to questions Thursday. Nvidia also has not answered our related questions."
+   ],
+   "why": "",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+   "published": "2026-11-15T00:08:07+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C58",
+   "section": "world",
+   "company": "",
+   "category": "Tutorials and how-tos",
+   "headline": "GitHub introduces standard SKILL.md specification for reusable AI agent workflows",
+   "dek": "A structured file directory format enables developers to share versioned instructions and operational rules across multiple agent platforms.",
+   "detail": [
+    "GitHub has published a guide on agent skills, a methodology for packaging repeatable developer context into versioned directories centered around a SKILL.md specification. The file format defines specific triggers, inputs, and operational boundaries for task execution, allowing team instructions to be shared across platforms like Claude Code, Cursor, and GitHub Copilot without duplicating context.",
+    "The specification separates instructions from environmental permissions, requiring host applications to supply database credentials, tool access, and API keys. To ensure portability, project-specific variables such as table schemas or environment parameters are isolated into a resolved manifest file created by initialization skills, separating repository details from team formatting rules.",
+    "The workflow pattern emphasizes isolated verification roles and human approval gates across pipeline stages. For example, the Proof Agent uses a dedicated verifier skill that evaluates diffs and outputs evidence-backed PASS, FAIL, or PARTIAL statuses without taking guidance from the primary coding agent's self-assessment."
+   ],
+   "why": "Adopting the SKILL.md specification offers Rishi a clean, modular structure for defining reproducible execution steps in his agentic vision and data pipelines.",
+   "source": "GitHub",
+   "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+   "published": "2026-11-12T22:54:52+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C12",
+   "section": "india",
+   "company": "Nvidia",
+   "category": "India AI and startups",
+   "headline": "Jensen Huang’s Exit: How Deep Does NVIDIA’s AI Ecosystem Run In India?",
+   "dek": "Jensen Huang’s exit from NVIDIA has put the spotlight on the company’s leadership and succession plans. But for India, the…",
+   "detail": [
+    "NVIDIA’s influence in India extends far beyond GPU sales, spanning AI infrastructure, software, developer ecosystems, startup incubation and direct equity investments.",
+    "With Indian data centre operators committing billions of dollars to NVIDIA-powered infrastructure, and enterprises and startups building on its CUDA-led software stack, the company has become deeply embedded in the country's AI ambitions.",
+    "As Jensen Huang exits, the bigger question is whether India can reduce its dependence on a single technology provider, particularly as geopolitical uncertainties, export restrictions and competing chip architectures reshape access to AI compute.",
+    "Jensen Huang’s exit from NVIDIA has put the spotlight on the company’s leadership and succession plans. But for India, the more consequential question is what happens to an ecosystem that has increasingly come to depend on the American chipmaker for its AI ambitions."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/features/jensen-huangs-exit-how-deep-does-nvidias-ai-ecosystem-run-in-india/",
+   "published": "2026-11-14T14:57:02+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C13",
+   "section": "india",
+   "company": "",
+   "category": "Policy and regulation",
+   "headline": "DPDP Act Implementation: MeitY Opens Consent Manager Registration Portal",
+   "dek": "The IT ministry (MeitY) has opened the registration process for consent managers under the Digital Personal Data Protection (DPDP) Act,…",
+   "detail": [
+    "MeitY has opened registration for Consent Managers under the DPDP Act, allowing eligible Indian companies with a minimum net worth of ₹2 Cr to apply through the new online portal",
+    "The framework aims to give individuals greater control over how their personal data is used while creating a regulated ecosystem for consent management services",
+    "The next phase of DPDP Act implementation, covering rights of data principals, data fiduciary obligations and DPBI’s penalty processes, will come into effect from May 2027",
+    "The IT ministry (MeitY) has opened the registration process for consent managers under the Digital Personal Data Protection (DPDP) Act, 2023."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/dpdp-act-implementation-meity-opens-consent-manager-registration-portal/",
+   "published": "2026-11-14T14:54:15+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C10",
+   "section": "india",
+   "company": "",
+   "category": "India AI and startups",
+   "headline": "DroneAcharya Profits Tank 65% YoY To ₹67 Lakh In H1",
+   "dek": "BSE SME-listed drone tech company DroneAcharya’s net profit plunged 65.3% to ₹67 Lakh in the first half (H1) of the…",
+   "detail": [
+    "DroneAcharya’s operating revenue also plunged 18.3% to ₹7.82 Cr in H1 FY27 compared to ₹9.6 Cr in the year-ago period",
+    "The drone tech company managed to earn less in H1 FY27 compared to the year-ago period, but it controlled costs well enough to improve profitability relative to sales",
+    "Meanwhile, the drone tech startup’s total expenses also declined 15.9% YoY to ₹6.9 Cr in the first half of FY27",
+    "BSE SME-listed drone tech company DroneAcharya’s net profit plunged 65.3% to ₹67 Lakh in the first half (H1) of the fiscal year 2026-27 (FY27) compared to ₹1.9 Cr in the year-ago period. On a sequential basis, the company had reported a net loss of ₹1.6 Cr in H2 FY26."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/droneacharya-profits-tank-65-yoy-to-%e2%82%b967-lakh-in-h1/",
+   "published": "2026-11-14T16:02:40+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "llama.cpp reaches version 1.0.0 with formal API stability guarantees",
+   "update": "llama.cpp v1.0.0 establishes strict major-version semantic versioning rules for API and ABI compatibility across ggml-org projects.",
+   "since": "2026-11-14",
+   "earlier": "llama.cpp v1.0.0 Released to Stabilize Local AI Ecosystem",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "story": "C42"
+  },
+  {
+   "headline": "AWS releases SGLang-Neuron for model serving on Trainium accelerators",
+   "update": "AWS detailed the out-of-tree PyTorch architecture, PD disaggregation support, and container deployment steps for SGLang-Neuron on Trainium.",
+   "since": "2026-11-13",
+   "earlier": "SGLang-Neuron Publicly Available to Serve Frontier Models on AWS Trainium",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+   "story": "C60"
+  },
+  {
+   "headline": "DeepSeek launches V4.1-Flash model with integrated tool APIs and dual billing",
+   "update": "DeepSeek released unified pricing details and integrated five server-side built-in tools for deepseek-flash.",
+   "since": "2026-11-14",
+   "earlier": "DeepSeek Opens App Toolkit and Flash Model to Developers",
+   "source": "News search",
+   "url": "https://note.com/masa_cloud/n/n9618055ea625?hl=en",
+   "story": "C24"
+  }
+ ],
+ "question": "How can developers balance offloading infrastructure tasks to server-side model tools against maintaining direct control over data pipelines and local inference backends?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 12 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

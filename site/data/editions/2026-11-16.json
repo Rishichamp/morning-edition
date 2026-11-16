@@ -1,0 +1,298 @@
+{
+ "date": "2026-11-16",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Alibaba releases Qwen4-Max with sparse mixture-of-experts architecture and 1M context",
+  "dek": "Alibaba's Qwen team has launched Qwen4-Max, featuring a 2.4-trillion-parameter backbone with 71 billion active parameters per token across a 1-million-token context window."
+ },
+ "brief": [
+  "Alibaba released Qwen4-Max, a 2.4-trillion-parameter sparse MoE model with 71 billion active parameters per token.",
+  "llama.cpp reached version 1.0.0, instituting semantic versioning rules to guarantee API stability for local inference.",
+  "DeepSeek opened standalone APIs for search, OCR, ASR, and TTS alongside its deepseek-flash model."
+ ],
+ "stories": [
+  {
+   "id": "C14",
+   "section": "world",
+   "company": "",
+   "category": "Model launches",
+   "headline": "Alibaba releases Qwen4-Max with sparse mixture-of-experts architecture and 1M context",
+   "dek": "Alibaba's Qwen team has launched Qwen4-Max, featuring a 2.4-trillion-parameter backbone with 71 billion active parameters per token across a 1-million-token context window.",
+   "detail": [
+    "Alibaba's Qwen team has introduced Qwen4-Max, a proprietary sparse mixture-of-experts (MoE) multimodal language model. The model features a 2.4-trillion-parameter backbone, activates 71 billion parameters per token, and incorporates 328 billion N-gram embedding parameters. It supports text, image, and video inputs, offering a 1-million-token context window and up to 393,000 max output tokens.",
+    "Architecturally, Qwen4 modifies sparse MoE design in three main areas: attention, residual connections, and embeddings. It pairs Gated DeltaNet layers with Qwen Sparse Attention to compress sequence history into fixed-size states, while using lightweight indexers to select context at micro-block granularity. Furthermore, four parallel Gated Residual branches control information flow, and layer 2 lookups leverage 328 billion extra N-gram parameters for local token patterns.",
+    "On internal tests, Qwen4-Max-Base recorded a 5% to 13% reduction in bits per byte compared to Qwen3.8-Max-Base while activating 25% fewer parameters. In Alibaba's 16-benchmark evaluation, Qwen4-Max scored highest on legal agent tasks (HLAB-Vals-1.1 score of 21.3) and Agents' Last Exam v1.1 (46.7), though it trailed Claude Opus 5.5 on coding and vision benchmarks.",
+    "Qwen4-Max is hosted exclusively on QwenCloud API and Qwen Studio with no open weights available for local deployment. API list prices have dropped to $1.50 per million input tokens and $4.50 per million output tokens, representing a 62% cut in average cost per task on the Work360 benchmark."
+   ],
+   "why": "Provides architectural insights into combining linear attention mechanisms with sparse MoE models for ultra-long context windows.",
+   "source": "News search",
+   "url": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
+   "published": "2026-11-16T01:44:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C60",
+   "section": "world",
+   "company": "Meta AI",
+   "category": "Open-source models",
+   "headline": "llama.cpp reaches version 1.0.0 with formal semantic versioning guarantees",
+   "dek": "After 3.5 years of open-source development, llama.cpp has released version 1.0.0, establishing strict API and ABI stability rules for downstream developers.",
+   "detail": [
+    "The llama.cpp project has officially released version 1.0.0, marking a formal stability milestone for the open-source local inference framework. Developed to execute multimodal language models on hardware ranging from consumer devices to enterprise servers, the library utilises C/C++ implementations, custom backends, and quantization techniques.",
+    "With the v1.0.0 release, the project and its underlying ggml engine are adopting strict semantic versioning. Moving forward, any breaking changes to the API or ABI will be clearly signalled through major-version increments to protect downstream applications that depend on the library's interfaces.",
+    "llama.cpp currently supports over 150 model architecture variants alongside mainstream speculative decoding methods. Its modular ggml backend architecture enables individual hardware backends to be compiled as dynamic libraries and loaded at runtime, supported by continuous integration hardware from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel."
+   ],
+   "why": "Ensures long-term API stability and backend portability when building local model evaluation or inference pipelines.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "published": "2026-11-13T14:05:22+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C64",
+   "section": "world",
+   "company": "DeepSeek",
+   "category": "APIs, pricing and developer updates",
+   "headline": "DeepSeek opens consumer app features and standalone utility APIs to developers",
+   "dek": "DeepSeek has exposed its app capabilities—including search, file parsing, and voice functions—to external developers through its API, powered by a new deepseek-flash model.",
+   "detail": [
+    "Hangzhou-based AI lab DeepSeek has expanded its API to grant third-party developers direct access to the core capabilities of its consumer application. The newly released features include web search, image search, deep-thinking search mode, file parsing, URL reading, safety checks, and voice processing.",
+    "At the core of this API expansion is deepseek-flash (identified as V4.1-Flash-1017), which serves requests across Messages, Responses, and Chat Completions endpoints. In addition to integrated model endpoints, DeepSeek has unbundled specific tools into standalone APIs covering Search, Fetch, Optical Character Recognition (OCR), Automatic Speech Recognition (ASR), and Text-to-Speech (TTS).",
+    "DeepSeek requires public-facing applications built on the API to incorporate mandatory safety checks. To assist integration, the lab has also released an open-source frontend demo providing a working reference architecture for developers assembling multimodal assistant workflows."
+   ],
+   "why": "Offers options to integrate unbundled multimodal tools like OCR and ASR into vision and language applications via API.",
+   "source": "News search",
+   "url": "https://cryptobriefing.com/deepseek-opens-app-features-developers-api/",
+   "published": "2026-11-13T12:37:00+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C25",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI in science and healthcare",
+   "headline": "A step toward defining the Standard Model on a lattice",
+   "dek": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+   "detail": [
+    "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+   "published": "2026-11-15T22:00:01+00:00",
+   "full_article": false,
+   "n": 4
+  },
+  {
+   "id": "C68",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+   "dek": "Speculative decoding accelerates generation by letting a lightweight drafter propose tokens for parallel verification by a target model. Diffusion drafters such as DFlash propose an entire token block in a single forward",
+   "detail": [
+    "Speculative decoding accelerates generation by letting a lightweight drafter propose tokens for parallel verification by a target model. Diffusion drafters such as DFlash propose an entire token block in a single forward pass, but mainly focus on text-only tasks, leaving multimodal drafting underexplored. To study this setting, we first introduce a metric of token-level visual dependence based on the KL divergence between next-token distributions with and without visual input. We find that accep"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.18482",
+   "published": "2026-11-12T19:00:00.000Z",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C71",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "Unbundling Multimodal Vision Encoding",
+   "dek": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it ",
+   "detail": [
+    "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior from upstream pretraining, dedicated vision capacity, and pre-fusion placement of that capacity (i.e., before the multimodal backbone). Because published models also differ in data, architecture, and c"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.17334",
+   "published": "2026-11-11T19:00:00.000Z",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C43",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "Chips and hardware",
+   "headline": "Google turned to AMD Epyc, not its own Axion chips, to secure its first confidential TPU",
+   "dek": "Google builds its first confidential TPU on AMD Epyc rather than its own Axion chip.",
+   "detail": [
+    "Google builds its first confidential TPU on AMD Epyc rather than its own Axion chip."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-us/news/other/google-turned-to-amd-epyc-not-its-own-axion-chips-to-secure-its-first-confidential-tpu/ar-AA2hrNw0",
+   "published": "2026-11-14T16:25:00+00:00",
+   "full_article": false,
+   "n": 7
+  },
+  {
+   "id": "C38",
+   "section": "world",
+   "company": "Intel",
+   "category": "MLOps and infrastructure",
+   "headline": "Intel, RadixArk Optimize SGLang for AI Inference on Intel Platforms",
+   "dek": "Collaboration targets open-source inference performance across Intel CPUs, GPUs and accelerators, including enterprise deployments.",
+   "detail": [
+    "Collaboration targets open-source inference performance across Intel CPUs, GPUs and accelerators, including enterprise deployments."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.eetasia.com/intel-radixark-optimize-sglang-for-ai-inference-on-intel-platforms/",
+   "published": "2026-11-15T16:00:00+00:00",
+   "full_article": false,
+   "n": 8
+  },
+  {
+   "id": "C50",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "Cloud and GPU access",
+   "headline": "OpenFold3 biomolecular structure prediction model launches on Amazon SageMaker JumpStart",
+   "dek": "The open-source OpenFold3 model is now available on AWS as an asynchronous endpoint, allowing structure predictions for proteins, DNA, RNA, and ligands.",
+   "detail": [
+    "The OpenFold Consortium and Columbia University's AlQuraishi Lab have made OpenFold3-preview available on Amazon SageMaker JumpStart. Released under an Apache 2.0 open-source license, OpenFold3 is an all-atom biomolecular structure prediction model capable of folding multi-chain protein complexes, protein-nucleic acid assemblies, and protein-ligand structures simultaneously.",
+    "Because complex structure predictions take several minutes to run, OpenFold3 deploys via SageMaker Asynchronous Inference endpoints rather than 60-second real-time API calls. Users upload sequence requests to Amazon S3, where an isolated endpoint queues execution, handles GPU warmup, and writes completed 3D output structures back to S3.",
+    "Deployment requires an AWS account with SageMaker execution roles and quota for ml.g6.4xlarge or ml.g6.12xlarge GPU instances. Asynchronous endpoints can be configured with CloudWatch alarms to scale instance count to zero when idle, minimising server costs between prediction jobs."
+   ],
+   "why": "Demonstrates how complex deep learning inference pipelines with long execution times are managed asynchronously on cloud GPU infrastructure.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+   "published": "2026-11-13T21:53:40+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C52",
+   "section": "world",
+   "company": "",
+   "category": "AI agents and coding tools",
+   "headline": "AI agent startup LangChain hits $3B valuation",
+   "dek": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+   "detail": [
+    "Agent management startup LangChain has raised a $300 million Series C at a $3 billion valuation led by CapitalG, with participation from investors, including Singapore’s GIC, DFJ Growth, IVP, and Sapphire Ventures, the company announced on Friday.",
+    "That’s more than double its $1.25 billion valuation when it raised $125 million about a year ago, led by IVP.",
+    "LangChain began in 2022 as a popular open source project that handled the kinds of tasks that early-stage LLMs found difficult, like searching the web, calling APIs, and interacting with databases. As the frontier AI labs delivered harnesses that now competently do those tasks, LangChain turned its focus toward managing AI agents. It has apparently found its stride in this highly competitive area with a simple message: letting businesses own their own intelligence.",
+    "With its open source roots, the startup says its agent creation and management software, LangSmith, is not trying to lock users into any particular model, cloud, or ecosystem, unlike the major clouds or frontier AI labs. It also promises that LangSmith will contain agent behavior and is easy to use."
+   ],
+   "why": "",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+   "published": "2026-11-13T19:37:57+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C22",
+   "section": "india",
+   "company": "",
+   "category": "India AI and startups",
+   "headline": "Indian startup Bharat Semi raises $24 million for AI-enabled image sensors",
+   "dek": "New Delhi-based chip startup Bharat Semi has secured $24 million in seed funding to design edge sensors that combine image capture and AI compute.",
+   "detail": [
+    "Indian fabless semiconductor startup Bharat Semi has raised $24 million in an all-equity seed round led by Info Edge Group, South Park Commons, and Indus Bridge Ventures. Additional investors include Valour Capital, Micromax, and Gaingels.",
+    "Founded in late 2021, the New Delhi startup is developing programmable image sensors that integrate visual data capture, processing, and AI execution onto a single chip. By removing the need to route visual data to separate image signal processors and system-on-chip components, the design aims to reduce overall system costs by at least 70%.",
+    "Bharat Semi has secured initial design wins with U.S. defense contractor General Atomics and Indian manufacturer Kaynes Semicon. First-generation sensor prototypes are currently under development, with second-generation AI-enabled prototypes planned for mid-2027 and commercial production targeted for late 2027."
+   ],
+   "why": "Highlights domestic hardware developments in combining computer vision processing directly onto image sensor silicon.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+   "published": "2026-11-15T23:30:00+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C8",
+   "section": "india",
+   "company": "",
+   "category": "India AI and startups",
+   "headline": "AI Startups To Watch: 5 Startups That Caught Our Eye In November",
+   "dek": "AI in India has moved past the phase of picking a single large language model. For two years, the loudest…",
+   "detail": [
+    "The question in Indian boardrooms has shifted from which model to adopt to how much it will cost to run, with inference spending now shaping everything from enterprise budgets to the startups built beneath them.",
+    "This month's cohort spans inference routing, semantic video data, autonomous commerce agents, AI-native CRM and qualified pipeline generation, each staking a claim somewhere on the path from model to revenue.",
+    "As Indian AI funding keeps climbing and agentic systems are held to harder ROI tests, these five startups show where the value in the stack is being captured next.",
+    "AI in India has moved past the phase of picking a single large language model. For two years, the loudest question in boardrooms was which model an enterprise would standardise on. While that question has largely settled, the challenge has shifted to running these models efficiently, reliably and at scale."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/startups/ai-startups-to-watch-5-startups-that-caught-our-eye-in-november/",
+   "published": "2026-11-16T06:18:22+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C3",
+   "section": "india",
+   "company": "",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Oister Global Launches ₹600 Cr Growth-Stage Focused Deeptech Fund",
+   "dek": "Private markets asset manager Oister Global has launched a growth-stage deeptech fund with a target corpus of ₹600 Cr. The…",
+   "detail": [
+    "Oister Global has launched a growth-stage deeptech fund with a target corpus of ₹400 Cr and a ₹200 Cr greenshoe option, taking its potential size to ₹600 Cr",
+    "The fund will invest in 8-10 mature, revenue-generating Indian deeptech companies across sectors such as space, defence, semiconductors, quantum technology and advanced mobility",
+    "The fund will back startups that have moved beyond early-stage technology development, with capital earmarked for production expansion, order execution and commercialisation",
+    "Private markets asset manager Oister Global has launched a growth-stage deeptech fund with a target corpus of ₹600 Cr. The firm will target backing Indian startups developing technologies across strategic sectors."
+   ],
+   "why": "",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/oister-global-launches-%e2%82%b9600-cr-growth-stage-focused-deeptech-fund/",
+   "published": "2026-11-16T08:25:47+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "llama.cpp reaches version 1.0.0 with formal semantic versioning guarantees",
+   "update": "llama.cpp formally releases version 1.0.0 detailing dynamic ggml backend loading and strict major-version breaking change policies.",
+   "since": "2026-11-15",
+   "earlier": "llama.cpp reaches version 1.0.0 with formal API stability guarantees",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "story": "C60"
+  },
+  {
+   "headline": "DeepSeek opens consumer app features and standalone utility APIs to developers",
+   "update": "DeepSeek details standalone API endpoints for OCR, ASR, and TTS alongside an open-source reference frontend.",
+   "since": "2026-11-15",
+   "earlier": "DeepSeek launches V4.1-Flash model with integrated tool APIs and dual billing",
+   "source": "News search",
+   "url": "https://cryptobriefing.com/deepseek-opens-app-features-developers-api/",
+   "story": "C64"
+  },
+  {
+   "headline": "OpenFold3 biomolecular structure prediction model launches on Amazon SageMaker JumpStart",
+   "update": "AWS provides deployment details for OpenFold3 on SageMaker Asynchronous Inference endpoints using ml.g6 GPU instances.",
+   "since": "2026-11-15",
+   "earlier": "OpenFold3 structure prediction model arrives on Amazon SageMaker JumpStart",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+   "story": "C50"
+  }
+ ],
+ "question": "As frontier architectures combine linear attention layers with sparse MoE routing, how will local fine-tuning strategies adapt to hyper-parameterised N-gram embeddings?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 10 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "date": "2026-11-17",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "Alibaba Launches Qwen4-Max Flagship Model With Closed Weights",
+  "dek": "Alibaba has released Qwen4-Max, a 2.4-trillion parameter mixture-of-experts model featuring a one-million token context window, but has kept its weights closed."
+ },
+ "brief": [
+  "Alibaba launched Qwen4-Max with 2.4 trillion parameters and a 1M token context window, but kept its model weights closed.",
+  "Nvidia introduced the DGX Spark Developer Kit, bringing a four-node GB10 Grace Blackwell cluster to desktop workspaces.",
+  "Sarvam AI opened Token Factory to host native and global open-weight models on local Indian GPU infrastructure via a single API."
+ ],
+ "stories": [
+  {
+   "id": "C78",
+   "section": "world",
+   "company": "Alibaba Qwen",
+   "category": "Model launches",
+   "headline": "Alibaba Launches Qwen4-Max Flagship Model With Closed Weights",
+   "dek": "Alibaba has released Qwen4-Max, a 2.4-trillion parameter mixture-of-experts model featuring a one-million token context window, but has kept its weights closed.",
+   "detail": [
+    "Alibaba announced Qwen4-Max as a new flagship AI model designed as an AI teammate for work, creativity, and discovery. The model uses a mixture-of-experts architecture, comprising 2.4 trillion parameters, and supports text, image, and video inputs with up to one million tokens in a single prompt.",
+    "In benchmark disclosures, Alibaba reported that Qwen4-Max scored near the top of coding tests, including 75.7 on DeepSWE v1.1. However, independent observations noted mixed results, such as 48.5 on Terminal-Bench 4.0. The model improves token efficiency, reducing average task costs on internal tests from $4.43 to $1.67 compared to the earlier Qwen3.8-Max.",
+    "Unlike preceding Qwen versions, Qwen4-Max has closed weights and cannot be downloaded by users, though smaller Qwen4 models will eventually receive open weights. Developers can access the flagship model via the QwenCloud API at $1.50 per million input tokens and $4.50 per million output tokens, as well as through Alibaba's Qwen Studio, QwenWork, and Qoder applications."
+   ],
+   "why": "As a prominent large model family shifts away from open weights for its flagship tier, it signals changing commercial strategies for frontier model releases.",
+   "source": "News search",
+   "url": "https://thenextweb.com/news/alibaba-launches-qwen4-max-flagship-ai-model-without-open-weights",
+   "published": "2026-11-16T00:49:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C28",
+   "section": "world",
+   "company": "Nvidia",
+   "category": "Chips and hardware",
+   "headline": "Nvidia Introduces DGX Spark Developer Kit for Desktop Supercomputing",
+   "dek": "The new four-node DGX Spark cluster puts the GB10 Grace Blackwell Superchip on researchers' desks with 512GB of combined memory.",
+   "detail": [
+    "Nvidia unveiled the DGX Spark HPC Developer Kit at the SC26 conference in Chicago, offering researchers a desktop-scale cluster. The system features a four-node setup of DGX Spark nodes connected directly in a ring via Nvidia ConnectX-7 networking without requiring an external network switch.",
+    "The hardware provides 512GB of combined memory and 20TB of NVMe storage, using NVFP4 quantization to run local models up to 700 billion parameters like DeepSeek V4.1. This setup aims to eliminate multi-day queue times on shared server clusters for academic and industrial research teams.",
+    "An upcoming Nvidia HPC SDK installation playbook will provide GPU-accelerated C, C++ and Fortran compilers alongside message passing interface tools. Early deployments include labs at UC Berkeley running simulations and fine-tuning models like Nemotron 3 Super without relying on data center infrastructure."
+   ],
+   "why": "This desktop-scale multi-node hardware configuration gives researchers local compute capabilities to test and run large models outside shared cluster queues.",
+   "source": "Nvidia",
+   "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+   "published": "2026-11-16T23:00:05+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C76",
+   "section": "world",
+   "company": "Cohere",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Cohere acquires AI code reviewer Cubic and bug finder AISLE; air-gapped results unpublished",
+   "dek": "Cohere acquires cubic and AISLE, adding an AI code review startup and an AI vulnerability finder to its sovereign AI platform. OpenSSL's CTO confirmed AISLE disclosed all 12 flaws in its January 2026 ...",
+   "detail": [
+    "Cohere acquires cubic and AISLE, adding an AI code review startup and an AI vulnerability finder to its sovereign AI platform. OpenSSL's CTO confirmed AISLE disclosed all 12 flaws in its January 2026 ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-us/technology/cybersecurity/cohere-acquires-ai-code-reviewer-cubic-and-bug-finder-aisle-air-gapped-results-unpublished/ar-AA2hxlYe",
+   "published": "2026-11-16T03:03:12+00:00",
+   "full_article": false,
+   "n": 3
+  },
+  {
+   "id": "C30",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "AI agents and coding tools",
+   "headline": "Build memory-aware AI agents with Agentic Retrieve on Amazon Bedrock Managed Knowledge Base",
+   "dek": "Amazon Bedrock Managed Knowledge Base and Amazon Bedrock AgentCore memory now store conversations, extract facts, and bring long-term memory into a single AgenticRetrieveStream call. This post shows how to build a memory",
+   "detail": [
+    "Users of a knowledge-grounded application expect it to remember them, not only to search well. They ask follow-up questions that make sense only in the context of the previous turn. They expect an answer about a policy or a procedure to reflect what they told the application about themselves last month. And they still expect every answer to be grounded in the documents they are allowed to read, with citations. Whether the application is a customer support assistant, a document chat inside a SaaS product, or an internal assistant over company policies, the expectation is the same.",
+    "Meeting that expectation is hard, because the context that would sharpen a search lives outside the knowledge base. A user’s location, role, or product tier was often mentioned in an unrelated conversation weeks ago. To use it, the application has to store every conversation, extract durable facts from it, decide which facts matter for the current question, and inject them into the request. When many users share the application, every one of those steps also has to be isolated per user, and so does every document.",
+    "Amazon Bedrock Managed Knowledge Base and Amazon Bedrock AgentCore memory, a capability of Amazon Bedrock AgentCore, now take over these steps: storing each conversation, extracting facts from it, and bringing the relevant facts into the search. You turn this on by adding a memoryConfiguration to the AgenticRetrieveStream request, which makes AgentCore memory a retrieval source alongside your knowledge base. Within the same call, the service restores the conversation, and the planner decides on its own when a fact about the user would help. It retrieves that fact from long-term memory and uses it to compose the sub-queries it sends to the knowledge base. After generating the answer, the service saves the turn back to memory. The same request carries a userContext, so the knowledge base returns only the documents that the user’s access control lists (ACLs) allow. The integration is opt-in and backward compatible. Your application keeps only what is genuinely yours: authenticating the user and passing who they are.",
+    "This post shows how to build such an assistant for many users who share one knowledge base and one memory resource. Each user sees only the documents they may read, and each user’s memory stays private. The running example is an internal employee assistant for AnyCompany, a fictional company. Employees sign in with Amazon Cognito and ask questions over HR policies, IT guides, engineering runbooks, and sales plans. We show how to read the user’s identity from the Cognito ID token, how to pass it to AgenticRetrieveStream for document ACLs and for memory, how to design memory namespaces for many users, and how to read the trace to see when the planner used memory. Finally, we make AWS Identity and Access Management (IAM) enforce per-user memory isolation even when application code gets it wrong. If you deployed the application from Build multi-tenant agentic chat applications on enterprise data with Amazon Bedrock Managed Knowledge Base, this post replaces its “persist conversation history yourself” step."
+   ],
+   "why": "",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/",
+   "published": "2026-11-16T22:43:30+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C72",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "NLP and language models",
+   "headline": "Anthropic says Claude Mythos slashed software work to onboard AMD GPUs from up to 12 months to around three days —writing almost 100% of kernels autonomously chips away at ...",
+   "dek": "Anthropic says Claude Mythos Preview brought up prompt processing for one model on AMD Instinct MI355X GPUs in about three days.",
+   "detail": [
+    "Get full access to premium articles, exclusive features and a growing list of member rewards.",
+    "Anthropic told IPO investors that its Claude Mythos Preview model did the software work required to get its AI running on AMD’s GPUs in about three days, with “basically no human intervention,” a job it says used to take six to 12 months. The three days cover prompt processing for one Anthropic model on AMD MI355X GPUs “at a useful level of performance,” with Mythos porting or writing “almost 100% of the kernels.” That kind of low-level code, which ties an AI model to one company’s chips, has long been part of Nvidia’s CUDA moat, and an AI that can write it in days would suggest that moat is eroding.",
+    "Tom Brown, Anthropic’s co-founder and chief compute officer, made the time comparison, noting to investors that the original meant using a team of “dozens of engineers.” The company already runs its models on multiple kinds of chips — on GPUs from Nvidia and AMD, Google’s TPUs, and AWS Trainium — and its fleet is managed as “one fungible pool of compute.” Brown called the early multi-chip decision “an unconventional bet.” It may have been a wise one, given that Google’s TPUs can now natively run AI models built in PyTorch, and Meta uses them in production.",
+    "Anthropic's claim that the job used to take six to 12 months comes from past work, from its “historical experience bringing up new accelerators using traditional engineering approaches,” where tailoring the code to each hardware platform was a challenge. Removing that onboarding barrier could reduce things to a purchase decision, and Anthropic started working with AMD GPUs for the first time this year, with an agreement for up to 2 gigawatts now in place."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat",
+   "published": "2026-11-16T07:00:00+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C85",
+   "section": "world",
+   "company": "",
+   "category": "Open-source models",
+   "headline": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+   "dek": "We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep resea",
+   "detail": [
+    "We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are competitive with strong open models of their size on agentic and coding benchmarks. On the modeling side, to strengthen reasoning, we introduce Mixture-of-Value Attention (MoVA), applying MoE to attention value projection"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.21003",
+   "published": "2026-11-15T19:00:00.000Z",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C37",
+   "section": "world",
+   "company": "Perplexity",
+   "category": "AI agents and coding tools",
+   "headline": "Perplexity Teammates bring autonomous AI agents to the Mac app",
+   "dek": "Perplexity brings AI Teammates to Mac, letting Max subscribers delegate ongoing tasks to autonomous agents that work in the background.The Latest Tech News, Delivered to Your Inbox ...",
+   "detail": [
+    "Perplexity brings AI Teammates to Mac, letting Max subscribers delegate ongoing tasks to autonomous agents that work in the background.The Latest Tech News, Delivered to Your Inbox ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-us/news/other/perplexity-teammates-bring-autonomous-ai-agents-to-the-mac-app/ar-AA2hAwjs",
+   "published": "2026-11-16T21:16:43+00:00",
+   "full_article": false,
+   "n": 7
+  },
+  {
+   "id": "C62",
+   "section": "world",
+   "company": "Apple",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Apple is testing daily usage limits for more complex Siri AI interactions",
+   "dek": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors.",
+   "detail": [
+    "Frequent users of some Siri AI and Apple Intelligence features will require an iCloud Plus subscription to avoid limits.﻿",
+    "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors.",
+    "Basic Siri commands and requests will remain free and unlimited, but more advanced features that rely on cloud-based processing like generating, cleaning up, or extending images in Photos will be subjected to the daily limits. There are four categories of limited usage, MacRumors reports, including using Siri AI for “multi-step, personal context requests,” image generation and editing tools, automations in Shortcuts that “rely on Apple Foundation Cloud and Cloud Pro Models,” and third-party apps that use those same cloud models.",
+    "Apple hasn’t specified exactly how many times those features and tools can be used each day before limits are reached, but they’ll vary based on the task. The company reportedly plans to provide notifications when users are approaching their limit and have finally reached it."
+   ],
+   "why": "",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+   "published": "2026-11-16T14:24:40-05:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C22",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI security and privacy",
+   "headline": "Strengthening NATO and allied cyber defenses with AI",
+   "dek": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+   "detail": [
+    "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+   "published": "2026-11-17T00:00:00+00:00",
+   "full_article": false,
+   "n": 9
+  },
+  {
+   "id": "C95",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+   "dek": "World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs.",
+   "detail": [
+    "World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs. But each caption or question names only a few attributes of a clip, so the model learns to retrieve those attributes rather than to read the clip, and the dynamics the encoder carries go unused: on the same items, a linear probe reads speed from frozen V-JEPA features at 87% whi"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.17831",
+   "published": "2026-11-12T19:00:00.000Z",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C1",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "Cloud and GPU access",
+   "headline": "Sarvam AI Opens Token Factory for Unified API Inference in India",
+   "dek": "Sarvam AI has launched Token Factory, providing developers in India with single-API access to Sarvam 105B and global open-weight models on local GPU infrastructure.",
+   "detail": [
+    "Sarvam AI has rolled out Token Factory to enterprises and developers, enabling access to its native Sarvam 105B model alongside global open-weight models such as DeepSeek V4.1 Flash, Google Gemma 4 31B, GLM 5.3, and Kimi K3.1 Pro. The platform operates on local GPU clusters within India.",
+    "The service utilizes an OpenAI-compatible API and charges based on token consumption, listing Sarvam 105B at ₹15 per million input tokens and ₹60 per million output tokens. A three-tier caching mechanism enables rapid response times, with the company noting high cache hit rates for frequent prompt inputs.",
+    "The offering targets organizations requiring strict data residency compliance, such as financial institutions, by keeping prompt processing on local infrastructure. Sarvam competes in the domestic inference market alongside Krutrim, OpenAI, and Anthropic."
+   ],
+   "why": "Local API inference options running on Indian servers provide direct domestic alternatives for deploying open and native models with data residency compliance.",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/sarvam-ai-opens-token-factory-to-run-global-ai-models-on-indian-servers/",
+   "published": "2026-11-17T09:50:00+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C2",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "AI in education",
+   "headline": "Accenture, Google Cloud to Expand AI Education Across 1,000 Indian Institutions",
+   "dek": "The collaboration will introduce AI Labs, industry-aligned learning programmes, and certifications covering generative AI, agentic AI, and AI engineering.",
+   "detail": [
+    "Accenture LearnVantage and Google Cloud have partnered to expand AI education across India, targeting more than 1,000 public and private schools and colleges with hands-on learning programmes and industry-aligned certifications.",
+    "The initiative will combine Accenture LearnVantage's learning programmes with Google Cloud's unified AI stack to establish AI Labs in schools and Centres of Excellence in higher education institutions. The programmes will cover foundational AI literacy, applied generative AI, agentic AI, and AI engineering, with the aim of preparing students for emerging technology roles.",
+    "\"The future of learning will be shaped by how we reimagine learning pathways and talent creation for careers as they continue to evolve,\" Anurag Bansal, Managing Director, Accenture LearnVantage, Asia Oceania and Middle East, said in a statement.",
+    "The partnership will introduce structured learning pathways for students and educators, supported by Google's AI tools and personalised coaching through Gemini. The platform will also offer guided learning pathways, multilingual voice capabilities, and AI-driven content to make learning more accessible."
+   ],
+   "why": "",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/accenture-and-google-cloud-partner-to-expand-ai-education-across-1000-indian-institutions",
+   "published": "2026-11-17T08:46:30+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C3",
+   "section": "india",
+   "company": "OpenAI",
+   "category": "Jobs, hiring and internships",
+   "headline": "Pragya Misra to Lead OpenAI Business Development in India and South Asia",
+   "dek": "OpenAI's former Head of Strategy and Global Affairs in India, Pragya Misra, is taking on a new leadership role focused on commercial expansion.",
+   "detail": [
+    "Pragya Misra has been appointed to head business development for OpenAI across India and South Asia. Her new focus centers on forming partnerships to drive enterprise AI adoption and expanding access to OpenAI technology in the region.",
+    "Misra joined OpenAI in April 2024 as its first employee in the country, initially focusing on policy, government relations, and foundational relationship building. She subsequently served as Head of Strategy and Global Affairs for India.",
+    "Highlighting India as ChatGPT's largest country market, OpenAI is initiating this leadership shift to deepen commercial engagement and scale local infrastructure support as adoption grows."
+   ],
+   "why": "Regional leadership shifts by major frontier labs highlight the expanding commercial and enterprise footprint of AI services in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/openai-names-pragya-misra-to-head-india-and-south-asia-business-expansion",
+   "published": "2026-11-17T08:32:17+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Alibaba Launches Qwen4-Max Flagship Model With Closed Weights",
+   "update": "Alibaba officially launched Qwen4-Max as a closed-weight mixture-of-experts model with a 1M context window.",
+   "since": "2026-11-16",
+   "earlier": "Alibaba releases Qwen4-Max with sparse mixture-of-experts architecture and 1M context",
+   "source": "News search",
+   "url": "https://thenextweb.com/news/alibaba-launches-qwen4-max-flagship-ai-model-without-open-weights",
+   "story": "C78"
+  }
+ ],
+ "question": "How do closed-weight flagship releases like Qwen4-Max alter the workflow strategies of developers who rely on local model customisation?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 10 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

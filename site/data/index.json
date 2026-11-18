@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-18",
+   "headline": "OpenAI introduces GPT-6.2 Astra and Sol models",
+   "publishedAt": "2026-11-18T10:29:08.645282+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-18T10:29:09.703800+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-17",
    "headline": "Alibaba Launches Qwen4-Max Flagship Model With Closed Weights",
    "publishedAt": "2026-11-17T10:59:29.510543+00:00",

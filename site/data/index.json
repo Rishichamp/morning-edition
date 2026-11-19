@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-19",
+   "headline": "Alibaba Cloud Launches Qwen4-Max Model With 60% Lower Task Costs",
+   "publishedAt": "2026-11-19T10:47:13.529575+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-19T10:47:14.455538+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-18",
    "headline": "OpenAI introduces GPT-6.2 Astra and Sol models",
    "publishedAt": "2026-11-18T10:29:08.645282+00:00",

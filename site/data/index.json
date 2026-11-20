@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-20",
+   "headline": "Google Introduces Tool Retrieval in the Gemini API",
+   "publishedAt": "2026-11-20T10:17:55.346508+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-20T10:17:56.508303+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-19",
    "headline": "Alibaba Cloud Launches Qwen4-Max Model With 60% Lower Task Costs",
    "publishedAt": "2026-11-19T10:47:13.529575+00:00",

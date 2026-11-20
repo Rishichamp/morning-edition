@@ -1,0 +1,297 @@
+{
+ "date": "2026-11-20",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "APIs, pricing and developer updates",
+  "headline": "Google Introduces Tool Retrieval in the Gemini API",
+  "dek": "Gemini API now supports on-demand tool loading in preview, letting agents manage large tool libraries efficiently without inflating input token counts."
+ },
+ "brief": [
+  "Google introduced Tool Retrieval in the Gemini API to let agents load parameter schemas on demand and reduce input tokens.",
+  "Amazon SageMaker AI added automated monitoring to detect inference endpoint latency drift and configuration gaps.",
+  "Anthropic completed a record-breaking IPO at $83 per share, raising over $100 billion in total capital and commitments."
+ ],
+ "stories": [
+  {
+   "id": "C41",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Google Introduces Tool Retrieval in the Gemini API",
+   "dek": "Gemini API now supports on-demand tool loading in preview, letting agents manage large tool libraries efficiently without inflating input token counts.",
+   "detail": [
+    "Google is launching Tool Retrieval in the Gemini API, currently in preview within the Interactions API. When agents connect to hundreds of tools, sending every full parameter schema on every request increases token counts, adds latency, and lowers tool-selection accuracy. This new feature keeps the full tool library on standby while loading parameter schemas only when required by the current task.",
+    "To enable Tool Retrieval, developers add a tool_search tool to requests and set defer_loading: true on tools they want to hold back. The model sees names and descriptions of deferred tools to know what is available, and when it needs a tool, it requests it by name. The API loads the schema and the model calls the function within the same request, with all steps logged for easy debugging.",
+    "The feature runs on server-side searches for Gemini 3.6 and later models, including all Gemini 4 models, with no separate index required. It works alongside prefix caching and remote Model Context Protocol servers, while token billing follows standard model rates."
+   ],
+   "why": "This is a useful design pattern for building scalable, multi-tool AI agents that operate efficiently under strict token and latency budgets.",
+   "source": "Google AI",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+   "published": "2026-11-19T18:00:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C88",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Research papers",
+   "headline": "Research acceleration: The jagged frontier",
+   "dek": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+   "detail": [
+    "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement."
+   ],
+   "why": "",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+   "published": "2026-11-18T08:00:00+00:00",
+   "full_article": false,
+   "n": 2
+  },
+  {
+   "id": "C76",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+   "dek": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilingual omni-modal foundation mode",
+   "detail": [
+    "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual perception and reasoning, WeMM-Video unifies text, image, audio, and video processing within a hybrid-thinking paradigm, seamlessly supporting both a non-thinking instruct mode for fast, direct response"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26409",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C27",
+   "section": "world",
+   "company": "",
+   "category": "MLOps and infrastructure",
+   "headline": "Amazon SageMaker AI Monitors Inference Endpoints for Drift and Inefficiencies",
+   "dek": "SageMaker AI now automatically monitors generative AI endpoints for latency drift and configuration gaps, offering agentic benchmarking in Studio.",
+   "detail": [
+    "Amazon SageMaker AI has introduced automated monitoring for generative AI inference endpoints to detect latency drift, idle GPUs, and missed optimization opportunities. Monitoring is enabled by default for endpoints using vLLM serving containers and GPU instances without requiring setup, analyzing operational signals like latency and GPU utilization without reading user requests.",
+    "The system surfaces findings through AWS Health, highlighting metrics such as week-over-week increases in time to first token, missing security patches, or unused performance features like speculative decoding. Notifications provide a direct link to an agentic experience in Amazon SageMaker Studio prefilled with endpoint traffic data.",
+    "From SageMaker Studio, engineering teams can run inference recommendations to benchmark current configurations against alternatives on separate compute before applying any changes. Monitoring itself carries no additional GPU charges, and production endpoints remain unaltered until actions are explicitly applied."
+   ],
+   "why": "Understanding automated inference optimization tools helps you keep production serving costs down and latency low as models scale.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/",
+   "published": "2026-11-19T21:28:18+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C18",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "AI agents and coding tools",
+   "headline": "Kimi Code CLI Adds Native Amazon Bedrock Provider Support",
+   "dek": "Moonshot AI updates Kimi Code CLI to version 2.7.0, introducing native Bedrock support that uses standard AWS credentials instead of custom keys.",
+   "detail": [
+    "Moonshot AI has released version 2.7.0 of the Kimi Code CLI, adding a native Bedrock provider to simplify how developers connect the coding agent to models on Amazon Bedrock. Previously, developers had to manage separate API keys and configure custom connection providers, but the new version integrates directly with standard AWS credential chains.",
+    "The native provider resolves temporary credentials using the standard AWS Command Line Interface chain, supporting named profiles and single sign-on workflows. It uses an internal token generator to handle short-lived bearer tokens and constructs regional endpoints for models such as Kimi K3.1 Pro Highspeed.",
+    "Authentication, regional routing, streaming, and client-side tool calling operate within the security boundaries of the configured AWS environment. Teams can scope permissions using IAM policies and global inference profiles to manage deployment access securely."
+   ],
+   "why": "Native CLI integrations using standard AWS credential chains streamline how you connect and test frontier coding agents within enterprise cloud environments.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+   "published": "2026-11-20T00:33:30+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C66",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Chips and hardware",
+   "headline": "OpenAI and AMD Optimize GPU Architecture Using AI Code Generation",
+   "dek": "OpenAI models optimized AMD GPU architecture by rewriting SystemVerilog RTL code, achieving a 14% PPA improvement and shortening design cycles.",
+   "detail": [
+    "OpenAI and AMD utilized AI models to optimize AMD's flagship GPU architecture, achieving up to 14% improvements in power, performance, and area over heavily optimized baselines. The collaborative effort shortened the chip design process from a year to under five months.",
+    "The project involved OpenAI models rewriting SystemVerilog Register Transfer Level code, which dictates how circuits perform computations and move data. The models explored alternative pipeline arrangements and circuit implementations while utilizing Synopsys electronic design automation tools to verify functionality and assess performance impacts.",
+    "AMD independently verified the results, noting single-digit percentage gains across key blocks of an upcoming flagship CPU and incorporating model-generated changes into recently taped-out designs. This hardware optimization builds upon a broader multi-year collaboration between the two companies."
+   ],
+   "why": "This demonstrates how advanced deep learning models are actively transforming semiconductor engineering and hardware design workflows at the silicon frontier.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/openai-and-amd-achieve-a-year-of-chip-design-progress-in-under-five-months",
+   "published": "2026-11-19T05:51:23+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C81",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+   "dek": "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. ",
+   "detail": [
+    "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than teaching the brain to"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26414",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C26",
+   "section": "world",
+   "company": "TSMC",
+   "category": "Policy and regulation",
+   "headline": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+   "dek": "By Che Pan and Wen-Yee Lee Nov 19 (Reuters) - Taiwan's TSMC is tightening restrictions on Chinese chip designers, suspending some previously permitted advanced manufacturing orders and generally ...",
+   "detail": [
+    "By Che Pan and Wen-Yee Lee Nov 19 (Reuters) - Taiwan's TSMC is tightening restrictions on Chinese chip designers, suspending some previously permitted advanced manufacturing orders and generally ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-us/news/other/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say/ar-AA2hPjNR",
+   "published": "2026-11-19T21:40:43+00:00",
+   "full_article": false,
+   "n": 8
+  },
+  {
+   "id": "C94",
+   "section": "world",
+   "company": "Microsoft",
+   "category": "AI agents and coding tools",
+   "headline": "Maintainers don’t need more AI bug reports. They need fixes.",
+   "dek": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more th",
+   "detail": [
+    "AI has made finding potential vulnerabilities fast and cheap. Fixing them still takes human judgment, and in open source, that work falls to maintainers. Many are already flooded with AI-generated security findings, including duplicates and reports that aren’t vulnerabilities at all. Another raw scan doesn’t help them. Anyone pointing a new model at a project should ask its maintainers first and come with fixes, not just findings.",
+    "Maintainers are under intense pressure from this flood of reports. As Christian Grobmeier, a maintainer of Log4j, has put it, the AI defending open source has to be better than the AI attacking it.",
+    "AI shouldn’t add to maintainers’ workload. So, with maintainers, GitHub and Microsoft ran a pilot together: could AI help maintainers ship fixes instead of handing them more findings?",
+    "GitHub and Microsoft are using Codename MDASH, Microsoft’s multi-model agentic scanning harness, to find and fix security vulnerabilities in widely used open source software, strengthening the foundation that much of the world’s code is built on."
+   ],
+   "why": "",
+   "source": "GitHub",
+   "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+   "published": "2026-11-17T18:29:29+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C16",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Anthropic Raises $81.3 Billion in Record-Breaking IPO",
+   "dek": "Anthropic completed its public offering at $83 per share, raising over $100 billion in total capital and securing massive stakes from major cloud providers.",
+   "detail": [
+    "Anthropic has completed its public offering on Thursday, raising a total of $81.3 billion at an upgraded price of $83 per share. The seven co-founders collectively sold approximately 3.4 million shares each, netting around $280 million individually before taxes and underwriting fees, though they have pledged to dedicate 80% of their equity to philanthropy.",
+    "In addition to Class A common stock, Anthropic sold $26 billion in non-voting Class N stock to major technology partners. Nvidia and Google each purchased $10 billion of these shares, with AMD, Broadcom, Micron, Microsoft, and TSMC acquiring the remainder.",
+    "Following equity conversions and share distributions, Google and Amazon together hold a combined 28% stake in the company. Despite raising immense capital, Anthropic disclosed extensive infrastructure commitments, estimating around $1.05 trillion to $1.08 trillion in future compute obligations."
+   ],
+   "why": "Tracking the financial scale and cloud partnerships of leading AI labs provides essential context on where frontier compute resources and industry investments are flowing.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+   "published": "2026-11-20T00:43:50+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C2",
+   "section": "india",
+   "company": "",
+   "category": "India AI and startups",
+   "headline": "Soket AI Secures $4 Million Funding and Launches EKA-1 Model",
+   "dek": "Soket AI raised $4 million from Bajaj Finserv and Pennant Technologies to launch EKA-1, a 26-billion-parameter sovereign foundation model supporting over 100 languages.",
+   "detail": [
+    "Soket AI has secured a $4 million investment round led by Bajaj Finserv’s applied research initiative, Finserv Intelligence, and investee firm Pennant Technologies. The capital will support the startup's indigenous AI solutions focused on data security, reliability, and technological sovereignty.",
+    "Alongside the funding announcement, Soket AI launched EKA-1 under Project EKA, its flagship sovereign initiative. EKA-1 is a 26-billion-parameter foundation model optimized for math, code, and reasoning capabilities while supporting over 100 languages, including regional tongues from India and the Global South.",
+    "Backed by the IndiaAI Mission, the startup aims to provide financial services and regulated institutions with efficient reasoning models that can be run securely on local infrastructure, allowing complete control over data governance and customer interactions."
+   ],
+   "why": "Sovereign foundation models and localized multilingual architectures highlight the rapid growth of domain-specific, secure AI development ecosystems in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/soket-ai-secures-usd-4-million-as-it-rolls-out-its-eka-1-model",
+   "published": "2026-11-20T08:04:27+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C91",
+   "section": "india",
+   "company": "AMD",
+   "category": "Cloud and GPU access",
+   "headline": "Neysa Deploys 8,192-GPU AMD Instinct MI350X Cluster in Mumbai",
+   "dek": "Neysa launched an 8,192-unit AMD Instinct MI350X GPU cluster in Mumbai through its Tytan platform to support large-scale training and inference workloads.",
+   "detail": [
+    "Neysa has deployed an 8,192-GPU cluster powered by AMD Instinct MI350X accelerators, AMD EPYC processors, and the ROCm software ecosystem in Mumbai. Brought online via its Tytan bare-metal infrastructure platform, the facility is designed to support large language model training, fine-tuning, and high-throughput inference workloads.",
+    "The infrastructure provides global and Indian enterprise customers with dedicated accelerator access, network architecture control, and deployment flexibility. Customers can choose between bare-metal configurations, Slurm clusters, or Kubernetes orchestration models.",
+    "The launch expands Neysa's silicon-agnostic cloud strategy as it serves rising domestic demand for high-performance AI compute. It follows other major regional infrastructure expansions, including an upcoming Noida facility partnership and broader financing initiatives aimed at scaling multi-thousand GPU deployments across India."
+   ],
+   "why": "Large-scale domestic GPU infrastructure deployments expand the availability of high-throughput compute resources for training and running models locally in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/neysa-deploys-amd-gpu-cluster-in-mumbai-for-ai-training-and-inference",
+   "published": "2026-11-18T06:19:49+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C90",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "India AI and startups",
+   "headline": "Sarvam AI's Token Factory Launch Sparks Sovereign AI Debate",
+   "dek": "Sarvam AI's Token Factory release reignited discussions around India's sovereign AI strategy due to its inclusion of several prominent Chinese open-weight models.",
+   "detail": [
+    "Sarvam AI has launched Token Factory, an inference platform providing developers access to eight models through a single OpenAI-compatible API hosted on GPU infrastructure in India. The catalog includes Sarvam's own 105B model alongside models from DeepSeek, Kimi, GLM, and Google, starting at competitive pricing tiers with zero-data-retention options.",
+    "The platform drew criticism from industry observers because six of the eight hosted models are developed by Chinese companies, raising questions about how a startup backed by the IndiaAI Mission aligns with national indigenous foundation model objectives. Supporters argued that inference hosting is a lucrative commercial business that keeps domestic data processing secure within Indian borders.",
+    "The debate highlights a broader tension in India's AI sector between building domestic foundation models from scratch and providing efficient infrastructure to access top global models. Competitors like JarvisLabs have also entered the inference market, testing benchmarks on speed, latency, and throughput to capture enterprise demand."
+   ],
+   "why": "The economics of inference hosting versus native model training present critical trade-offs for startups balancing government mandates with commercial viability.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-features/sarvams-token-factory-sparks-indias-sovereign-ai-debate-again",
+   "published": "2026-11-18T07:10:00+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "OpenAI and AMD Optimize GPU Architecture Using AI Code Generation",
+   "update": "New details reveal OpenAI models rewrote SystemVerilog RTL code to achieve a 14% PPA improvement on AMD GPUs, cutting the chip design cycle to under five months.",
+   "since": "2026-11-17",
+   "earlier": "Anthropic says Claude Mythos slashed software work to onboard AMD GPUs from up to 12 months to around three days —writing almost 100% of kernels autonomously chips away at ...",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/openai-and-amd-achieve-a-year-of-chip-design-progress-in-under-five-months",
+   "story": "C66"
+  },
+  {
+   "headline": "Sarvam AI's Token Factory Launch Sparks Sovereign AI Debate",
+   "update": "Sarvam AI's Token Factory launch has triggered fresh industry debates regarding India's sovereign AI definitions due to its hosting of multiple Chinese models.",
+   "since": "2026-11-17",
+   "earlier": "Sarvam AI Opens Token Factory for Unified API Inference in India",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-features/sarvams-token-factory-sparks-indias-sovereign-ai-debate-again",
+   "story": "C90"
+  },
+  {
+   "headline": "Neysa Deploys 8,192-GPU AMD Instinct MI350X Cluster in Mumbai",
+   "update": "Further reports detail Neysa's operational deployment of the 8,192-GPU AMD Instinct MI350X cluster in Mumbai via its Tytan bare-metal platform.",
+   "since": "2026-11-18",
+   "earlier": "Neysa deploys 8,192 AMD Instinct MI350X GPUs in Mumbai",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/neysa-deploys-amd-gpu-cluster-in-mumbai-for-ai-training-and-inference",
+   "story": "C91"
+  }
+ ],
+ "question": "When building multi-tool agents under strict token budgets, how can dynamic tool retrieval protocols be balanced against prefix caching efficiencies?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-21",
+   "headline": "OpenAI Models Assist AMD Flagship GPU Design",
+   "publishedAt": "2026-11-21T10:03:20.410497+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-21T10:03:21.640548+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-20",
    "headline": "Google Introduces Tool Retrieval in the Gemini API",
    "publishedAt": "2026-11-20T10:17:55.346508+00:00",

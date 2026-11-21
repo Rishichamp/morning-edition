@@ -1,0 +1,300 @@
+{
+ "date": "2026-11-21",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "OpenAI",
+  "headline": "OpenAI Models Assist AMD Flagship GPU Design",
+  "dek": "OpenAI models rewrote AMD chip code, with verification handled by Synopsys tools."
+ },
+ "brief": [
+  "AWS launched a distributed KV caching skill for ElastiCache to cut LLM latency and inference costs.",
+  "Anthropic researcher Levent Alpöge published a Lean proof claiming to solve the Riemann hypothesis using Claude.",
+  "Google committed 5 million dollars to IIT Kharagpur for Indic language AI research and educational development."
+ ],
+ "stories": [
+  {
+   "id": "C46",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "",
+   "headline": "OpenAI Models Assist AMD Flagship GPU Design",
+   "dek": "OpenAI models rewrote AMD chip code, with verification handled by Synopsys tools.",
+   "detail": [
+    "OpenAI announced that its AI models helped rewrite chip code for AMD's flagship GPU designs, achieving efficiency improvements of up to 14%. The generated code was verified using Synopsys software.",
+    "OpenAI is currently training a specialized model, GPT-Synopsys, intended to directly run chip-design tools for hardware engineers. The full article contains further technical details."
+   ],
+   "why": "Relevant to monitoring AI-assisted chip design and hardware optimization progress.",
+   "source": "News search",
+   "url": "https://www.forbes.com/sites/jonmarkman/2026/11/20/openai-says-its-ai-models-improved-amds-flagship-gpu-design-by-up-to-14/",
+   "published": "2026-11-20T09:19:00+00:00",
+   "full_article": false,
+   "n": 1
+  },
+  {
+   "id": "C14",
+   "section": "world",
+   "company": "",
+   "category": "MLOps and infrastructure",
+   "headline": "AWS Introduces Distributed KV Caching Agent Skill for Self-Hosted LLMs",
+   "dek": "The Agent Toolkit for AWS now includes a skill to deploy distributed KV caching with Amazon ElastiCache for self-hosted LLM fleets.",
+   "detail": [
+    "AWS has launched a distributed key-value (KV) caching skill within its Agent Toolkit to optimise self-hosted large language model inference. The architecture addresses latency and GPU compute redundancy caused by small, isolated caches on individual servers during long multi-turn agentic or chat sessions.",
+    "By extending local GPU caches with a shared Amazon ElastiCache tier, any inference server in a fleet can reuse KV attention states across user sessions and server failures. AWS benchmarks indicate that distributed KV caching can reduce self-hosted LLM costs by up to 40% and time to first token by up to 80%.",
+    "The skill integrates the LMCache 0.5.8rc1+ connector into engines such as vLLM 0.11.1+ and SGLang 0.5.13+, running beside Valkey 9.1+ on cache.i8ge.48xlarge nodes. It also includes the free KVTrace tool, allowing developers to model prompt traffic and verify prospective financial savings prior to deploying infrastructure."
+   ],
+   "why": "Optimising KV caching with vLLM and SGLang helps reduce latency and GPU infrastructure spend when serving open-weight models.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+   "published": "2026-11-21T00:14:26+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C43",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI security and privacy",
+   "headline": "OpenAI Details Safeguards Against Adversarial Model Distillation",
+   "dek": "OpenAI has updated request-level and campaign-level defenses to protect intermediate chain-of-thought traces in frontier models.",
+   "detail": [
+    "OpenAI has shared its approach to detecting and disrupting adversarial distillation, where unauthorized entities extract model capabilities to train un-safeguarded student models. The effort focuses heavily on protecting reasoning traces—the internal chain-of-thought steps generated prior to final answers—particularly in dual-use domains such as cybersecurity and biology.",
+    "Internal adaptive evaluations on GPT-6.2 Astra and GPT-6.2 Sol showed that updated safeguards reduced the average success rate for extracting protected reasoning from 54.0% (in GPT-6 Astra) to 0.2%. Studies conducted by OpenAI confirmed that student models trained on exact reasoning traces retain stronger generalizable cyber capabilities than those trained on reasoning summaries.",
+    "Defenses combine request-level mechanisms—including adversarial training, input/output classifiers, and tool-call argument inspection—with campaign-level monitoring across accounts. Attack patterns identified through internal red-teaming and external security disclosures are continuously integrated back into model training."
+   ],
+   "why": "Understanding how frontier labs block chain-of-thought extraction is relevant to fine-tuning strategies and model safety.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "published": "2026-11-20T10:00:00+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C61",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "AI agents and coding tools",
+   "headline": "Moonshot AI Adds Native Amazon Bedrock Support to Kimi Code CLI",
+   "dek": "Kimi Code CLI v2.7.0 lets developers authenticate using standard AWS credentials instead of separate API keys.",
+   "detail": [
+    "Moonshot AI has released version 2.7.0 of its open-source Kimi Code CLI, featuring native Amazon Bedrock provider support. The update enables developers to connect to foundation models on Bedrock using their existing AWS command-line interface credential chain, including named profiles and AWS Single Sign-On.",
+    "Under the native provider, the CLI uses the @aws/bedrock-token-generator library to produce short-lived bearer tokens valid for up to 12 hours. This removes the requirement to manually provision and store static API keys within local configuration files.",
+    "The walkthrough demonstrates setup using Kimi K3.1 Pro Highspeed via global cross-Region inference. The model supports streaming, configurable reasoning, image inputs, and client-side tool calling while keeping request processing inside the AWS data boundary."
+   ],
+   "why": "Simplifies integrating open-weight Kimi models into command-line coding workflows using standard AWS credentials.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+   "published": "2026-11-20T00:33:30+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C93",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "Mind2Act World Benchmark Evaluates Robotic Manipulation Reasoning",
+   "dek": "A diagnostic benchmark designed to test reasoning, physical execution, and feedback integration in robots.",
+   "detail": [
+    "Mind2Act World is a diagnostic benchmark aimed at evaluating embodied intelligence across cognitive reasoning, physical execution, and environmental feedback integration. It addresses gaps in existing benchmarks that fail to isolate reasoning failures from execution errors.",
+    "The authors detail how history-based reasoning interacts with execution in robotic manipulation tasks. The full paper provides complete benchmark evaluations."
+   ],
+   "why": "Relevant for monitoring evaluation frameworks in computer vision, robotics, and physical AI.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26444",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C98",
+   "section": "world",
+   "company": "",
+   "category": "",
+   "headline": "Depth Pro 2 Delivers Metric Monocular Depth for Video and Images",
+   "dek": "A single network architecture balances temporal consistency and boundary sharpness at full resolution.",
+   "detail": [
+    "Depth Pro 2 presents a single monocular depth estimation network designed to process images and video at native resolution. The approach resolves traditional trade-offs where multi-frame models lose boundary sharpness while single-frame models lack temporal consistency.",
+    "The model predicts dense metric depth directly across image sequences. The full paper contains complete architectural specifications and metric evaluations."
+   ],
+   "why": "Directly relevant to computer vision, monocular depth estimation, and visual perception research.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26603",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C77",
+   "section": "world",
+   "company": "Mistral",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Deutsche Telekom Invests $109 Million in Mistral AI Series D Round",
+   "dek": "The investment forms part of a strategic partnership to deploy sovereign AI across German enterprise and public sectors.",
+   "detail": [
+    "Deutsche Telekom's investment arm, T.Capital, has invested €100 million ($109 million) in Mistral AI as part of its Series D funding round. The round initially closed in September at a $24.4 billion post-money valuation, raising $3.48 billion in total equity led by Samsung Electronics.",
+    "The telco announced that the funding represents the first phase of a broader strategic partnership aimed at helping German businesses and public institutions adopt sovereign AI. Mistral models allow local deployment on enterprise servers, ensuring organisations retain control over proprietary data.",
+    "The announcement follows a multi-billion-dollar compute agreement Mistral concluded with Microsoft in July. Deutsche Telekom stated that the partnership will combine European AI models with secure IT infrastructure for industrial applications."
+   ],
+   "why": "Shows strong enterprise backing and growing infrastructure investment for open-weight European LLMs.",
+   "source": "News search",
+   "url": "https://www.datacenterdynamics.com/en/news/deutsche-telekom-invests-109-million-in-mistral-ai-as-first-step-in-larger-partnership/",
+   "published": "2026-11-19T16:00:00+00:00",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C52",
+   "section": "world",
+   "company": "TSMC",
+   "category": "Chips and hardware",
+   "headline": "TSMC Tightens Export Restrictions on Advanced Chip Nodes for China",
+   "dek": "TSMC has reportedly halted Chinese customer orders at 16nm and below following new US Commerce Department regulations.",
+   "detail": [
+    "Taiwan Semiconductor Manufacturing Company (TSMC) has reportedly notified Chinese chip design firms to halt orders at 16nm and more advanced nodes without US export licenses. The action follows the entry into force of the US Commerce Department's interim final rule, Addressing Remote Access to Advanced Semiconductors, on 19 November 2026.",
+    "The updated rule shifts the licensing burden by presuming controlled status for affected advanced chips, replacing previous foundry-side compute performance testing. The regulation also imposes license requirements on advanced chip exports to data centres in countries including Singapore, Malaysia, and Brazil.",
+    "High-performance computing accounted for 68% of TSMC's third-quarter revenue, with nodes at 7nm and below generating 79% of wafer revenue. Chinese design firms lacking licenses will generally be restricted to mature 28nm and 40nm process nodes without high-bandwidth memory or advanced packaging."
+   ],
+   "why": "Directly affects global GPU supply chains, foundry capacity, and hardware availability for deep learning hardware.",
+   "source": "News search",
+   "url": "https://247wallst.com/investing/2026/11/20/tsmc-is-halting-some-china-chip-orders-as-a-new-u-s-rule-kicks-in/",
+   "published": "2026-11-20T05:13:00+00:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C54",
+   "section": "world",
+   "company": "Mistral",
+   "category": "Jobs, hiring and internships",
+   "headline": "Mistral AI Opens Regional APAC Headquarters in Singapore",
+   "dek": "The office will focus on forward deployment capabilities and technical talent, aiming for 200 staff by 2027.",
+   "detail": [
+    "Mistral AI opened its Asia-Pacific regional headquarters in Singapore on 19 November 2026, setting a target to employ 200 regional staff by 2027. The company currently has around 40 employees in Singapore, expanding from plans announced earlier this year.",
+    "Approximately 70% of the regional headcount will consist of forward deployment engineers and scientists who work directly with client technical teams. The roles focus on agentic systems, custom model integration, and local deployment rather than standard fine-tuning or sales.",
+    "Mistral maintains existing Singapore partnerships with the Home Team Science and Technology Agency and DSO National Laboratories. Regional leadership noted that expanding agentic workflows will require ongoing investments in local digital infrastructure and data centre compute capacity."
+   ],
+   "why": "Signals growing regional demand for forward deployment engineers and localized agentic AI development.",
+   "source": "News search",
+   "url": "https://www.kucoin.com/news/flash/mistral-ai-opens-apac-hq-in-singapore-aims-to-hire-200-by-2027",
+   "published": "2026-11-20T02:31:00+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C41",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Research papers",
+   "headline": "Anthropic Mathematician Claims Lean Proof of Riemann Hypothesis via Claude",
+   "dek": "Levent Alpöge has published a proposed formal proof of the Riemann hypothesis created alongside Claude.",
+   "detail": [
+    "Anthropic mathematician Levent Alpöge has announced a proposed formal proof of the Riemann hypothesis and the Generalized Riemann Hypothesis developed with the assistance of Claude. The proof was written using the Lean theorem prover and posted to Alpöge's personal website.",
+    "Anthropic has not formally commented on or verified the submission. To qualify for the Clay Mathematics Institute's $1 million Millennium Prize, any proposed solution must be officially published and undergo at least two years of sustained peer review within the global mathematics community.",
+    "The announcement follows OpenAI's recent claim of solving the Navier-Stokes problem using AI agent clusters. Alpöge previously reported using Claude to resolve the Jacobian conjecture, illustrating the expanding role of LLMs and formal verification tools in pure mathematics research."
+   ],
+   "why": "Highlights how automated reasoning tools and LLMs are being applied to formal mathematical proofs.",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+   "published": "2026-11-20T11:34:13-05:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C6",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "India AI and startups",
+   "headline": "Google Grants $5 Million to IIT Kharagpur for AI Research and Education",
+   "dek": "Funding will support research in Indic languages, materials science, agriculture, and educational capacity building.",
+   "detail": [
+    "Google has committed $5 million to IIT Kharagpur to accelerate advanced AI research, expand technical education, and strengthen institute infrastructure. CEO Sundar Pichai stated that the funding will support training programmes for students, faculty members, and educators.",
+    "The funding builds upon Google's Amplify Initiative, which collaborates with IIT Kharagpur to build hyperlocal datasets capturing India's regional linguistic diversity. Research initiatives under the grant will focus on Indic language processing, materials science, agriculture, and educational tech.",
+    "The commitment follows previous academic investments by Google in India, including $8 million across four government AI Centres of Excellence (IISc Bengaluru, IIT Kanpur, IIT Madras, and IIT Ropar) and $2 million for an Indic Language Technologies Research Hub at IIT Bombay."
+   ],
+   "why": "Directly impacts AI research resources, Indic language initiatives, and academic computing capacity within the IIT network.",
+   "source": "News search",
+   "url": "https://inc42.com/buzz/google-commits-5-mn-to-sundar-pichais-alma-mater-iit-kharagpur/",
+   "published": "2026-11-21T01:45:00+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C85",
+   "section": "india",
+   "company": "DeepSeek",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Sarvam AI Prices 105B Model Below DeepSeek Rates",
+   "dek": "Sarvam's Token Factory launch sets aggressive pricing for its 105B parameter model.",
+   "detail": [
+    "Sarvam AI has introduced its Token Factory platform, pricing its Sarvam 105B model below rates offered by DeepSeek. The strategy highlights growing competition in Indian model hosting and inference economics.",
+    "The move raises broader discussions regarding token sovereignty and commercial frontier AI development in India. The full article contains additional details."
+   ],
+   "why": "Useful for tracking Indian foundation model inference pricing and API access options.",
+   "source": "News search",
+   "url": "https://www.forbes.com/sites/janakirammsv/2026/11/19/sarvam-prices-its-own-model-below-deepseek-in-new-token-factory/",
+   "published": "2026-11-19T04:31:00+00:00",
+   "full_article": false,
+   "n": 12
+  },
+  {
+   "id": "C38",
+   "section": "india",
+   "company": "",
+   "category": "AI in education",
+   "headline": "Goa Cabinet Approves AI Policy 2026 to Train 50,000 Graduates",
+   "dek": "The policy allocates resources across graduate skilling, MSME adoption, and local Konkani language model development.",
+   "detail": [
+    "The Goa Cabinet has approved the Goa Artificial Intelligence Policy 2026, establishing a three-year roadmap to train and certify 50,000 graduates in AI skills by 2030. The policy allocates 60% of resources to skilling and capacity building, 20% to startup support, and 20% to infrastructure.",
+    "The roadmap introduces the Konkani AI and Research Excellence Scheme to build a Konkani large language model and translation pipeline connected to the central BHASHINI platform. An AI Research Centre of Excellence for Language Technology will oversee dataset collection with community consent.",
+    "For industry adoption, the policy includes the Udyam AI Scheme to provide funding and innovation support for micro, small, and medium enterprises. Implementation will be monitored by an advisory council chaired by Chief Minister Pramod Sawant."
+   ],
+   "why": "Demonstrates regional state initiatives to expand practical AI education and develop Indic language LLM resources.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/goa-cabinet-approves-ai-policy-2026-puts-60-towards-skilling",
+   "published": "2026-11-20T13:22:38+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Moonshot AI Adds Native Amazon Bedrock Support to Kimi Code CLI",
+   "update": "Details how Kimi Code CLI v2.7.0 uses short-lived bearer tokens and standard AWS credentials for Bedrock.",
+   "since": "2026-11-20",
+   "earlier": "Kimi Code CLI Adds Native Amazon Bedrock Provider Support",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+   "story": "C61"
+  },
+  {
+   "headline": "TSMC Tightens Export Restrictions on Advanced Chip Nodes for China",
+   "update": "Confirms TSMC's order halt extends to 16nm process nodes following the US interim final rule taking effect.",
+   "since": "2026-11-20",
+   "earlier": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+   "source": "News search",
+   "url": "https://247wallst.com/investing/2026/11/20/tsmc-is-halting-some-china-chip-orders-as-a-new-u-s-rule-kicks-in/",
+   "story": "C52"
+  },
+  {
+   "headline": "Deutsche Telekom Invests $109 Million in Mistral AI Series D Round",
+   "update": "Confirms T.Capital's €100 million investment as part of Mistral's $3.48 billion Series D round valued at $24.4 billion.",
+   "since": "2026-11-19",
+   "earlier": "Deutsche Telekom’s tech fund invests $110 million in Mistral AI",
+   "source": "News search",
+   "url": "https://www.datacenterdynamics.com/en/news/deutsche-telekom-invests-109-million-in-mistral-ai-as-first-step-in-larger-partnership/",
+   "story": "C77"
+  }
+ ],
+ "question": "How will the deployment of distributed KV caching alter the cost-efficiency of self-hosting open-weight models compared to managed APIs?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

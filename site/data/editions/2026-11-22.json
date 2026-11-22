@@ -1,0 +1,304 @@
+{
+ "date": "2026-11-22",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Chips and hardware",
+  "headline": "OpenAI models improve AMD flagship GPU design by up to 14 per cent",
+  "dek": "OpenAI says its AI models rewrote AMD chip code, which was verified by Synopsys software."
+ },
+ "brief": [
+  "Dragos research exposed prompt theft and web scraping across AI gateways and reseller networks despite zero-data-retention flags.",
+  "Sarvam AI launched Token Factory in India, running token-based API inference on privately owned GPU clusters.",
+  "Anthropic CEO Dario Amodei pledged at the Nasdaq bell to pace AI training to maintain human control."
+ ],
+ "stories": [
+  {
+   "id": "C56",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Chips and hardware",
+   "headline": "OpenAI models improve AMD flagship GPU design by up to 14 per cent",
+   "dek": "OpenAI says its AI models rewrote AMD chip code, which was verified by Synopsys software.",
+   "detail": [
+    "OpenAI announced that its AI models rewrote AMD chip code, with Synopsys software used to verify the generated hardware designs. The optimizations improved AMD's flagship GPU design by up to 14 per cent.",
+    "To build on these results, OpenAI is currently training a specialized model named GPT-Synopsys. The model is designed to run chip-design tools directly for hardware engineers.",
+    "Note that only a short snippet was available for this report, and the full article contains further details."
+   ],
+   "why": "Hardware design optimizations by AI can lead to efficiency gains in the next generation of cloud training GPUs.",
+   "source": "News search",
+   "url": "https://www.forbes.com/sites/jonmarkman/2026/11/20/openai-says-its-ai-models-improved-amds-flagship-gpu-design-by-up-to-14/",
+   "published": "2026-11-20T09:19:00+00:00",
+   "full_article": false,
+   "n": 1
+  },
+  {
+   "id": "C52",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "AI in science and healthcare",
+   "headline": "Anthropic mathematician claims Lean proof of Riemann hypothesis using Claude",
+   "dek": "Anthropic mathematician Levent Alpöge claims to have proved the Riemann hypothesis working with Claude.",
+   "detail": [
+    "Anthropic mathematician Levent Alpöge claims to have discovered a proof of the Riemann hypothesis and the Generalized Riemann Hypothesis working alongside Claude. The arguments were presented and formalized using the Lean proof assistant without unverified assumptions.",
+    "Alpöge stated on his website that he messaged Anthropic CEO Dario Amodei about the proof on Sunday night and delayed publication until after the company's Thursday IPO. Anthropic has not officially commented on or verified the claim, having noted in August that it did not expect Claude's techniques to lead to a proof of the hypothesis.",
+    "The Riemann hypothesis is one of seven Millennium Prize problems administered by the Clay Mathematics Institute, which requires a proposed proof to withstand two years of community scrutiny before receiving formal recognition and a 1 million dollar bounty. The announcement follows OpenAI's unverified September claim of solving the Navier-Stokes problem using 10,000 agents."
+   ],
+   "why": "The combined use of LLMs and formal proof assistants like Lean shows how AI tools are entering rigorous mathematical research.",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+   "published": "2026-11-20T11:34:13-05:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C58",
+   "section": "world",
+   "company": "Alibaba Qwen",
+   "category": "Chips and hardware",
+   "headline": "Alibaba uses T-Head in-house chips to train next-generation Qwen model",
+   "dek": "Alibaba CEO Eddie Wu announced that T-Head chips are training Qwen models and serving Bailian inference.",
+   "detail": [
+    "Alibaba CEO Eddie Wu announced during the company's quarterly earnings call that Alibaba is using chips developed by its semiconductor subsidiary T-Head to train its next-generation Qwen model.",
+    "T-Head chips are also being deployed on Alibaba's Bailian model platform (known internationally as Model Studio) to provide inference services for Chinese-made chips across cloud environments.",
+    "Wu stated that aligning Alibaba's proprietary silicon with its foundation models will reduce computing costs and improve application development efficiency, strengthening its full-stack AI infrastructure within China's domestic computing supply chain."
+   ],
+   "why": "Demonstrates the shift by major cloud providers toward custom silicon to lower training and inference costs for flagship models.",
+   "source": "News search",
+   "url": "https://technode.com/2026/11/20/alibaba-uses-its-own-chips-to-train-next-generation-qwen-model/",
+   "published": "2026-11-20T06:14:00+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C54",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Safety and alignment",
+   "headline": "OpenAI details safeguards to prevent adversarial distillation of reasoning traces",
+   "dek": "OpenAI has implemented request- and campaign-level protections to stop unauthorized model capability extraction.",
+   "detail": [
+    "OpenAI has detailed new defense strategies against adversarial distillation, where unauthorized actors use frontier model outputs to train secondary models that lack comparable safety protections. The safeguards focus on preventing capability extraction in dual-use domains such as cybersecurity and biology.",
+    "The company placed heavy emphasis on protecting exact reasoning traces (chain-of-thought steps). In internal benchmarks, fine-tuning a student model on exact reasoning traces yielded higher cyber capabilities than fine-tuning on reasoning summaries, particularly at higher inference budgets.",
+    "OpenAI implemented updated request-level and campaign-level safeguards in GPT-6.2 Astra and GPT-6.2 Sol. Internal adaptive red-teaming showed that the average attack success rate for recovering protected reasoning fell from 54.0 per cent in GPT-6 Astra to 0.2 per cent in GPT-6.2 Astra."
+   ],
+   "why": "Understanding model distillation safeguards and reasoning trace protection is essential for AI safety and fine-tuning practices.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "published": "2026-11-20T10:00:00+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C88",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "Depth Pro 2 introduces native resolution metric monocular depth for video",
+   "dek": "Depth Pro 2 addresses the trade-off between temporal consistency and boundary sharpness in monocular depth estimation.",
+   "detail": [
+    "Researchers have presented Depth Pro 2, a monocular depth estimation approach capable of predicting dense metric depth for both static images and video at full native resolution.",
+    "Prior monocular depth estimation methods typically trade off temporal consistency for boundary sharpness, where multi-frame methods favor consistency while single-frame methods favor sharp boundaries. Depth Pro 2 trains a single scalable network to overcome this limitation.",
+    "Note that only a short snippet was available for this report, and the full article contains further details."
+   ],
+   "why": "Metric depth estimation models operating at native resolution directly assist computer vision and 3D perception pipelines.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26603",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C41",
+   "section": "world",
+   "company": "",
+   "category": "MLOps and infrastructure",
+   "headline": "AWS introduces agent skill for distributed key-value caching in LLM serving",
+   "dek": "The Agent Toolkit for AWS offers a skill using Amazon ElastiCache to reduce inference costs and latency.",
+   "detail": [
+    "AWS has launched a distributed key-value (KV) caching agent skill within its Agent Toolkit to optimize self-hosted LLM inference fleets running vLLM, SGLang, or Ray Serve. The skill works with coding agents like Kiro and Claude Code.",
+    "Self-hosted LLM setups often incur high prefill latency when long prompt context is resent without shared memory. By integrating Amazon ElastiCache for Valkey via the LMCache connector, distributed KV caching can cut self-hosted LLM inference costs by up to 40 per cent and time to first token by up to 80 per cent.",
+    "The skill includes a diagnostic workflow and a free tool called KVTrace to measure workload cutover points and cache hit rates before deploying infrastructure. It enforces safety checks, requiring user approval for infrastructure modifications and verifying output consistency across cache-loaded runs."
+   ],
+   "why": "Provides practical techniques using LMCache and vLLM to cut prefill latency and GPU memory overhead during LLM deployment.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+   "published": "2026-11-21T00:14:26+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C84",
+   "section": "world",
+   "company": "",
+   "category": "Open-source models",
+   "headline": "WeMM-Video presents open-source bilingual omni-modal foundation models up to 35B",
+   "dek": "The WeMM-Video family unifies text, image, audio, and video processing in a hybrid-thinking architecture.",
+   "detail": [
+    "WeMM-Video is a family of Chinese-English bilingual omni-modal foundation models released in 2B, 4B, 9B, and 35B-A3B parameter variants.",
+    "The model family focuses on joint audio-visual perception and reasoning, unifying text, image, audio, and video inputs. It supports both a fast non-thinking instruct mode and reasoning paradigms.",
+    "Note that only a short snippet was available for this report, and the full article contains further details."
+   ],
+   "why": "Open-source omni-modal models providing joint video and audio understanding offer flexible baselines for multimodal research.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26409",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C77",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Anthropic CEO Dario Amodei recommits to safety pacing following record IPO",
+   "dek": "Speaking at the Nasdaq opening bell, Amodei stated Anthropic will pace AI training and deployment.",
+   "detail": [
+    "Following Anthropic's record-breaking initial public offering on Wall Street, CEO Dario Amodei spoke at the Nasdaq opening bell to reaffirm the company's commitment to safety and human control over AI systems.",
+    "Amodei highlighted the potential for AI to compress a century of scientific and medical progress into a decade, citing applications in protein folding and drug design. However, he warned of risks including misuse by individuals or nation-states, economic disruption, and loss of control over AI systems.",
+    "Amodei declared that Anthropic would unequivocally pace the training and deployment of AI systems to ensure they remain safe, echoing sentiments shared by co-founder Daniela Amodei in a CNBC interview."
+   ],
+   "why": "Tracks governance commitments, training pacing, and safety policies at major frontier AI labs following public market listings.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+   "published": "2026-11-19T16:19:41+00:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C65",
+   "section": "world",
+   "company": "Amazon / AWS",
+   "category": "AI agents and coding tools",
+   "headline": "Kimi Code CLI v2.7.0 adds native Amazon Bedrock provider authentication",
+   "dek": "Moonshot AI updated its coding CLI to use standard AWS CLI credentials and SSO without separate API keys.",
+   "detail": [
+    "Moonshot AI has released version 2.7.0 of its open-source Kimi Code CLI, adding a native bedrock provider. Previously, using the CLI with Amazon Bedrock required configuring an OpenAI-compatible provider with a manually managed Bedrock API key.",
+    "The native provider resolves credentials through the standard AWS CLI credential chain, supporting named profiles and Single Sign-On (SSO). It automatically generates short-lived bearer tokens valid for up to 12 hours via @aws/bedrock-token-generator.",
+    "The update supports models such as Kimi K3.1 Pro Highspeed via global cross-Region inference profiles, providing streaming, configurable reasoning, image input, and client-side tool calling."
+   ],
+   "why": "Simplifies developer workflows when connecting open-weight coding agents to cloud model endpoints using native AWS authentication.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
+   "published": "2026-11-20T00:33:30+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C45",
+   "section": "world",
+   "company": "",
+   "category": "AI security and privacy",
+   "headline": "Security experiment reveals widespread data leakage and credential theft in AI supply chains",
+   "dek": "Dragos researcher HD Moore planted 2 million canary credentials across AI gateways and hosting services.",
+   "detail": [
+    "Dragos chief research officer HD Moore conducted a canary experiment by planting nearly 2 million unique, trackable secrets—including AWS access keys, SSH passwords, and private git URLs—into prompts routed through AI gateways like OpenRouter and Vercel.",
+    "The study revealed that three hosting providers were compromised by external attackers who siphoned incoming prompts at the front door before models ran, testing stolen AWS credentials thousands of times. Some stolen prompts were marked with Zero Data Retention (ZDR) flags.",
+    "Additionally, OpenRouter notified users after learning that prompts sent to Chinese model provider MiniMax (and its resellers AtlasCloud, Novita, and StreamLake) were accessed by a web scraper that fetched secret URLs from prompts regardless of ZDR settings. OpenRouter subsequently removed its ZDR label from MiniMax endpoints."
+   ],
+   "why": "Highlights critical privacy and security risks when sending sensitive data, credentials, or code prompts through third-party AI gateways.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "published": "2026-11-20T20:59:08+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C27",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "India AI and startups",
+   "headline": "Sarvam AI launches Token Factory inference service on private GPU infrastructure",
+   "dek": "Sarvam AI introduced a pay-per-token API platform hosting Sarvam 105B and open-weight models.",
+   "detail": [
+    "Sarvam AI has launched Token Factory, an inference-as-a-service platform offering pay-per-token API access to its proprietary Sarvam 105B model alongside open-weight models including DeepSeek V4.1 Flash, Kimi K3.1 Pro, GLM 5.3, and Google's Gemma 4 31B.",
+    "Pricing for Sarvam 105B starts at an introductory ₹10 per million input tokens and ₹25 per million output tokens, while other models range from ₹14 to ₹950 per million tokens. The company reported serving over 450 billion tokens daily for DeepSeek V4.1 Flash, with 95.7 per cent coming from prompt cache billed at ₹0.25 per million tokens.",
+    "Addressing public questions regarding government-subsidised infrastructure, Sarvam clarified that Token Factory runs on privately procured GPUs rather than the 4,096 Nvidia H100 GPUs allocated under the IndiaAI Mission, whose access ended in March 2026. Sarvam provides Zero Data Retention (ZDR) only upon request and defaults to using data for model training unless opted out."
+   ],
+   "why": "Provides direct visibility into India's emerging AI cloud ecosystem, inference token pricing, and data retention policies.",
+   "source": "Inc42",
+   "url": "https://inc42.com/features/sarvams-token-factory-raises-indias-ai-inference-stakes/",
+   "published": "2026-11-21T11:57:54+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C32",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "India AI and startups",
+   "headline": "Google grants 5 million dollars to IIT Kharagpur for AI research and education",
+   "dek": "CEO Sundar Pichai announced funding focused on Indic languages, agriculture, and educational technology.",
+   "detail": [
+    "Google CEO Sundar Pichai announced a 5 million dollar grant to his alma mater, IIT Kharagpur, to advance research and capacity building in artificial intelligence.",
+    "The funding will support three primary areas: advanced AI research, educational opportunities, and AI capacity building. Projects will target real-world challenges in Indic languages, materials science, agriculture, and educational technology.",
+    "The initiative includes expanding AI curriculum development and training for faculty and students, supporting India's broader vision of making AI accessible across the nation."
+   ],
+   "why": "Directly affects academic AI research funding, infrastructure, and Indic language model development in Indian higher education.",
+   "source": "News search",
+   "url": "https://www.ibtimes.co.in/googles-5-million-support-iit-kharagpur-take-countrys-ai-all-vision-forward-ceo-pichai-908556",
+   "published": "2026-11-21T07:32:00+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C57",
+   "section": "india",
+   "company": "TSMC",
+   "category": "Chips and hardware",
+   "headline": "TSMC reportedly evaluates customer balance sheets before allocating advanced chip capacity",
+   "dek": "TSMC is assessing client credit limits and requiring prepayments to manage AI supply chain risks.",
+   "detail": [
+    "Taiwan Semiconductor Manufacturing Company (TSMC) is reportedly evaluating customer balance sheets, historical loss rates, and business outlooks before allocating foundry capacity, according to a report by Commercial Times.",
+    "Customer-specific credit limits have been set, requiring cash payments or prepayments for orders that exceed established thresholds. TSMC's Q2 2026 financial report disclosed NT$234.23 billion in temporary receipts from customers reserving production capacity.",
+    "While TSMC's financial statements confirm credit-risk assessment procedures for accounts receivable, the company has not officially confirmed the reported order restrictions. CEO CC Wei noted during an October earnings call that foundry allocation factors include data centre construction, power availability, and client finances."
+   ],
+   "why": "Illustrates how financial constraints and credit limits in semiconductor manufacturing shape hardware availability for AI labs.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/tsmc-reportedly-weighs-ai-customers-financial-health-before-allocating-chip-capacity",
+   "published": "2026-11-20T06:32:48+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Sarvam AI launches Token Factory inference service on private GPU infrastructure",
+   "update": "Sarvam AI clarified that Token Factory runs on privately owned GPUs rather than government-subsidised IndiaAI Mission hardware.",
+   "since": "2026-11-20",
+   "earlier": "Sarvam AI's Token Factory Launch Sparks Sovereign AI Debate",
+   "source": "Inc42",
+   "url": "https://inc42.com/features/sarvams-token-factory-raises-indias-ai-inference-stakes/",
+   "story": "C27"
+  },
+  {
+   "headline": "Anthropic CEO Dario Amodei recommits to safety pacing following record IPO",
+   "update": "Following its Wall Street IPO, Anthropic CEO Dario Amodei publicly pledged at the Nasdaq opening bell to pace model training for safety.",
+   "since": "2026-11-20",
+   "earlier": "Anthropic Raises $81.3 Billion in Record-Breaking IPO",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+   "story": "C77"
+  },
+  {
+   "headline": "OpenAI models improve AMD flagship GPU design by up to 14 per cent",
+   "update": "OpenAI revealed its models improved AMD flagship GPU designs by up to 14% and is training GPT-Synopsys for chip design.",
+   "since": "2026-11-21",
+   "earlier": "OpenAI Models Assist AMD Flagship GPU Design",
+   "source": "News search",
+   "url": "https://www.forbes.com/sites/jonmarkman/2026/11/20/openai-says-its-ai-models-improved-amds-flagship-gpu-design-by-up-to-14/",
+   "story": "C56"
+  }
+ ],
+ "question": "How will trade-offs between API proxy convenience and data privacy shape developer decisions when routing prompts to inference providers?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 12 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

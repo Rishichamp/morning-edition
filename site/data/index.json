@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-22",
+   "headline": "OpenAI models improve AMD flagship GPU design by up to 14 per cent",
+   "publishedAt": "2026-11-22T10:02:11.754564+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-22T10:02:13.668779+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-21",
    "headline": "OpenAI Models Assist AMD Flagship GPU Design",
    "publishedAt": "2026-11-21T10:03:20.410497+00:00",

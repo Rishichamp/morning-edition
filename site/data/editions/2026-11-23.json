@@ -1,0 +1,292 @@
+{
+ "date": "2026-11-23",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "AI in science and healthcare",
+  "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+  "dek": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's "
+ },
+ "brief": [
+  "Sarvam AI released the Sarvam-105B-1711 model, offering an NVFP4 quantized version that runs on a single GPU.",
+  "OpenAI urged frontier AI developers to adopt pretraining perplexity thresholds as a standard benchmark for model safety.",
+  "Bolna AI fine-tuned an open-source model to launch Syl, achieving 93% transcription accuracy on short Indian speech replies."
+ ],
+ "stories": [
+  {
+   "id": "C68",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "AI in science and healthcare",
+   "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+   "dek": "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's ",
+   "detail": [
+    "An Anthropic mathmetician’s latest breakthrough is another sign of how quickly AI is transforming mathematics.",
+    "If you buy something from a link, The Verge may earn a commission. See our ethics statement.",
+    "Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics’s most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world’s best mathematicians for decades. If verified, it would mark yet another seismic achievement for AI in mathematics and add to the upheaval already unleashed by OpenAI’s previous, often inelegant forays into the field.",
+    "Alpöge’s solution has yet to be verified independently. Anthropic has not commented or involved itself in Alpöge’s announcement. In a document on his website, Alpöge says he texted Anthropic CEO Dario Amodei about the solution “late Sunday night” and suggests he held off publication until after the company’s IPO on Thursday."
+   ],
+   "why": "",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+   "published": "2026-11-20T11:34:13-05:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C27",
+   "section": "world",
+   "company": "AMD",
+   "category": "Chips and hardware",
+   "headline": "AMD acquires AI chip startup Taalas in $2.9 billion transaction",
+   "dek": "AMD has purchased AI chip startup Taalas for $2.9 billion to integrate neural network models directly into silicon hardware.",
+   "detail": [
+    "AMD has agreed to acquire AI chip startup Taalas in a transaction valued at $2.9 billion. The acquisition provides AMD with technology engineered to embed AI models directly into silicon architecture to improve inference efficiency. The full article contains further information regarding hardware specifications and integration plans."
+   ],
+   "why": "This acquisition points to a industry trend towards custom hardware designs that bake model architectures directly into silicon for efficient execution.",
+   "source": "News search",
+   "url": "https://tech.eu/2026/11/23/amd-acquires-ai-chip-startup-taalas-for-29b-to-advance-ai-inference-technology/",
+   "published": "2026-11-22T16:00:00+00:00",
+   "full_article": false,
+   "n": 2
+  },
+  {
+   "id": "C62",
+   "section": "world",
+   "company": "",
+   "category": "Cloud and GPU access",
+   "headline": "AWS launches SageMaker HyperPod Global Inference Gateway for multi-cluster routing",
+   "dek": "AWS introduced the Global Inference Gateway for SageMaker HyperPod, enabling automated cross-cluster and cross-Region load balancing for LLM serving.",
+   "detail": [
+    "Amazon Web Services has launched the SageMaker HyperPod Global Inference Gateway, expanding its inference architecture to manage requests across multiple clusters and AWS Regions. The gateway provides a single managed endpoint that routes traffic over the private AWS backbone to clusters with available compute capacity.",
+    "The system evaluates real-time metrics, including key-value cache utilization and queue depth, reported by metrics publishers running on each cluster. Operators can set custom routing weights across four load signals to determine request placement. The gateway automatically manages failover, shifting traffic away from offline clusters without requiring client endpoint reconfiguration.",
+    "Inbound requests are authenticated using AWS Signature Version 4 and IAM credentials before routing. The managed regional gateway fleet handles TLS termination and cluster validation, while cluster-level inference gateways maintain pod-level routing at each destination."
+   ],
+   "why": "This feature illustrates how production infrastructure handles KV-cache aware routing and automated failover across distributed GPU clusters.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+   "published": "2026-11-20T22:35:24+00:00",
+   "full_article": true,
+   "n": 3
+  },
+  {
+   "id": "C38",
+   "section": "world",
+   "company": "xAI",
+   "category": "AI security and privacy",
+   "headline": "Grok created sexualized deepfakes of me, N.J. author claims in suit",
+   "dek": "A prominent New Jersey author and founder of MuslimGirl.com filed a lawsuit on Nov. 18 against Elon Musk's X and xAI alleging that the Grok artificial intelligence tool generated sexualized deepfake ...",
+   "detail": [
+    "A prominent New Jersey author and founder of MuslimGirl.com filed a lawsuit on Nov. 18 against Elon Musk's X and xAI alleging that the Grok artificial intelligence tool generated sexualized deepfake images of her, according to court documents.",
+    "The legal complaint filed in the Northern District of California claims the technology produced images that stripped activist Amani Al-Khatahtbeh of her clothing and her hijab.",
+    "The lawsuit targets both the X social media platform, formerly known as Twitter, and the xAI corporation for their alleged roles in creating and spreading the offensive images.",
+    "\"I am taking Elon Musk to court,\" she said. \"My legal team and I are officially filing a complaint against xAI for allowing Grok to be used as a weapon against our bodies and our identities.\""
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.yahoo.com/news/us/articles/grok-created-sexualized-deepfakes-n-140202245.html",
+   "published": "2026-11-22T06:02:00+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C37",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Anthropic told its IPO bankers to steer clear of OpenAI, DeepSeek, Cursor and Hugging Face",
+   "dek": "Anthropic barred core IPO bankers from working with OpenAI, DeepSeek, Cursor and Hugging Face for six months across its 22-bank syndicate.",
+   "detail": [
+    "The Claude maker capped deal teams and imposed a six-month rival ban on core bankers across its 22-bank syndicate",
+    "Anthropic wanted Wall Street’s help going public. It also wanted Wall Street to keep its distance from the competition.",
+    "The AI company behind the Claude models told the banks underwriting its IPO that core deal team members could not work with OpenAI, DeepSeek, Cursor or Hugging Face for six months. That is an unusual ask in a business where the same handful of banks tend to advise everyone.",
+    "Anthropic’s offering drew a syndicate of 22 underwriters. Each bank was limited to a maximum of four senior bankers on its deal team. Selected senior bankers were also asked to sign legal documents covering the competitor restriction."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://cryptobriefing.com/anthropic-ipo-bankers-rival-ban/",
+   "published": "2026-11-22T06:37:00+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C4",
+   "section": "world",
+   "company": "",
+   "category": "",
+   "headline": "Bolna AI builds Syl speech model to improve recognition of short Indian utterances",
+   "dek": "Indian startup Bolna AI has introduced Syl, an automatic speech recognition model fine-tuned to process short responses and background acknowledgements in phone calls.",
+   "detail": [
+    "Voice AI startup Bolna AI has introduced Syl, a specialized automatic speech recognition model engineered to process brief phone responses such as 'haan', 'ji', and 'theek hai'. Standard speech recognition models frequently fail on short utterances or static background sounds during voice calls, leading to empty transcriptions or broken interactions.",
+    "Syl was developed by fine-tuning an open-source foundational model on Bolna's internal dataset of conversational data, targeting Hindi and English speech patterns. In testing conducted on held-out production calls, Syl achieved 93% accuracy for single-word responses with a median latency of 250 milliseconds. The model reduced instances where agents asked callers to repeat themselves by 31%.",
+    "The launch represents a shift in strategy for Bolna from aggregating third-party AI services to engineering proprietary models. Syl is designed as the first model in a planned suite spanning speech recognition, text-to-speech, and decision-making modules."
+   ],
+   "why": "The Syl architecture demonstrates how targeted fine-tuning of open foundation models can solve low-latency, domain-specific speech recognition challenges in Indian languages.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-startups/bolna-builds-its-own-speech-model-to-catch-what-voice-ai-misses",
+   "published": "2026-11-23T08:49:22+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C30",
+   "section": "world",
+   "company": "Mistral",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Deutsche Telekom stock: T.Capital invests in Mistral AI",
+   "dek": "On November 19, Deutsche Telekom said through its investment arm T.Capital Tech Fund that it had invested 100 million euros in Mistral AI's Series D financing round. The company described the ...",
+   "detail": [
+    "On November 19, Deutsche Telekom said through its investment arm T.Capital Tech Fund that it had invested 100 million euros in Mistral AI's Series D financing round. The company described the investment as the first step toward a future strategic partnership with the French AI developer, according to Deutsche Telekom.",
+    "The planned cooperation would combine Deutsche Telekom's sovereign infrastructure, customer relationships and integration expertise with Mistral AI's frontier models, enterprise software and deployment capabilities. The companies intend to help German businesses and public institutions introduce AI tailored to their needs, with a focus on industrial and regulated sectors.",
+    "T.Capital manages more than 2 billion euros in assets for Deutsche Telekom and invests in businesses aligned with the Group's strategic priorities. The Mistral investment extends Deutsche Telekom's existing focus on sovereign AI infrastructure in Germany, while Mistral has expanded its presence with a Munich hub.",
+    "Deutsche Telekom board member Ferri Abolhassan said the investment would broaden the combination of European AI technology with trusted infrastructure and integration capabilities. Mistral AI Chief Financial Officer Johan Bergqvist said the companies could bring controlled and trustworthy AI to German industry and public institutions at scale."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-telekom-stock-t-capital-invests-in-mistral-ai/70546183",
+   "published": "2026-11-22T13:02:00+00:00",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C44",
+   "section": "world",
+   "company": "Perplexity",
+   "category": "Benchmarks and leaderboards",
+   "headline": "OpenAI advocates using pretraining perplexity to evaluate frontier model progress and safety",
+   "dek": "OpenAI published internal pretraining perplexity measurements, arguing that cross-entropy loss provides a reliable benchmark for predicting emergent capabilities and establishing shared safety standards.",
+   "detail": [
+    "OpenAI has published a blog post advocating cross-entropy loss, or perplexity, as the primary benchmark to track progress in general intelligence and establish shared safety standards. The post argues that while downstream evaluations saturate quickly as models advance, measuring perplexity on held-out datasets during pretraining provides a consistent metric for underlying capability gains.",
+    "The publication included historical internal loss measurements from GPT-3.5 through to recent frontier systems. OpenAI noted that specific capabilities emerged as discrete loss thresholds were crossed without explicit manual targeting. For example, productive chain-of-thought reasoning emerged at a log-perplexity of approximately 0.91, while automated problem-solving in open mathematics began occurring at a log-perplexity of 0.76.",
+    "OpenAI expects further transformative capabilities in areas such as cybersecurity and deep learning research as pretraining losses enter the 0.68 to 0.70 log-perplexity range. The company called on frontier developers to establish joint safety limits and red-teaming protocols based on pretraining perplexity before models reach these performance thresholds."
+   ],
+   "why": "Understanding how pretraining perplexity correlates with emergent model capabilities helps you gauge performance scaling beyond task-specific benchmarks.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "published": "2026-11-22T00:00:00+00:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C69",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+   "dek": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubl",
+   "detail": [
+    "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.27193",
+   "published": "2026-11-19T19:00:00.000Z",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C71",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+   "dek": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely",
+   "detail": [
+    "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a fai"
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.26444",
+   "published": "2026-11-18T19:00:00.000Z",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C2",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "Open-source models",
+   "headline": "Sarvam releases upgraded Sarvam-105B-1711 model and clarifies compute subsidy details",
+   "dek": "Sarvam AI has launched an upgraded version of its open-weight 105B model while responding to public debate about hosting foreign models on its inference platform.",
+   "detail": [
+    "Sarvam AI co-founder Pratyush Kumar has responded to criticism regarding the company's decision to host open-weight foreign models, including Chinese models from DeepSeek and Alibaba, on its Token Factory platform. Kumar stated that providing inference infrastructure complements rather than conflicts with Sarvam's primary goal of training indigenous foundation models. He clarified that subsidised GPU access provided under the IndiaAI Mission ended in March 2026 and was not used to operate Token Factory.",
+    "Alongside the statement, Sarvam released Sarvam-105B-1711, an upgraded checkpoint of its 105-billion-parameter open-weight model. Trained using upgraded NVIDIA B200 infrastructure, the model demonstrated performance improvements across conversational agent benchmarks, moving from an initial average score of 42.6 to 73.9. Sarvam reported that its blended inference cost dropped from $0.44 to $0.15 per million tokens.",
+    "The company released the model weights in BF16 and NVFP4 formats. Sarvam highlighted that the 65GB NVFP4 version is compressed sufficiently to run on a single NVIDIA RTX PRO 6000 Blackwell GPU. The startup plans to release additional vision, speech, and edge models over the coming weeks."
+   ],
+   "why": "The release of the 65GB NVFP4 checkpoint allows you to run and evaluate a 105-billion-parameter model on a high-end single GPU setup.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/sarvam-defends-hosting-chinese-ai-models-releases-upgraded-105b-model",
+   "published": "2026-11-23T10:12:56+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C46",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "AI in education",
+   "headline": "Google provides $5 million grant to IIT Kharagpur for AI research",
+   "dek": "Google has allocated $5 million to IIT Kharagpur to support academic research in Indic languages, agriculture, materials science, and AI education.",
+   "detail": [
+    "Google is allocating $5 million to IIT Kharagpur to advance academic AI research across Indic language processing, agriculture, materials science, and education. The grant will also fund the expansion of campus-wide AI training programs for students. The full article provides additional details regarding institutional implementation."
+   ],
+   "why": "This grant expands compute resources and research initiatives focused on Indic language modeling within the Indian academic ecosystem.",
+   "source": "News search",
+   "url": "https://www.msn.com/en-in/news/other/iit-kharagpur-gets-5-million-google-funding-for-ai-research-and-education/ar-AA2hXppA",
+   "published": "2026-11-21T21:29:57+00:00",
+   "full_article": false,
+   "n": 12
+  },
+  {
+   "id": "C1",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "India AI and startups",
+   "headline": "From Sarvam Tie-Up to Drones, All That Happened at Bengaluru Tech Summit 2026",
+   "dek": "At the Bengaluru Tech Summit 2026, Karnataka announced six initiatives to strengthen its research and innovation infrastructure.",
+   "detail": [
+    "Karnataka announced six initiatives to enhance its research and innovation infrastructure at Bengaluru Tech Summit 2026.",
+    "The event featured participation from 64 countries and included 1,518 exhibitors, with a significant representation of startups.",
+    "Chief Minister D K Shivakumar highlighted Karnataka's role as a key player in India's software and services exports.",
+    "The state attracted $9.4 billion in foreign direct investment in the first half of FY26, representing 26.7% of India's total."
+   ],
+   "why": "",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-features/from-sarvam-to-all-that-happened-at-the-bengaluru-tech-summit-2026",
+   "published": "2026-11-23T10:55:02+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Sarvam releases upgraded Sarvam-105B-1711 model and clarifies compute subsidy details",
+   "update": "Sarvam AI released the upgraded Sarvam-105B-1711 model checkpoint and clarified its Token Factory infrastructure funding.",
+   "since": "2026-11-22",
+   "earlier": "Sarvam AI launches Token Factory inference service on private GPU infrastructure",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/sarvam-defends-hosting-chinese-ai-models-releases-upgraded-105b-model",
+   "story": "C2"
+  },
+  {
+   "headline": "Google provides $5 million grant to IIT Kharagpur for AI research",
+   "update": "Google has formally confirmed the details of its $5 million AI research grant to IIT Kharagpur.",
+   "since": "2026-11-22",
+   "earlier": "Google grants 5 million dollars to IIT Kharagpur for AI research and education",
+   "source": "News search",
+   "url": "https://www.msn.com/en-in/news/other/iit-kharagpur-gets-5-million-google-funding-for-ai-research-and-education/ar-AA2hXppA",
+   "story": "C46"
+  }
+ ],
+ "question": "How can pretraining perplexity tracking be integrated into local validation pipelines when fine-tuning open-weight models on constrained hardware?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

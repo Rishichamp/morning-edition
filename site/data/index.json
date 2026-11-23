@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-23",
+   "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+   "publishedAt": "2026-11-23T11:00:11.457530+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-23T11:00:12.756899+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-22",
    "headline": "OpenAI models improve AMD flagship GPU design by up to 14 per cent",
    "publishedAt": "2026-11-22T10:02:11.754564+00:00",

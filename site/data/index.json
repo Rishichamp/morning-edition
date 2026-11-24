@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-24",
+   "headline": "Amazon says AI agents found and exploited an unpatched zero-day",
+   "publishedAt": "2026-11-24T12:46:38.337700+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-24T12:46:39.452124+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-23",
    "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
    "publishedAt": "2026-11-23T11:00:11.457530+00:00",
@@ -116,14 +125,6 @@
    "emailedAt": "2026-11-10T19:56:58.220571+00:00",
    "test": false,
    "version": 2
-  },
-  {
-   "date": "2026-11-10",
-   "headline": "IIT Delhi and Walmart Sign Partnership to Boost AI Research",
-   "publishedAt": "2026-11-10T18:04:54.895840+00:00",
-   "emailStatus": "sent",
-   "emailedAt": "2026-11-10T18:04:56.100499+00:00",
-   "test": false
   }
  ]
 }

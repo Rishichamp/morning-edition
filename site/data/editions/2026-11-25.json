@@ -1,0 +1,304 @@
+{
+ "date": "2026-11-25",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "AI in science and healthcare",
+  "headline": "OpenAI details intrinsic protein design capabilities in GPT-6 model family",
+  "dek": "OpenAI reported that its GPT-6 models can design novel protein structures and sequences using general reasoning and code without relying on specialized biology models."
+ },
+ "brief": [
+  "OpenAI demonstrated GPT-6 models designing novel protein structures without domain-specific biology architectures.",
+  "Alibaba Cloud made Qwen4-Max API-only, increasing the operational divide with open-weights releases.",
+  "Entire partnered with Sarvam AI to offer locally hosted AI coding agents and Git forge infrastructure in India."
+ ],
+ "stories": [
+  {
+   "id": "C46",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI in science and healthcare",
+   "headline": "OpenAI details intrinsic protein design capabilities in GPT-6 model family",
+   "dek": "OpenAI reported that its GPT-6 models can design novel protein structures and sequences using general reasoning and code without relying on specialized biology models.",
+   "detail": [
+    "OpenAI released research demonstrating that its GPT-6 model family can design new protein shapes and amino acid sequences without calling specialized domain models. The systems rely on general-purpose reasoning and coding tools, integrating principles of mathematics, physics, chemistry, and structural biology. Researchers guided the design process through prompt instructions specifying target binding sites and structural traits.",
+    "In computational benchmarks, GPT-6 models performed comparably to or better than specialized protein design models across multiple tasks, although full protein structure prediction remains an identified limitation. In laboratory experiments conducted with research partner Onava, designs produced by a pre-released version of GPT-6.2 resulted in positive target binding across five evaluated targets. Out of 322 designed minibinders tested in the lab, 35 (10.9%) exhibited positive binding.",
+    "To convert three-dimensional outputs into physical test candidates, specialized models such as SolubleMPNN were used to suggest amino acid sequences and filter candidates. OpenAI highlighted that general-purpose foundation models can easily adapt to fine-grained user constraints, such as specific atomic bond placements or secondary structure counts, purely through prompt changes."
+   ],
+   "why": "Demonstrates how general foundation models with multimodal reasoning can undertake domain-specific scientific tasks like protein design without task-specific architecture modifications.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "published": "2026-11-24T13:00:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C15",
+   "section": "world",
+   "company": "Alibaba Qwen",
+   "category": "Model launches",
+   "headline": "Alibaba Cloud shifts top-tier Qwen4-Max model to API-only delivery",
+   "dek": "Alibaba Cloud's flagship 2.4-trillion parameter Qwen4-Max model is available exclusively via API, widening the gap between open-weights releases and proprietary offerings.",
+   "detail": [
+    "Alibaba Cloud officially launched Qwen4-Max, a Mixture-of-Experts (MoE) model featuring 2.4 trillion total parameters with 71 billion active parameters per query. The flagship system supports a 1 million token context window alongside image and video inputs. Pricing is structured at $1.50 per million input tokens and $4.50 per million output tokens.",
+    "Unlike previous generations, Qwen4-Max is hosted exclusively on external APIs like QwenCloud without distribution of underlying model weights. Open-weight models were mentioned only as coming soon without specified release dates, licenses, or parameter counts. Organizations requiring local deployment must currently rely on previous open releases such as Qwen3.8-27B.",
+    "Independent evaluations by Artificial Analysis awarded Qwen4-Max an Intelligence Index score of 43, placing it behind top proprietary models like Fable 5.2 (65) and Opus 5.5 (59). The analysis noted strong performance in document comprehension and multi-step agent workflows, but identified weaker performance in technical chart interpretation, where it scored 54.2."
+   ],
+   "why": "Highlights key operational shifts in open-weights foundation model availability, impacting choices between self-hosted local models and cloud API integrations.",
+   "source": "News search",
+   "url": "https://note.com/daiki_aiwork/n/na5ed98112abd?hl=en",
+   "published": "2026-11-25T03:30:00+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C86",
+   "section": "world",
+   "company": "AMD",
+   "category": "Chips and hardware",
+   "headline": "AMD acquires AI chip startup Taalas for 2.9 billion dollars",
+   "dek": "AMD has acquired chip startup Taalas to integrate AI models directly into silicon, according to a brief announcement.",
+   "detail": [
+    "Chipmaker AMD has acquired AI chip startup Taalas in a transaction valued at $2.9 billion. The deal brings Taalas's hardware design capabilities and engineering team under AMD's corporate structure.",
+    "The startup specializes in technology that bakes neural network models directly into silicon hardware to optimize inference throughput. This architectural approach aims to significantly increase AI execution efficiency compared to general-purpose computing hardware.",
+    "The available text provides a brief summary snippet of the acquisition. The full article provides additional background details on implementation timelines and strategic alignment."
+   ],
+   "why": "Signals a growing industry trend toward hardwiring deep learning architectures directly onto silicon for dedicated inference acceleration.",
+   "source": "News search",
+   "url": "https://tech.eu/2026/11/23/amd-acquires-ai-chip-startup-taalas-for-29b-to-advance-ai-inference-technology/",
+   "published": "2026-11-22T21:38:00+00:00",
+   "full_article": false,
+   "n": 3
+  },
+  {
+   "id": "C43",
+   "section": "world",
+   "company": "Nvidia",
+   "category": "Funding, deals and acquisitions",
+   "headline": "Amazon acquires Decart technology for 7.5 billion dollars to boost Trainium",
+   "dek": "Amazon has acquired startup Decart's optimization stack and engineering team to improve AI model performance across custom Trainium chips.",
+   "detail": [
+    "Amazon has acquired the team and technology of Israeli startup Decart in a reported $7.5 billion transaction aimed at narrowing the performance gap with Nvidia hardware. Amazon plans to integrate the Decart Optimization Stack (DOS) into its AWS environment to increase efficiency across its custom Trainium chips.",
+    "The agreement brings co-founders Dean Leitersdorf, Orian Leitersdorf, and Moshe Shalev along with their technical team to Amazon. Amazon confirmed it is acquiring the startup's model optimization stack rather than its world model projects. The two companies had previously collaborated on Trainium chip optimizations since 2025.",
+    "The acquisition mirrors previous strategic semiconductor talent purchases in the region, such as Amazon's 2015 purchase of Annapurna Labs and Intel's acquisition of Habana Labs. Industry investors noted the acquisition aims to make AWS Trainium data centers more accessible and competitive for external enterprise workloads."
+   ],
+   "why": "Illustrates how software compilation and model optimization layers are used to maximize performance on non-Nvidia custom silicon.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+   "published": "2026-11-24T15:51:07+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C65",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "AI agents and coding tools",
+   "headline": "Anthropic launches Claude Ship to automate code review and approvals",
+   "dek": "Anthropic introduced Claude Ship, an agentic tool suite designed to review pull requests, fix errors, and execute automated code merges based on custom policies.",
+   "detail": [
+    "Anthropic has announced Claude Ship, a suite of AI agents created to automate pull request reviews, bug fixes, and deployment approvals. The tool arrives as AI code generation accelerates PR volume, creating review bottlenecks for engineering teams.",
+    "The product suite includes Code Review, which is now generally available, alongside two beta agents named PR Steward and Claude Approvals. PR Steward automatically resolves failing CI checks and merge conflicts, while Claude Approvals evaluates pull requests against repository policy files written in natural language to execute automated code merges.",
+    "Development teams retain operational control by selecting review depth settings and setting monthly execution budgets. The tools are rolling out in beta for GitHub repositories accessible on Claude Team and Enterprise subscription tiers."
+   ],
+   "why": "Shows the evolution of developer tools from AI code completion to fully autonomous codebase maintenance and PR approval workflows.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+   "published": "2026-11-23T22:05:50+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C40",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "NVIDIA Isaac Lab and Newton enable sim-to-real obstacle avoidance for Microduck",
+   "dek": "A new Hugging Face tutorial outlines a sim-to-real workflow for Microduck using Isaac Lab and Newton to train obstacle avoidance with fixed walking policies.",
+   "detail": [
+    "A technical tutorial outlines a sim-to-real workflow for adding local obstacle avoidance to the Microduck robot while keeping its base walking policy frozen. The control architecture separates navigation from balance, using time-of-flight (ToF) distance measurements to modify incoming velocity commands at 50 Hz.",
+    "Physics and sensor interactions are modeled using NVIDIA Isaac Lab and Newton's multi-mesh raycaster, simulating an 8x8 grid VL53L5CX ToF sensor operating at 15 Hz. Environments are generated using SimReady 3D assets on Hugging Face combined with primitive geometries across 16,384 GPU-parallel simulation environments.",
+    "The navigation policy is trained with Proximal Policy Optimization (PPO) over 1,500 iterations before export as ONNX checkpoints for deployment. Laptop-based inference scripts stream adjusted gamepad commands to the physical robot platform during execution."
+   ],
+   "why": "Provides a practical blueprint for GPU-parallel reinforcement learning and sim-to-real deployment pipelines using Isaac Lab and ONNX exports.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+   "published": "2026-11-24T16:34:13+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C87",
+   "section": "world",
+   "company": "",
+   "category": "Research papers",
+   "headline": "Loom Attention introduces rewirable circuits in Transformers via per-token memory",
+   "dek": "Researchers propose Loom Attention, allowing Transformers to dynamically rewire internal circuits at every token through dual-stream memory.",
+   "detail": [
+    "A new research paper introduces Loom Attention, an architectural mechanism that allows Transformer models to dynamically alter internal circuit connectivity at each generated token. The method interweaves standard horizontal self-attention across tokens with vertical attention over outputs from prior attention heads.",
+    "The vertical attention mechanism is implemented using normalized and gated linear attention operating on a per-token matrix memory. This structure functions as a second residual stream to store compressed head outputs efficiently without prohibitive memory overhead.",
+    "The text provided is a short summary snippet of the paper. The full publication provides complete mathematical derivations and empirical evaluations across benchmark tasks."
+   ],
+   "why": "Explores innovative architectural modifications to Transformer attention layers that enable dynamic internal feature routing.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.30634",
+   "published": "2026-11-22T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C71",
+   "section": "world",
+   "company": "",
+   "category": "Computer vision",
+   "headline": "PartAgent framework integrates 2D and 3D experts for 3D part segmentation",
+   "dek": "A paper presents PartAgent, a training-free framework combining 3D geometric proposals with 2D semantic cues for object part segmentation.",
+   "detail": [
+    "Researchers introduced PartAgent, a training-free agentic framework developed for 3D object part segmentation. The system bridges structural geometry and semantic context by integrating predictions from multiple domain-specific experts.",
+    "Pretrained 3D vision models provide spatially grounded region proposals, while 2D vision experts supply semantic context to identify constituent object parts. The framework employs a closed-loop refinement loop to update structural segmentations progressively.",
+    "The summary provided is a brief paper snippet. The complete paper outlines detailed benchmark comparisons and concrete agent interaction protocols."
+   ],
+   "why": "Demonstrates training-free agentic pipelines combining specialized 2D and 3D vision models for structural multi-modal tasks.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.32554",
+   "published": "2026-11-23T19:00:00.000Z",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C72",
+   "section": "world",
+   "company": "",
+   "category": "Robotics and embodied AI",
+   "headline": "RoboDojo-Mirror benchmark evaluates robot manipulation policies in front of mirrors",
+   "dek": "A benchmark study reveals that standard visual robotic manipulation policies fail when physical mirrors and object reflections are introduced.",
+   "detail": [
+    "Researchers presented RoboDojo-Mirror, an evaluation framework designed to analyze how robotic manipulation policies handle visual reflections. Inspired by animal cognition mirror tests, the suite evaluates whether policies function reliably in mirrored environments.",
+    "Built upon the RoboDojo platform, the benchmark maintains standard task objectives while introducing single-mirror, dual-mirror, and mirrored-tabletop visual setups. Experiments show that scene reflections disrupt standard vision-based control policies.",
+    "The provided text is a brief summary snippet of the study. The full research paper details benchmark setup metrics and policy failure classifications."
+   ],
+   "why": "Highlights key vision policy vulnerabilities and edge cases when deploying visual control models in environment settings containing reflections.",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.33010",
+   "published": "2026-11-23T19:00:00.000Z",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C67",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI security and privacy",
+   "headline": "OpenAI and Cisco launch Shirudo open-source Linux security runtime",
+   "dek": "Shirudo uses eBPF and AI-generated shields to protect running Linux systems against active exploits without requiring service restarts.",
+   "detail": [
+    "OpenAI and Cisco have jointly launched Shirudo, an open-source security runtime engineered to safeguard active Linux operating systems during patch deployment cycles. The framework utilizes extended Berkeley Packet Filter (eBPF) technology to monitor system activity and apply targeted security rules without restarting active services.",
+    "During baseline testing, a custom shield generated by OpenAI's Codex successfully mitigated a Java4Shell attack against an active Elasticsearch service by injecting input validation checks into Java's Base64 decoder. Security teams can test proposed eBPF shields under operational workloads to confirm exploit mitigation without breaking benign traffic.",
+    "Shirudo incorporates cryptographic signatures, Linux kernel verification, and Trusted Platform Module (TPM) hardware attestation to maintain audit trails of active security policies. The project has been released under BSD 2-Clause and GPL dual licenses for open-source community development."
+   ],
+   "why": "Combines AI code generation tools with kernel-level eBPF instrumentation to automate live Linux system administration and security.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "published": "2026-11-23T21:20:00+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C55",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Sarvam AI launches Dictate API supporting 22 Indian languages and English",
+   "dek": "Sarvam AI introduced Sarvam Dictate, an API combining speech recognition and text editing for multilingual audio processing at ₹0.50 per minute.",
+   "detail": [
+    "Sarvam AI has launched Sarvam Dictate, an API engineered to transcribe and refine voice dictations across English and 22 Indian languages. The service is priced at ₹0.50 per minute of processed audio and handles live streams or uploaded recordings up to one hour long.",
+    "The processing pipeline pairs Sarvam’s Saaras V4 speech recognition model with a tailored version of its 105B parameter LLM. Saaras V4 performs initial transcription, while the 105B model edits the output to correct false starts, remove filler words, and manage mid-sentence code-switching between English and Indian languages.",
+    "Sarvam reported benchmark tests showing Dictate required 40% fewer character edits than Google’s Gemini 3.5 Transcribe on short English dictations, and 47% fewer across Indian languages and Hinglish. Developers can pass up to 1,000 custom domain terms and contextual records per API request to guide output formatting."
+   ],
+   "why": "Provides practical speech-to-text API tools optimized for code-mixed Indian languages and localized software applications.",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/sarvam-ai-launches-dictation-api-for-english-22-indian-languages/",
+   "published": "2026-11-24T06:46:40+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C83",
+   "section": "india",
+   "company": "Google / DeepMind",
+   "category": "India AI and startups",
+   "headline": "Google grants 46 crore rupees to IIT Kharagpur for AI research",
+   "dek": "Google has announced a ₹46 crore grant to IIT Kharagpur to support AI compute infrastructure, research, and talent development.",
+   "detail": [
+    "Google has awarded a grant of ₹46 crore (approximately $5 million) to IIT Kharagpur to support artificial intelligence research and technical education. The funding initiative aligns with national objectives under India's IndiaAI Mission.",
+    "The grant funds compute infrastructure expansion, fundamental academic research initiatives, and AI skill training programs for technical talent. The goal is to strengthen indigenous compute capacity and domestic AI capability development.",
+    "The available text is a short news snippet. The full report provides additional context regarding specific research project allocations and university initiatives."
+   ],
+   "why": "Directly impacts academic AI research funding, infrastructure expansion, and compute access in the Indian higher education ecosystem.",
+   "source": "News search",
+   "url": "https://www.msn.com/en-in/technology/artificial-intelligence/from-classroom-to-cloud-google-pours-46-crore-into-iit-kharagpur-s-ai-research/ar-AA2i2CDT",
+   "published": "2026-11-23T03:26:07+00:00",
+   "full_article": false,
+   "n": 12
+  },
+  {
+   "id": "C14",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "AI agents and coding tools",
+   "headline": "Entire partners with Sarvam AI to host sovereign AI coding agents in India",
+   "dek": "Developer platform Entire has integrated Sarvam AI's models onto its Trails platform, offering local code hosting and agent inference for Indian enterprises.",
+   "detail": [
+    "Developer platform Entire, founded by former GitHub CEO Thomas Dohmke, has partnered with Sarvam AI to provide AI coding agents hosted within India. The integration enables developers to deploy automated agents while complying with strict local data residency requirements.",
+    "Sarvam's models are available in preview on Trails, Entire's alternative workspace to traditional pull requests. Developers can host private Git repositories directly in Indian data centers, ensuring both repository code and model inference remain in local jurisdiction.",
+    "In infrastructure benchmarks using the open-source ForgeMark tool, Entire recorded 355 pushes per second during multi-agent testing. The company reported that this throughput exceeded Cursor Origin (29 pushes/sec), GitLab (10 pushes/sec), and GitHub (4 pushes/sec)."
+   ],
+   "why": "Combines developer tool workflows with sovereign cloud infrastructure for local AI code generation and management.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/thomas-dohmkes-entire-partners-with-sarvam-to-bring-ai-coding-agents-to-india",
+   "published": "2026-11-25T05:04:05+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [
+  {
+   "headline": "Sarvam AI launches Dictate API supporting 22 Indian languages and English",
+   "update": "Sarvam AI detailed Dictate's architecture pairing Saaras V4 with a 105B LLM, claiming 47% fewer edit corrections than Gemini 3.5 on Indian languages.",
+   "since": "2026-11-24",
+   "earlier": "Sarvam AI launches Dictate API for English and 22 Indian languages",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/sarvam-ai-launches-dictation-api-for-english-22-indian-languages/",
+   "story": "C55"
+  },
+  {
+   "headline": "Anthropic launches Claude Ship to automate code review and approvals",
+   "update": "Anthropic outlined Claude Ship's constituent agents—Code Review, PR Steward, and Claude Approvals—and detailed custom policy configuration options.",
+   "since": "2026-11-24",
+   "earlier": "Anthropic Introduces Claude Ship to Bring AI Agents Into Code Approval",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+   "story": "C65"
+  },
+  {
+   "headline": "OpenAI and Cisco launch Shirudo open-source Linux security runtime",
+   "update": "OpenAI and Cisco provided operational details on Shirudo's eBPF shield verification mechanisms, TPM attestation, and Java4Shell test results.",
+   "since": "2026-11-24",
+   "earlier": "OpenAI and Cisco Launch Open-Source eBPF Security Tool Shirudo",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "story": "C67"
+  }
+ ],
+ "question": "As foundation models demonstrate strong intrinsic capabilities across specialized domains like protein design, how will your development workflows shift between generalist model APIs and self-hosted domain models?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.6-flash. 11 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}

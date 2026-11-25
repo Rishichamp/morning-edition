@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-25",
+   "headline": "OpenAI details intrinsic protein design capabilities in GPT-6 model family",
+   "publishedAt": "2026-11-25T11:32:02.979730+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-25T11:32:04.009600+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-24",
    "headline": "Amazon says AI agents found and exploited an unpatched zero-day",
    "publishedAt": "2026-11-24T12:46:38.337700+00:00",
@@ -114,15 +123,6 @@
    "publishedAt": "2026-11-12T10:04:24.322890+00:00",
    "emailStatus": "sent",
    "emailedAt": "2026-11-12T10:04:25.512349+00:00",
-   "test": false,
-   "version": 2
-  },
-  {
-   "date": "2026-11-11",
-   "headline": "Google Releases Gemini 4 Carbon Model With Agent Swarm Feature",
-   "publishedAt": "2026-11-10T19:56:56.629263+00:00",
-   "emailStatus": "sent",
-   "emailedAt": "2026-11-10T19:56:58.220571+00:00",
    "test": false,
    "version": 2
   }

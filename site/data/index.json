@@ -1,6 +1,15 @@
 {
  "editions": [
   {
+   "date": "2026-11-26",
+   "headline": "GPT-6 Models Demonstrate Intrinsic Protein-Design Capabilities via Reasoning",
+   "publishedAt": "2026-11-26T11:15:26.888558+00:00",
+   "emailStatus": "sent",
+   "emailedAt": "2026-11-26T11:15:28.065619+00:00",
+   "test": false,
+   "version": 2
+  },
+  {
    "date": "2026-11-25",
    "headline": "OpenAI details intrinsic protein design capabilities in GPT-6 model family",
    "publishedAt": "2026-11-25T11:32:02.979730+00:00",
@@ -114,15 +123,6 @@
    "publishedAt": "2026-11-13T09:51:07.379510+00:00",
    "emailStatus": "sent",
    "emailedAt": "2026-11-13T09:51:08.669952+00:00",
-   "test": false,
-   "version": 2
-  },
-  {
-   "date": "2026-11-12",
-   "headline": "Google AI launches Gemini Decisions API for rapid multimodal choices",
-   "publishedAt": "2026-11-12T10:04:24.322890+00:00",
-   "emailStatus": "sent",
-   "emailedAt": "2026-11-12T10:04:25.512349+00:00",
    "test": false,
    "version": 2
   }

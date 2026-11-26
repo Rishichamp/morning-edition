@@ -1,0 +1,274 @@
+{
+ "date": "2026-11-26",
+ "version": 2,
+ "sample": false,
+ "front": {
+  "kicker": "Model launches",
+  "headline": "GPT-6 Models Demonstrate Intrinsic Protein-Design Capabilities via Reasoning",
+  "dek": "OpenAI's GPT-6 models can design new protein shapes and sequences using only reasoning and code, matching or outperforming specialized biology models in tests."
+ },
+ "brief": [
+  "OpenAI's GPT-6 models demonstrate intrinsic protein-design capabilities using reasoning and code.",
+  "BharatGen launches Patram 1.5, a 7-billion-parameter open-weights vision-language model for documents.",
+  "Entire partners with Sarvam AI to bring sovereign AI coding agents with local data residency to India."
+ ],
+ "stories": [
+  {
+   "id": "C67",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "Model launches",
+   "headline": "GPT-6 Models Demonstrate Intrinsic Protein-Design Capabilities via Reasoning",
+   "dek": "OpenAI's GPT-6 models can design new protein shapes and sequences using only reasoning and code, matching or outperforming specialized biology models in tests.",
+   "detail": [
+    "The GPT-6 family of models can design new protein shapes and chemical building block sequences using only reasoning and general-purpose code, without calling specialized biology models.",
+    "In lab tests with Onava, proteins based on GPT-6.2's designs showed evidence of binding across five targets, and redesigned antibodies also retained binding.",
+    "When tested against specialized models like RFdiffusion, GPT-6.2 scored slightly lower, while internal models scored higher, though predicting a complete protein structure remains a weakness."
+   ],
+   "why": "This research shows how general-purpose reasoning models can directly handle complex structural biology tasks without dedicated pipelines.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+   "published": "2026-11-24T13:00:00+00:00",
+   "full_article": true,
+   "n": 1
+  },
+  {
+   "id": "C10",
+   "section": "world",
+   "company": "",
+   "category": "APIs, pricing and developer updates",
+   "headline": "Hugging Face Expands Nemotron 3.5 Parse with Open Data and DFlash2",
+   "dek": "Hugging Face releases synthetic training datasets, fine-tuning recipes, and the DFlash2 speculator for faster inference on NVIDIA Nemotron 3.5 Parse.",
+   "detail": [
+    "Hugging Face has released synthetic training datasets, a fine-tuning recipe, and a DFlash2 speculator to build on NVIDIA Nemotron 3.5 Parse.",
+    "The open-sourced datasets include Synthetic Charts V1 with 9.98M examples, Synthetic Tables V1 with 1M examples, and OCR Synthetic Multilingual v2 with 7.9M examples.",
+    "Using the DFlash2 speculator increased native single-pass throughput on an H200 GPU up to 7.62x at concurrency 1 compared to disabled speculative decoding."
+   ],
+   "why": "The open-source release provides ready datasets and efficient decoding methods for vision-language document processing workflows.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "published": "2026-11-26T05:05:36+00:00",
+   "full_article": true,
+   "n": 2
+  },
+  {
+   "id": "C15",
+   "section": "world",
+   "company": "Hugging Face",
+   "category": "AI agents and coding tools",
+   "headline": "Hugging Face AI agent swarm report: Server blocked admin token attempt, accepted peer review swap",
+   "dek": "AI agent swarm research from Hugging Face shows a strict merge gate beat hierarchies and voting when 1,000 DeepSeek agents built the PyBot chatbot in nine days. The Nov. 25 report says server-enforced ...",
+   "detail": [
+    "AI agent swarm research from Hugging Face shows a strict merge gate beat hierarchies and voting when 1,000 DeepSeek agents built the PyBot chatbot in nine days. The Nov. 25 report says server-enforced ..."
+   ],
+   "why": "",
+   "source": "News search",
+   "url": "https://www.msn.com/en-us/technology/artificial-intelligence/hugging-face-ai-agent-swarm-report-server-blocked-admin-token-attempt-accepted-peer-review-swap/ar-AA2ifOdy",
+   "published": "2026-11-25T22:50:22+00:00",
+   "full_article": false,
+   "n": 3
+  },
+  {
+   "id": "C23",
+   "section": "world",
+   "company": "",
+   "category": "Safety and alignment",
+   "headline": "Where scientists draw the line on AI agents",
+   "dek": "",
+   "detail": [
+    "Delegating research tasks to AI does not remove scientists’ responsibility for how the work is accomplished. For example, a researcher using AI to review the literature needs to check whether the system overlooks conflicting evidence or makes claims the cited papers don’t support. Someone handing off data analysis to an agentic system needs to understand which methods it used, which files it accessed, and whether the results can be successfully reproduced. A researcher automating part of a lab protocol needs confidence that the system respects physical safety constraints, such as temperature limits or material toxicity, while a researcher working with human-participant data needs assurance that a system protects participants' privacy and limits who can access their information. Researchers also need clear institutional guidelines for verifying and disclosing AI-assisted work.",
+    "These ethical and safety questions are central to our work on AI for science. Responsible science is about more than accuracy—scientific fields have ethical research norms because of past actions and choices by scientists and scientific communities, and those norms also cover how research is conducted and what impact it has. We want AI tools to expand what scientists can accomplish without compromising their ability to scrutinize evidence, verify methods, and – perhaps most importantly – stand behind their findings.",
+    "To better understand what that requires, we interviewed 17 scientists working in the natural, applied, and social sciences about the responsible development of AI agents. These systems can use tools and carry out research tasks with varying degrees of autonomy. The interviews drew on a network of researchers established through earlier survey work—we wanted to understand how scientists would steer AI’s development to reflect the responsibilities of their fields. We asked where researchers would welcome agentic assistance, what could go wrong, and what safeguards they would need to trust agents with their own studies.",
+    "Our interest in these questions grew out of work to evaluate the safety of models developed at Ai2. As we expand our focus on AI for science, we’ve found that much of the safety work on scientific applications emphasizes catastrophic risks in areas such as biology and nuclear physics. We also need ways to assess whether agents follow the standards of responsible conduct of research in the fields where they’re used."
+   ],
+   "why": "",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+   "published": "2026-11-25T18:52:55+00:00",
+   "full_article": true,
+   "n": 4
+  },
+  {
+   "id": "C32",
+   "section": "world",
+   "company": "Microsoft",
+   "category": "AI agents and coding tools",
+   "headline": "How to choose the next safe step in application modernization",
+   "dek": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post How to choose the next safe step in application modernization appeared first",
+   "detail": [
+    "A request to modernize an application often starts with a technology question: Which framework should replace the old one? Before you choose, find out what still works. Then collect evidence that can act as a regression net for that behavior and show where modernization is necessary.",
+    "I used an evidence-first method on four public applications, from a small Node.js game to a large Java enterprise resource planning (ERP) application. Each needed a different treatment, but the way I collected evidence, chose the next experiment, and decided on possible proof points was repeatable.",
+    "This post walks through that process so you can apply it to one application of your own. It also shows how to encode the procedure in a GitHub Copilot agent skill while keeping architectural judgment with the people responsible for the system.",
+    "The label on an application rarely tells you enough. “Java microservices” doesn’t tell you which Java Development Kit (JDK) runs in production, where that version is pinned, whether the tests execute, or which interfaces other systems depend on. “Legacy monolith” doesn’t tell you whether the business core is broken or whether one retired platform dependency prevents the application from starting."
+   ],
+   "why": "",
+   "source": "GitHub",
+   "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+   "published": "2026-11-25T15:00:00+00:00",
+   "full_article": true,
+   "n": 5
+  },
+  {
+   "id": "C43",
+   "section": "world",
+   "company": "",
+   "category": "Image, video and audio AI",
+   "headline": "Building an Indic Voice Agent with CUGA and Multilingual Embeddings",
+   "dek": "Developers built a multilingual voice agent using IBM's CUGA harness and multilingual-e5 embeddings to query English agricultural handbooks in regional Indian languages.",
+   "detail": [
+    "A small voice agent was built using the CUGA agent harness to allow users to ask questions in regional languages and search English handbooks.",
+    "Cross-lingual retrieval was solved by using the multilingual-e5-large embedding model so that non-English queries map to the correct English document vectors.",
+    "The setup integrates with IBM Bharat Core to support sovereign enterprise AI solutions and local infrastructure deployments across India."
+   ],
+   "why": "This demonstrates practical agent architectures and multilingual embedding tricks for building vernacular AI applications in India.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+   "published": "2026-11-25T10:22:09+00:00",
+   "full_article": true,
+   "n": 6
+  },
+  {
+   "id": "C56",
+   "section": "world",
+   "company": "",
+   "category": "",
+   "headline": "VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation",
+   "dek": "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable pr",
+   "detail": [
+    "Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, a camera aimed away from its subject, broken object interactions, or narration that drifts out of sync, and none of these raise a runtime error. Feeding rendered frames and audio back into the coding "
+   ],
+   "why": "",
+   "source": "Hugging Face Papers",
+   "url": "https://huggingface.co/papers/2611.34237",
+   "published": "2026-11-24T19:00:00.000Z",
+   "full_article": true,
+   "n": 7
+  },
+  {
+   "id": "C66",
+   "section": "world",
+   "company": "Google / DeepMind",
+   "category": "AI in science and healthcare",
+   "headline": "Mass Spec Skills Bring Gemini Reasoning to Tandem Mass Spectrometry",
+   "dek": "Mass Spec Skills for Google Antigravity pair Gemini's chemical reasoning with open tools to interpret tandem mass spectra and identify small molecules.",
+   "detail": [
+    "Mass Spec Skills empower scientists using Google Antigravity to interpret tandem mass spectra and query public chemical databases.",
+    "The tool helps elucidate uncharted small molecules by inferring structures directly from observed fragment ions when reference spectra are missing.",
+    "In a test on a negative-mode tandem mass spectrum, the agent used SIRIUS to determine the molecular formula and tested PubChem isomers against fragmentation pathways."
+   ],
+   "why": "It illustrates how agentic workflows can automate complex scientific data interpretation tasks using existing domain tools.",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+   "published": "2026-11-24T13:07:53+00:00",
+   "full_article": true,
+   "n": 8
+  },
+  {
+   "id": "C74",
+   "section": "world",
+   "company": "Anthropic",
+   "category": "Cloud and GPU access",
+   "headline": "Amazon Bedrock Launches Trusted Access API with EFS and EDC",
+   "dek": "AWS announces the general availability of the Amazon Bedrock trusted access program API, featuring Enterprise Frontier Safeguards and Enterprise Data Controls.",
+   "detail": [
+    "The new API provides a unified way to discover, request, and enroll in model provider trusted access programs on Amazon Bedrock.",
+    "Enterprise Frontier Safeguards (EFS) allow eligible customers to store retained data in their own AWS account while automated safety monitoring flags risks.",
+    "Enterprise Data Controls (EDC) offer identical automated safety monitoring while storing retained data in Amazon-managed storage with AWS-managed keys."
+   ],
+   "why": "This gives enterprise users fine-grained security controls and data residency options when deploying frontier models on AWS.",
+   "source": "AWS Machine Learning",
+   "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+   "published": "2026-11-24T05:01:14+00:00",
+   "full_article": true,
+   "n": 9
+  },
+  {
+   "id": "C79",
+   "section": "world",
+   "company": "OpenAI",
+   "category": "AI security and privacy",
+   "headline": "OpenAI and Cisco Launch Open-Source eBPF Security Tool Shirudo",
+   "dek": "OpenAI and Cisco released Shirudo, an open-source runtime using eBPF to protect running Linux systems against exploits without requiring restarts.",
+   "detail": [
+    "Shirudo is an open-source runtime designed to help teams protect Linux systems while rolling out patches without needing restarts.",
+    "It uses eBPF to observe suspicious activity and apply targeted security protections to running systems, such as blocking a Java4Shell exploit.",
+    "The runtime features cryptographically signed shields, kernel verification rules, and TPM hardware-backed verification to record loaded protections."
+   ],
+   "why": "It provides a low-level, AI-assisted security mechanism for hardening Linux environments against zero-day vulnerabilities.",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "published": "2026-11-23T21:20:00+00:00",
+   "full_article": true,
+   "n": 10
+  }
+ ],
+ "india": [
+  {
+   "id": "C8",
+   "section": "india",
+   "company": "",
+   "category": "Model launches",
+   "headline": "BharatGen Launches Patram 1.5, a 7B Vision-Language Model",
+   "dek": "BharatGen released Patram 1.5, a 7B vision-language model for document processing that interprets scans as images and outputs structured JSON or HTML.",
+   "detail": [
+    "BharatGen launched Patram 1.5, a seven-billion-parameter vision-language model built to read scanned, handwritten, stamped, and multilingual documents.",
+    "Unlike traditional OCR systems, the model processes documents as images to interpret tables, signatures, and charts, outputting data in JSON, HTML, or Markdown.",
+    "The model can run locally on an organization's infrastructure with a 32,000-token context window and is available on Hugging Face and the BharatGen Playground."
+   ],
+   "why": "As a 7B sovereign VLM that can run locally, it is a valuable open-weight tool for document processing tasks in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/bharatgen-launches-patram-15-a-7b-vision-language-model-for-document-processing",
+   "published": "2026-11-26T07:17:59+00:00",
+   "full_article": true,
+   "n": 11
+  },
+  {
+   "id": "C37",
+   "section": "india",
+   "company": "Anthropic",
+   "category": "AI agents and coding tools",
+   "headline": "Anthropic Expands Research Preview of Claude Duet to India",
+   "dek": "Anthropic expanded the research preview of its Claude Duet AI work assistant to India, allowing professionals to automate tasks across connected apps.",
+   "detail": [
+    "Powered by Claude Opus 5.5, Claude Duet monitors connected apps, prioritizes tasks, and works in the background even when user devices are off.",
+    "The assistant connects with over 6,000 tools and plugins including Gmail, Slack, Stripe, and QuickBooks to schedule meetings and forecast finances.",
+    "It includes automated safeguards against prompt injection and unauthorized actions, requiring user approval for messages, payments, and document signing."
+   ],
+   "why": "It highlights the regional availability of advanced multi-app autonomous work agents in India.",
+   "source": "Inc42",
+   "url": "https://inc42.com/buzz/anthropic-takes-on-openai-meta-with-new-proactive-ai-agent-claude-duet/",
+   "published": "2026-11-25T13:20:13+00:00",
+   "full_article": true,
+   "n": 12
+  },
+  {
+   "id": "C47",
+   "section": "india",
+   "company": "Indian AI",
+   "category": "AI agents and coding tools",
+   "headline": "Entire Partners With Sarvam to Bring AI Coding Agents to India",
+   "dek": "Thomas Dohmke's Entire partnered with Sarvam AI to offer Indian developers AI coding agents powered by locally hosted models with data residency.",
+   "detail": [
+    "Entire integrated Sarvam's models into its Trails platform to let developers run coding agents with private code hosting and inference within India.",
+    "The partnership targets regulated industries requiring strict data residency compliance by keeping code and agent runs inside the country.",
+    "Entire's Git infrastructure achieved 355 pushes per second in tests, outperforming competing platforms significantly."
+   ],
+   "why": "This collaboration combines local LLMs with specialized developer platforms to support sovereign AI coding workflows in India.",
+   "source": "Analytics India Magazine",
+   "url": "https://analyticsindiamag.com/ai-news/thomas-dohmkes-entire-partners-with-sarvam-to-bring-ai-coding-agents-to-india",
+   "published": "2026-11-25T05:04:05+00:00",
+   "full_article": true,
+   "n": 13
+  }
+ ],
+ "changes": [],
+ "question": "How can open-source 7B vision-language models like Patram 1.5 be efficiently fine-tuned on a single cloud GPU for specialized document extraction tasks?",
+ "record": {
+  "window": "Stories published in the last 72 hours, gathered at 08:00 IST",
+  "privacy": "Built only from public news, company blogs and papers. No personal mail, chats or calendar are read.",
+  "verification": "Every story links to its original page. Detailed summaries are written only from that page's text.",
+  "unverified": [
+   "Picked and written by gemini-3.5-flash-lite. 12 of 13 stories were read in full; the rest are from the feed's summary only."
+  ]
+ }
+}
